@@ -1,95 +1,258 @@
-# Remove-ExpressVPN.ps1
-# Удаляет папку ExpressVPN рекурсивно с принудительным снятием прав (PowerShell 5 compatible)
-# Запускать ОТ АДМИНИСТРАТОРА!
+<#
+.SYNOPSIS
+  Permanently delete a file or folder after removing protections, with an interactive progress bar.
 
-$Path = 'C:\Program Files (x86)\ExpressVPN'
+.DESCRIPTION
+  Prompts for a target path, elevates if required, removes ReadOnly/Hidden/System attributes,
+  takes ownership, resets ACLs, disables inheritance, enumerates items and deletes them one-by-one
+  while showing a progress bar and percentage. Includes safety checks for system-critical paths.
 
-function Write-Info($msg){ Write-Host "[*] $msg" -ForegroundColor Cyan }
-function Write-Ok($msg){ Write-Host "[OK] $msg" -ForegroundColor Green }
-function Write-Err($msg){ Write-Host "[ERR] $msg" -ForegroundColor Red }
+.NOTES
+  Compatible with PowerShell 5.1 and PowerShell 7+.
+  Run with Administrator privileges for full effect.
+#>
 
-# Проверка прав администратора
-$identity = [Security.Principal.WindowsIdentity]::GetCurrent()
-$principal = New-Object Security.Principal.WindowsPrincipal($identity)
-if (-not $principal.IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)) {
-    Write-Err "Скрипт должен быть запущен от имени администратора. Завершение."
-    exit 1
+# ---------- Colored Output Helpers ----------
+function Write-Info   ($m){ Write-Host "[i] $m" -ForegroundColor Cyan }
+function Write-Warn   ($m){ Write-Host "[!] $m" -ForegroundColor Yellow }
+function Write-ErrorX ($m){ Write-Host "[x] $m" -ForegroundColor Red }
+function Write-Ok     ($m){ Write-Host "[✓] $m" -ForegroundColor Green }
+function Write-Step   ($m){ Write-Host "── $m" -ForegroundColor Magenta }
+
+# ---------- Elevation ----------
+function Ensure-Elevated {
+    # Check if running as Administrator; if not, relaunch self with UAC prompt.
+    $isAdmin = ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()
+               ).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+    if(-not $isAdmin){
+        Write-Warn "Administrator privileges required. Restarting with elevation..."
+        $exe  = (Get-Process -Id $PID).Path
+        # If PSCommandPath is empty (interactive session), use current script path if possible
+        if([string]::IsNullOrEmpty($PSCommandPath)){
+            Write-Warn "Script path unknown. Start this script from a file to enable auto-elevation."
+            exit 1
+        }
+        $args = "-NoLogo -NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`""
+        $psi  = New-Object System.Diagnostics.ProcessStartInfo
+        $psi.FileName  = $exe
+        $psi.Arguments = $args
+        $psi.Verb      = "runas"
+        try   { [Diagnostics.Process]::Start($psi) | Out-Null } 
+        catch { Write-ErrorX "Elevation request denied."; exit 1 }
+        exit 0
+    }
 }
 
-# Проверка существования папки
-if (-not (Test-Path -LiteralPath $Path)) {
-    Write-Err "Путь не найден: $Path"
-    exit 1
-}
+# ---------- Safety Guard ----------
+function Test-DangerousPath {
+    param([string]$Path)
+    try { $full = [IO.Path]::GetFullPath($Path) } catch { return $true }
 
-Write-Info "Начинаю удаление: $Path"
+    # Patterns considered dangerous (drive roots, system folders, user profiles, etc.)
+    $dangerRoots = @(
+        '^([A-Za-z]:\\)?$',                          
+        '^[A-Za-z]:\\$',                             
+        '^[A-Za-z]:\\Windows(\\.*)?$',               
+        '^[A-Za-z]:\\Program Files( \(x86\))?(\\.*)?$',
+        '^[A-Za-z]:\\ProgramData(\\.*)?$',
+        '^[A-Za-z]:\\Users\\?$',
+        '^[A-Za-z]:\\Users\\[^\\]+\\AppData(\\.*)?$'
+    )
 
-try {
-    # 1) Останавливаем сервисы с именем, содержащим 'express' (если есть)
-    $svc = Get-Service -ErrorAction SilentlyContinue | Where-Object { $_.Name -match 'express' -or $_.DisplayName -match 'express' }
-    if ($svc) {
-        foreach ($s in $svc) {
-            Write-Info "Останавливаю службу: $($s.Name)"
-            try { Stop-Service -Name $s.Name -Force -ErrorAction Stop; Write-Ok "Служба $($s.Name) остановлена" } catch { Write-Err "Не удалось остановить службу $($s.Name): $_" }
-        }
-    } else { Write-Info "Службы express не найдены." }
-
-    # 2) Завершаем процессы с именем содержащим 'expressvpn' или 'express'
-    $procs = Get-Process -ErrorAction SilentlyContinue | Where-Object { $_.Name -match 'expressvpn' -or $_.Name -match '^express' }
-    if ($procs) {
-        foreach ($p in $procs) {
-            Write-Info "Убиваю процесс: $($p.ProcessName) (Id $($p.Id))"
-            try { Stop-Process -Id $p.Id -Force -ErrorAction Stop; Write-Ok "Процесс $($p.ProcessName) завершён" } catch { Write-Err "Не удалось завершить процесс $($p.ProcessName): $_" }
-        }
-    } else { Write-Info "Процессы expressvpn не найдены." }
-
-    # 3) Снимаем атрибуты 'ReadOnly' и 'System' рекурсивно
-    Write-Info "Снимаю атрибуты ReadOnly/System рекурсивно"
-    try {
-        Get-ChildItem -LiteralPath $Path -Recurse -Force -ErrorAction SilentlyContinue | ForEach-Object {
-            try { $_.Attributes = 'Normal' } catch { }
-        }
-        Write-Ok "Атрибуты сняты"
-    } catch {
-        Write-Err "Ошибка при снятии атрибутов: $_"
+    foreach($rx in $dangerRoots){
+        if($full -match $rx){ return $true }
     }
 
-    # 4) Берём владение и выдаём полный доступ группе Administrators (используем takeown + icacls для PS5 совместимости)
-    Write-Info "Беру владение (takeown) и выдаю полный доступ Administrators (icacls)"
-    $takeownCmd = "takeown /F `"$Path`" /R /D Y"
-    $icaclsCmd  = "icacls `"$Path`" /grant `"Administrators:F`" /T /C"
+    # Prevent deleting current user profile
+    $userProfile = [Environment]::GetFolderPath("UserProfile")
+    if($full -ieq $userProfile){ return $true }
 
-    cmd.exe /c $takeownCmd 2>&1 | ForEach-Object { Write-Info $_ }
-    cmd.exe /c $icaclsCmd 2>&1 | ForEach-Object { Write-Info $_ }
-
-    # 5) Пытаемся удалить через Remove-Item
-    Write-Info "Пробую Remove-Item -Recurse -Force"
-    Remove-Item -LiteralPath $Path -Recurse -Force -ErrorAction Stop
-    Write-Ok "Папка успешно удалена через Remove-Item."
-    exit 0
+    return $false
 }
-catch {
-    Write-Err "Remove-Item не сработал: $_. Попытка принудительного удаления через rd.exe"
+
+# ---------- Long Path Support ----------
+function Get-ExtendedPath {
+    param([string]$Path)
+    if($Path -like "\\?\*"){ return $Path }
+    if($Path.StartsWith("\\\\")){ return "\\?\UNC\" + $Path.Substring(2) }
+    return "\\?\$Path"
+}
+
+# ---------- Reset Ownership and ACLs ----------
+function Reset-OwnershipAndAcl {
+    param([string]$Target)
+    Write-Step "Removing ReadOnly/Hidden/System attributes..."
     try {
-        # Доп. попытка: убедиться, что внутри нет заблокированных файлов: повторно убиваем процессы и снимаем атрибуты
-        Get-Process -ErrorAction SilentlyContinue | Where-Object { $_.Name -match 'expressvpn' -or $_.Name -match '^express' } | ForEach-Object { Stop-Process -Id $_.Id -Force -ErrorAction SilentlyContinue }
+        & attrib -r -h -s "$Target" /s /d 2>$null
+    } catch { }
 
-        Get-ChildItem -LiteralPath $Path -Recurse -Force -ErrorAction SilentlyContinue | ForEach-Object {
-            try { $_.Attributes = 'Normal' } catch { }
+    Write-Step "Taking ownership and resetting ACLs..."
+    try {
+        & takeown /f "$Target" /r /d y        | Out-Null
+        & icacls "$Target" /grant *S-1-5-32-544:(F) /T /C | Out-Null  # Administrators full control
+        & icacls "$Target" /inheritance:d /T /C            | Out-Null
+        & icacls "$Target" /reset /T /C                    | Out-Null
+    } catch {
+        Write-Warn "takeown/icacls returned errors, continuing..."
+    }
+}
+
+# ---------- Delete With Progress ----------
+function Delete-WithProgress {
+    param([string]$Target)
+
+    # If target is a file -> simple deletion with progress
+    if((Test-Path -LiteralPath $Target) -and (Get-Item -LiteralPath $Target).PSIsContainer -eq $false){
+        $name = Split-Path -Leaf $Target
+        Write-Step "Deleting file: $name"
+        Write-Progress -Activity "Deleting" -Status "Removing file" -PercentComplete 0 -Id 1
+        try {
+            Remove-Item -LiteralPath $Target -Force -ErrorAction Stop
+            Write-Progress -Activity "Deleting" -Completed -Id 1
+            return $true
+        } catch {
+            Write-Progress -Activity "Deleting" -Status "Failed" -PercentComplete 100 -Id 1
+            Write-Warn "Remove-Item failed for file: $($_.Exception.Message)"
+            return $false
         }
+    }
 
-        # Финальная принудительная команда удаления через cmd (rd /s /q)
-        $cmd = "rd /s /q `"$Path`""
-        $proc = Start-Process -FilePath cmd.exe -ArgumentList "/c $cmd" -Verb runAs -Wait -NoNewWindow -PassThru
-        if (Test-Path -LiteralPath $Path) {
-            Write-Err "После rd папка всё ещё существует. Возможно, файл занят или права не сняты."
-            exit 2
+    # If target is a folder (or not resolved), enumerate children
+    Write-Step "Collecting items to delete (this may take a while for large trees)..."
+    try {
+        $items = Get-ChildItem -LiteralPath $Target -Recurse -Force -ErrorAction SilentlyContinue -Force | ForEach-Object { $_.FullName }
+    } catch {
+        Write-Warn "Error enumerating items: $($_.Exception.Message)"
+        $items = @()
+    }
+
+    # Include the root target itself (delete it last)
+    $itemsList = @()
+    if($items){ $itemsList += $items }
+    $itemsList += $Target
+
+    $total = $itemsList.Count
+    if($total -eq 0){
+        Write-Warn "No items found under target. Attempting direct removal..."
+        try {
+            Remove-Item -LiteralPath $Target -Recurse -Force -ErrorAction Stop
+            return $true
+        } catch {
+            Write-Warn "Direct removal failed: $($_.Exception.Message)"
+            return $false
+        }
+    }
+
+    $index = 0
+    foreach($it in $itemsList){
+        $index++
+        $percent = [int](($index / $total) * 100)
+        $short = if($it.Length -gt 60){ '...' + $it.Substring($it.Length - 57) } else { $it }
+        Write-Progress -Activity "Deleting items" -Status "$index of $total: $short" -PercentComplete $percent -Id 1
+
+        try {
+            if(Test-Path -LiteralPath $it){
+                # If folder, remove contents first then folder - using Remove-Item with -Force
+                Remove-Item -LiteralPath $it -Recurse -Force -ErrorAction Stop -Confirm:$false
+            }
+        } catch {
+            # If Remove-Item failed for this individual item, try cmd fallback for file/folder
+            try {
+                if((Test-Path -LiteralPath $it) -and (Get-Item -LiteralPath $it).PSIsContainer){
+                    & cmd /c "rmdir /s /q `"$it`"" 2>$null
+                } else {
+                    & cmd /c "del /f /q `"$it`"" 2>$null
+                }
+            } catch {
+                # ignore individual failures, continue to next; final check will detect leftover items
+            }
+        }
+    }
+
+    Write-Progress -Activity "Deleting items" -Completed -Id 1
+
+    # Final existence check
+    if(Test-Path -LiteralPath $Target){
+        Write-Warn "Target still exists after per-item deletion attempts."
+        return $false
+    } else {
+        return $true
+    }
+}
+
+# ---------- Fallback Bulk Delete ----------
+function Fallback-BulkDelete {
+    param([string]$Target)
+    Write-Step "Attempting bulk fallback removal via cmd..."
+    try {
+        if((Test-Path -LiteralPath $Target) -and (Get-Item -LiteralPath $Target).PSIsContainer){
+            & cmd /c "rmdir /s /q `"$Target`"" 2>$null
         } else {
-            Write-Ok "Папка удалена через rd."
-            exit 0
+            & cmd /c "del /f /q `"$Target`"" 2>$null
+        }
+        Start-Sleep -Milliseconds 300
+        if(Test-Path -LiteralPath $Target){
+            Write-Warn "Fallback bulk removal failed or target still present."
+            return $false
+        } else {
+            return $true
         }
     } catch {
-        Write-Err "Не удалось принудительно удалить папку: $_"
-        exit 3
+        Write-Warn "Fallback bulk removal exception: $($_.Exception.Message)"
+        return $false
     }
+}
+
+# ---------- Main ----------
+Ensure-Elevated
+
+$rawPath = Read-Host "Enter the full path of the file or folder to permanently delete"
+if([string]::IsNullOrWhiteSpace($rawPath)){
+    Write-ErrorX "No path specified."
+    exit 1
+}
+
+# Resolve if possible, otherwise use literal
+try{
+    $resolved = Resolve-Path -LiteralPath $rawPath -ErrorAction Stop
+    $target   = $resolved.ProviderPath
+} catch {
+    $target = $rawPath
+}
+
+if(-not (Test-Path -LiteralPath $target)){
+    Write-Warn "Object not found: $target (continuing anyway; if path is incorrect, deletion will fail)."
+}
+
+if(Test-DangerousPath -Path $target){
+    Write-ErrorX "Critical system path detected. Aborting to prevent damage."
+    exit 2
+}
+
+$ext = Get-ExtendedPath -Path $target
+Write-Info "Target: $target"
+Write-Info "Extended path: $ext"
+
+# Prepare: remove attributes and ACLs
+Reset-OwnershipAndAcl -Target $ext
+
+# Delete with interactive progress
+$deleted = $false
+try {
+    $deleted = Delete-WithProgress -Target $ext
+} catch {
+    Write-Warn "Delete-WithProgress threw an exception: $($_.Exception.Message)"
+    $deleted = $false
+}
+
+if(-not $deleted){
+    # Try a final fallback
+    $deleted = Fallback-BulkDelete -Target $ext
+}
+
+if($deleted){
+    Write-Ok "Done. The object was permanently deleted."
+} else {
+    Write-ErrorX "Failed to delete the object."
+    Write-Warn "Tip: close Explorer, editors, or antivirus processes that may lock files, then retry."
 }

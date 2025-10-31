@@ -1,5 +1,5 @@
 # PowerShell 7+
-# Принудительная перезагрузка списка ПК через WinRM
+# Force reboot of multiple remote PCs via WinRM
 
 $Computers = @(
   'SALA10-LAP','SALA11-LAP','SALA12-LAP','SALA13-LAP','SALA14-LAP','SALA15-LAP',
@@ -10,35 +10,39 @@ $Computers = @(
   'POKOJNAUCZ1-PC','POKOJNAUCZ2-PC','POKOJNAUCZ3-PC','POKOJNAUCZ4-PC','SALAN1-LAP'
 )
 
-# Настройки
+# Settings
 $ForceRestart = $true
 $DelayBeforeSeconds = 0
 $ThrottleLimit = 24
 
-# Опционально спросить креды
-$Cred = Get-Credential -Message "Введите учётку с правами на удалённый рестарт"
+$Cred = Get-Credential -Message "Enter account with rights to restart remotely"
 
-$restartSb = {
-    param([int]$Delay, [bool]$Force)
-
-    if ($Delay -gt 0) {
-        $args = '/r','/t',$Delay,'/c','Planowany restart przez administratora'
-        if ($Force) { $args += '/f' }
-        Start-Process -FilePath "shutdown.exe" -ArgumentList $args -WindowStyle Hidden
-        "SCHEDULED:$Delay"
-    }
-    else {
-        Restart-Computer -Force:$Force
-        "INSTANT"
-    }
-}
-
-Write-Host "Запускаю перезагрузку $($Computers.Count) компьютеров..." -ForegroundColor Yellow
+Write-Host "Starting reboot for $($Computers.Count) computers..." -ForegroundColor Yellow
 
 $results = $Computers | ForEach-Object -Parallel {
     try {
-        Invoke-Command -ComputerName $_ -Credential $using:Cred -ScriptBlock $using:restartSb -ArgumentList $using:DelayBeforeSeconds,$using:ForceRestart -ErrorAction Stop
-        [pscustomobject]@{Computer=$_;Status="OK"}
+        $comp = $_
+        $delay = $using:DelayBeforeSeconds
+        $force = $using:ForceRestart
+        $cred  = $using:Cred
+
+        if ($delay -gt 0) {
+            $args = '/r','/t',$delay,'/c','Planned restart by administrator'
+            if ($force) { $args += '/f' }
+
+            Invoke-Command -ComputerName $comp -Credential $cred -ScriptBlock {
+                param($a) Start-Process -FilePath "shutdown.exe" -ArgumentList $a -WindowStyle Hidden
+            } -ArgumentList ($args -join " ") -ErrorAction Stop
+
+            [pscustomobject]@{Computer=$comp;Status="OK";Mode="SCHEDULED:$delay"}
+        }
+        else {
+            Invoke-Command -ComputerName $comp -Credential $cred -ScriptBlock {
+                Restart-Computer -Force
+            } -ErrorAction Stop
+
+            [pscustomobject]@{Computer=$comp;Status="OK";Mode="INSTANT"}
+        }
     }
     catch {
         [pscustomobject]@{Computer=$_;Status="FAIL";Error=$_.Exception.Message}

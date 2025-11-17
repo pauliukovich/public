@@ -1,8 +1,5 @@
 # Force-TimeSync-WinRM.ps1
-# PowerShell 7.x (Windows)
-# Forces time sync on multiple remote PCs via WinRM (WSMan).
-# Output: Green = Success (shows current time + time source), Red = Fail.
-# Prompts ONLY for the password of a fixed user.
+# PowerShell 7.x — WinRM sync with readable TXT log
 
 # --- Computer list ---
 $Computers = @(
@@ -14,34 +11,36 @@ $Computers = @(
   'POKOJNAUCZ1-PC','POKOJNAUCZ2-PC','POKOJNAUCZ3-PC','POKOJNAUCZ4-PC','SALAN1-LAP'
 ) | Sort-Object -Unique
 
-# --- Fixed username (adjust domain if needed) ---
-# Use 'sp6zabki\serwis' or 'sp6zabki.local\serwis' depending on your env.
-$UserName = 'sp6zabki\serwis'
+# --- Log file (Readable TXT) ---
+$TempDir = 'C:\Temp'
+if (-not (Test-Path -LiteralPath $TempDir)) { 
+    New-Item -ItemType Directory -Path $TempDir -Force | Out-Null 
+}
 
-# --- Prompt only for password; build PSCredential ---
-$SecurePwd = Read-Host -AsSecureString -Prompt "Enter password for '$UserName'"
-$Cred = [pscredential]::new($UserName, $SecurePwd)
+$Stamp = Get-Date -Format 'yyyy-MM-dd_HH-mm-ss'
+$LogFile = Join-Path $TempDir ("Force-TimeSync-WinRM_{0}.txt" -f $Stamp)
 
-# --- Optional: faster failure on unreachable hosts ---
+# Header
+"================ Force Time Sync Report ================" | Out-File $LogFile -Encoding UTF8
+"Generated: $(Get-Date)"                                   | Out-File $LogFile -Append -Encoding UTF8
+"=========================================================" | Out-File $LogFile -Append -Encoding UTF8
+"" | Out-File $LogFile -Append -Encoding UTF8
+
+# --- Session options ---
 $SessionOption = New-PSSessionOption -OperationTimeout (New-TimeSpan -Seconds 25)
 
-# --- Main loop (per-host try/catch to get clean per-target status) ---
 foreach ($Comp in $Computers) {
     try {
-        # In PowerShell 7, -ComputerName uses WSMan on Windows (requires WinRM on targets).
         $info = Invoke-Command -ComputerName $Comp `
-                               -Credential $Cred `
                                -Authentication Default `
                                -ConfigurationName 'Microsoft.PowerShell' `
                                -SessionOption $SessionOption `
                                -ErrorAction Stop `
                                -ScriptBlock {
-            # 1) Ensure Windows Time service is running, then force a resync
+
             Restart-Service w32time -Force -ErrorAction Stop
-            # Rediscover NTP peers and resync; suppress noisy output
             w32tm /resync /rediscover /nowait > $null 2>&1
 
-            # 2) Collect current time and source
             $now    = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss")
             $source = (w32tm /query /source 2>&1) -join ' '
 
@@ -52,15 +51,32 @@ foreach ($Comp in $Computers) {
             }
         }
 
-        Write-Host ("[OK] {0} -> Time: {1} | Source: {2}" -f $info.Host, $info.Time, $info.Source) -ForegroundColor Green
+        Write-Host ("[OK]   {0} -> {1} | {2}" -f $info.Host, $info.Time, $info.Source) -ForegroundColor Green
+
+        @"
+Host:    $($info.Host)
+Status:  OK
+Time:    $($info.Time)
+Source:  $($info.Source)
+---------------------------------------------------------
+"@ | Out-File $LogFile -Append -Encoding UTF8
     }
     catch {
-        # Show concise root cause; common cases: WinRM disabled, firewall, DNS, creds
         $msg = $_.Exception.Message
         if ($_.ErrorDetails.Message) { $msg = $_.ErrorDetails.Message }
+
         Write-Host ("[FAIL] {0} -> {1}" -f $Comp, $msg) -ForegroundColor Red
+
+        @"
+Host:    $Comp
+Status:  FAIL
+Error:   $msg
+---------------------------------------------------------
+"@ | Out-File $LogFile -Append -Encoding UTF8
     }
 }
 
-# Keep console open if launched in a new window
+Write-Host ""
+Write-Host ("Log saved to: {0}" -f $LogFile) -ForegroundColor Cyan
+
 Read-Host -Prompt "Press Enter to exit"

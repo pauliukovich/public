@@ -1,0 +1,4 @@
+diskpart
+list volume
+select volume X
+delete volume

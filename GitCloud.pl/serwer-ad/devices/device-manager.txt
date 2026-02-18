@@ -1,0 +1,1572 @@
+===== DEVICE MANAGER INVENTORY =====
+Server : SERWER-AD
+Date   : 2025-12-19 00:00:02
+
+Total devices: 291
+
+-----------------------------------------------
+
+### CLASS: Unknown
+Count: 1
+
+- Name: 
+  DeviceID: HTREE\ROOT\0
+  Status: OK
+  Manufacturer: 
+
+-----------------------------------------------
+
+### CLASS: Battery
+Count: 1
+
+- Name: HID UPS Battery
+  DeviceID: HID\VID_0463&PID_FFFF\6&31F6915D&0&0000
+  Status: OK
+  Manufacturer: Microsoft
+
+-----------------------------------------------
+
+### CLASS: CDROM
+Count: 1
+
+- Name: PLDS DVD+-RW DU-8A5LH
+  DeviceID: SCSI\CDROM&VEN_PLDS&PROD_DVD+-RW_DU-8A5LH\4&2C60028B&0&070000
+  Status: OK
+  Manufacturer: (Standard CD-ROM drives)
+
+-----------------------------------------------
+
+### CLASS: Computer
+Count: 1
+
+- Name: ACPI x64-based PC
+  DeviceID: ROOT\ACPI_HAL\0000
+  Status: OK
+  Manufacturer: (Standard computers)
+
+-----------------------------------------------
+
+### CLASS: DellInstrumentation
+Count: 1
+
+- Name: DellInstrumentation Device
+  DeviceID: ROOT\DELLINSTRUMENTATION\0000
+  Status: OK
+  Manufacturer: Dell Technologies
+
+-----------------------------------------------
+
+### CLASS: DiskDrive
+Count: 1
+
+- Name: DELL PERC H740P Adp SCSI Disk Device
+  DeviceID: SCSI\DISK&VEN_DELL&PROD_PERC_H740P_ADP\5&2DFAA99E&0&010000
+  Status: OK
+  Manufacturer: (Standard disk drives)
+
+-----------------------------------------------
+
+### CLASS: Display
+Count: 1
+
+- Name: Matrox G200eW3 (Nuvoton) WDDM 1.2
+  DeviceID: PCI\VEN_102B&DEV_0536&SUBSYS_07CA1028&REV_04\5&32E6F6F8&0&0000E4
+  Status: OK
+  Manufacturer: Matrox Graphics Inc.
+
+-----------------------------------------------
+
+### CLASS: HDC
+Count: 2
+
+- Name: Standard SATA AHCI Controller
+  DeviceID: PCI\VEN_8086&DEV_A1D2&SUBSYS_07CA1028&REV_09\3&11583659&0&8D
+  Status: OK
+  Manufacturer: Standard SATA AHCI Controller
+
+- Name: Standard SATA AHCI Controller
+  DeviceID: PCI\VEN_8086&DEV_A182&SUBSYS_07CA1028&REV_09\3&11583659&0&B8
+  Status: OK
+  Manufacturer: Standard SATA AHCI Controller
+
+-----------------------------------------------
+
+### CLASS: HIDClass
+Count: 7
+
+- Name: HID-compliant consumer control device
+  DeviceID: HID\VID_046D&PID_C31C&MI_01&COL01\7&16798BA1&0&0000
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: HID-compliant consumer control device
+  DeviceID: HID\VID_046D&PID_C31C&MI_01&COL03\7&16798BA1&0&0002
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: HID-compliant system controller
+  DeviceID: HID\VID_046D&PID_C31C&MI_01&COL02\7&16798BA1&0&0001
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: MGE USB UPS
+  DeviceID: USB\VID_0463&PID_FFFF\G145L14061
+  Status: OK
+  Manufacturer: MGE
+
+- Name: USB Input Device
+  DeviceID: USB\VID_046D&PID_C31C&MI_00\6&13498FC6&0&0000
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: USB Input Device
+  DeviceID: USB\VID_0000&PID_3825\5&866022A&0&12
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: USB Input Device
+  DeviceID: USB\VID_046D&PID_C31C&MI_01\6&13498FC6&0&0001
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+-----------------------------------------------
+
+### CLASS: Keyboard
+Count: 1
+
+- Name: HID Keyboard Device
+  DeviceID: HID\VID_046D&PID_C31C&MI_00\7&3A50C963&0&0000
+  Status: OK
+  Manufacturer: (Standard keyboards)
+
+-----------------------------------------------
+
+### CLASS: Monitor
+Count: 1
+
+- Name: Generic PnP Monitor
+  DeviceID: DISPLAY\AOC2060\6&AE0D8E7&0&UID327680
+  Status: OK
+  Manufacturer: (Standard monitor types)
+
+-----------------------------------------------
+
+### CLASS: Mouse
+Count: 1
+
+- Name: HID-compliant mouse
+  DeviceID: HID\VID_0000&PID_3825\6&13655CAD&0&0000
+  Status: OK
+  Manufacturer: Microsoft
+
+-----------------------------------------------
+
+### CLASS: Net
+Count: 13
+
+- Name: Broadcom NetXtreme Gigabit Ethernet
+  DeviceID: PCI\VEN_14E4&DEV_165F&SUBSYS_001F1028&REV_00\00002CEA7F523D3900
+  Status: OK
+  Manufacturer: Broadcom Corporation
+
+- Name: Broadcom NetXtreme Gigabit Ethernet #2
+  DeviceID: PCI\VEN_14E4&DEV_165F&SUBSYS_001F1028&REV_00\00002CEA7F523D3A01
+  Status: OK
+  Manufacturer: Broadcom Corporation
+
+- Name: Microsoft Kernel Debug Network Adapter
+  DeviceID: ROOT\KDNIC\0000
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Tailscale Tunnel
+  DeviceID: SWD\WINTUN\{37217669-42DA-4657-A55B-0D995D328250}
+  Status: OK
+  Manufacturer: WireGuard LLC
+
+- Name: WAN Miniport (GRE)
+  DeviceID: SWD\MSRRAS\MS_GREMINIPORT
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: WAN Miniport (IKEv2)
+  DeviceID: SWD\MSRRAS\MS_AGILEVPNMINIPORT
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: WAN Miniport (IP)
+  DeviceID: SWD\MSRRAS\MS_NDISWANIP
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: WAN Miniport (IPv6)
+  DeviceID: SWD\MSRRAS\MS_NDISWANIPV6
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: WAN Miniport (L2TP)
+  DeviceID: SWD\MSRRAS\MS_L2TPMINIPORT
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: WAN Miniport (Network Monitor)
+  DeviceID: SWD\MSRRAS\MS_NDISWANBH
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: WAN Miniport (PPPOE)
+  DeviceID: SWD\MSRRAS\MS_PPPOEMINIPORT
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: WAN Miniport (PPTP)
+  DeviceID: SWD\MSRRAS\MS_PPTPMINIPORT
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: WAN Miniport (SSTP)
+  DeviceID: SWD\MSRRAS\MS_SSTPMINIPORT
+  Status: OK
+  Manufacturer: Microsoft
+
+-----------------------------------------------
+
+### CLASS: Ports
+Count: 2
+
+- Name: Port komunikacyjny (COM1)
+  DeviceID: ACPI\PNP0501\2
+  Status: OK
+  Manufacturer: (Standardowe typy portów)
+
+- Name: Port komunikacyjny (COM2)
+  DeviceID: ACPI\PNP0501\1
+  Status: OK
+  Manufacturer: (Standardowe typy portów)
+
+-----------------------------------------------
+
+### CLASS: PrintQueue
+Count: 4
+
+- Name: Główna kolejka wydruku
+  DeviceID: SWD\PRINTENUM\PRINTQUEUES
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Microsoft Print to PDF
+  DeviceID: SWD\PRINTENUM\{E8ABA998-8714-4015-AD4E-9984530406DC}
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Microsoft XPS Document Writer
+  DeviceID: SWD\PRINTENUM\{58BDFE27-7CAF-4325-A412-F08CA26B2570}
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: OneNote (Desktop)
+  DeviceID: SWD\PRINTENUM\{5D9630EF-49DA-44E7-8C58-698A2602A9FD}
+  Status: OK
+  Manufacturer: Microsoft
+
+-----------------------------------------------
+
+### CLASS: Processor
+Count: 12
+
+- Name: Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+  DeviceID: ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_85_-_INTEL(R)_XEON(R)_BRONZE_3204_CPU_@_1.90GHZ\10
+  Status: OK
+  Manufacturer: Intel
+
+- Name: Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+  DeviceID: ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_85_-_INTEL(R)_XEON(R)_BRONZE_3204_CPU_@_1.90GHZ\11
+  Status: OK
+  Manufacturer: Intel
+
+- Name: Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+  DeviceID: ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_85_-_INTEL(R)_XEON(R)_BRONZE_3204_CPU_@_1.90GHZ\12
+  Status: OK
+  Manufacturer: Intel
+
+- Name: Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+  DeviceID: ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_85_-_INTEL(R)_XEON(R)_BRONZE_3204_CPU_@_1.90GHZ\13
+  Status: OK
+  Manufacturer: Intel
+
+- Name: Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+  DeviceID: ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_85_-_INTEL(R)_XEON(R)_BRONZE_3204_CPU_@_1.90GHZ\14
+  Status: OK
+  Manufacturer: Intel
+
+- Name: Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+  DeviceID: ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_85_-_INTEL(R)_XEON(R)_BRONZE_3204_CPU_@_1.90GHZ\15
+  Status: OK
+  Manufacturer: Intel
+
+- Name: Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+  DeviceID: ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_85_-_INTEL(R)_XEON(R)_BRONZE_3204_CPU_@_1.90GHZ\_0
+  Status: OK
+  Manufacturer: Intel
+
+- Name: Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+  DeviceID: ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_85_-_INTEL(R)_XEON(R)_BRONZE_3204_CPU_@_1.90GHZ\_1
+  Status: OK
+  Manufacturer: Intel
+
+- Name: Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+  DeviceID: ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_85_-_INTEL(R)_XEON(R)_BRONZE_3204_CPU_@_1.90GHZ\_2
+  Status: OK
+  Manufacturer: Intel
+
+- Name: Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+  DeviceID: ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_85_-_INTEL(R)_XEON(R)_BRONZE_3204_CPU_@_1.90GHZ\_3
+  Status: OK
+  Manufacturer: Intel
+
+- Name: Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+  DeviceID: ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_85_-_INTEL(R)_XEON(R)_BRONZE_3204_CPU_@_1.90GHZ\_4
+  Status: OK
+  Manufacturer: Intel
+
+- Name: Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+  DeviceID: ACPI\GENUINEINTEL_-_INTEL64_FAMILY_6_MODEL_85_-_INTEL(R)_XEON(R)_BRONZE_3204_CPU_@_1.90GHZ\_5
+  Status: OK
+  Manufacturer: Intel
+
+-----------------------------------------------
+
+### CLASS: SCSIAdapter
+Count: 3
+
+- Name: Microsoft Storage Spaces Controller
+  DeviceID: ROOT\SPACEPORT\0000
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Microsoft VHD Loopback Controller
+  DeviceID: {8E7BD593-6E6C-4C52-86A6-77175494DD8E}\MSVHDHBA\1&3030E83&0&01
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: PERC H740P Adapter
+  DeviceID: PCI\VEN_1000&DEV_0016&SUBSYS_1FCB1028&REV_01\4&DA43232&0&0010
+  Status: OK
+  Manufacturer: AVAGO TECH.
+
+-----------------------------------------------
+
+### CLASS: SoftwareComponent
+Count: 3
+
+- Name: Generic software component
+  DeviceID: SWD\DRIVERENUM\OEM_DAL_COMPONENT&4&373B2A35&0
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Generic software component
+  DeviceID: SWD\DRIVERENUM\OEM_ICLS_COMPONENT&4&373B2A35&0
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Generic software component
+  DeviceID: SWD\DRIVERENUM\OEM_LMS_COMPONENT&4&373B2A35&0
+  Status: OK
+  Manufacturer: Microsoft
+
+-----------------------------------------------
+
+### CLASS: SoftwareDevice
+Count: 2
+
+- Name: Microsoft Radio Device Enumeration Bus
+  DeviceID: SWD\RADIO\{3DB5895D-CC28-44B3-AD3D-6F01A782B8D2}
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Microsoft RRAS Root Enumerator
+  DeviceID: SWD\MSRRAS\{5E259276-BC7E-40E3-B93B-8F89B5F3ABC0}
+  Status: OK
+  Manufacturer: Microsoft
+
+-----------------------------------------------
+
+### CLASS: System
+Count: 225
+
+- Name: ACPI Fixed Feature Button
+  DeviceID: ACPI\FIXEDBUTTON\2&DABA3FF&0
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: ACPI Module Device
+  DeviceID: ACPI\ACPI0004\CPUSCK0
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: ACPI Module Device
+  DeviceID: ACPI\ACPI0004\CPUSCK1
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: Advanced programmable interrupt controller
+  DeviceID: ACPI\PNP0003\3&11583659&0
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: Composite Bus Enumerator
+  DeviceID: ROOT\COMPOSITEBUS\0000
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Direct memory access controller
+  DeviceID: ACPI\PNP0200\4&2DD78CC&0
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: High precision event timer
+  DeviceID: ACPI\PNP0103\4&2DD78CC&0
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: Intel(R) address translation DSM interface
+  DeviceID: ACPI\INTL0000\2&DABA3FF&0
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) C620 series chipset CSME: Management Engine Interface #2 - A1BB
+  DeviceID: PCI\VEN_8086&DEV_A1BB&SUBSYS_07CA1028&REV_09\3&11583659&0&B1
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) C620 series chipset CSME: Management Engine Interface #3 - A1BE
+  DeviceID: PCI\VEN_8086&DEV_A1BE&SUBSYS_07CA1028&REV_09\3&11583659&0&B4
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) C620 series chipset LPC Controller - A1C1
+  DeviceID: PCI\VEN_8086&DEV_A1C1&SUBSYS_07CA1028&REV_09\3&11583659&0&F8
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) C620 series chipset MROM 0 - A1EC
+  DeviceID: PCI\VEN_8086&DEV_A1EC&SUBSYS_07CA1028&REV_09\3&11583659&0&88
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) C620 series chipset PCI Express Root Port #1 - A190
+  DeviceID: PCI\VEN_8086&DEV_A190&SUBSYS_07CA1028&REV_F9\3&11583659&0&E0
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) C620 series chipset PCI Express Root Port #5 - A194
+  DeviceID: PCI\VEN_8086&DEV_A194&SUBSYS_07CA1028&REV_F9\3&11583659&0&E4
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) C620 series chipset PCI Express Root Port #6 - A195
+  DeviceID: PCI\VEN_8086&DEV_A195&SUBSYS_07CA1028&REV_F9\3&11583659&0&E5
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) C620 series chipset PMC - A1A1
+  DeviceID: PCI\VEN_8086&DEV_A1A1&SUBSYS_07CA1028&REV_09\3&11583659&0&FA
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) C620 series chipset SMBus - A1A3
+  DeviceID: PCI\VEN_8086&DEV_A1A3&SUBSYS_07CA1028&REV_09\3&11583659&0&FC
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) C620 series chipset SPI Controller - A1A4
+  DeviceID: PCI\VEN_8086&DEV_A1A4&SUBSYS_07CA1028&REV_09\3&11583659&0&FD
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) C620 series chipset Thermal Subsystem - A1B1
+  DeviceID: PCI\VEN_8086&DEV_A1B1&SUBSYS_07CA1028&REV_09\3&11583659&0&A2
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Management Engine Interface 
+  DeviceID: PCI\VEN_8086&DEV_A1BA&SUBSYS_07CA1028&REV_09\3&11583659&0&B0
+  Status: OK
+  Manufacturer: Intel
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 2054
+  DeviceID: PCI\VEN_8086&DEV_2054&SUBSYS_00008086&REV_07\3&2411E6FE&0&E8
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 2054
+  DeviceID: PCI\VEN_8086&DEV_2054&SUBSYS_00008086&REV_07\3&2FF92B1D&0&E8
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 2055
+  DeviceID: PCI\VEN_8086&DEV_2055&SUBSYS_00008086&REV_07\3&2411E6FE&0&E9
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 2055
+  DeviceID: PCI\VEN_8086&DEV_2055&SUBSYS_00008086&REV_07\3&2FF92B1D&0&E9
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 2056
+  DeviceID: PCI\VEN_8086&DEV_2056&SUBSYS_00008086&REV_07\3&2FF92B1D&0&EA
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 2056
+  DeviceID: PCI\VEN_8086&DEV_2056&SUBSYS_00008086&REV_07\3&2411E6FE&0&EA
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 2057
+  DeviceID: PCI\VEN_8086&DEV_2057&SUBSYS_00008086&REV_07\3&2411E6FE&0&EB
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 2057
+  DeviceID: PCI\VEN_8086&DEV_2057&SUBSYS_00008086&REV_07\3&2FF92B1D&0&EB
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2FF92B1D&0&48
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2411E6FE&0&49
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2411E6FE&0&48
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2411E6FE&0&47
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2411E6FE&0&46
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2411E6FE&0&45
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2411E6FE&0&44
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2411E6FE&0&43
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2411E6FE&0&42
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2FF92B1D&0&47
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2411E6FE&0&40
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2FF92B1D&0&40
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2411E6FE&0&41
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2FF92B1D&0&49
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2FF92B1D&0&46
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2FF92B1D&0&45
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2FF92B1D&0&44
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2FF92B1D&0&42
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2FF92B1D&0&43
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208D
+  DeviceID: PCI\VEN_8086&DEV_208D&SUBSYS_00008086&REV_07\3&2FF92B1D&0&41
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2FF92B1D&0&70
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2FF92B1D&0&79
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2FF92B1D&0&78
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2411E6FE&0&70
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2411E6FE&0&71
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2411E6FE&0&72
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2411E6FE&0&73
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2411E6FE&0&75
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2411E6FE&0&76
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2FF92B1D&0&77
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2411E6FE&0&78
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2411E6FE&0&79
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2FF92B1D&0&75
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2FF92B1D&0&74
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2FF92B1D&0&73
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2FF92B1D&0&72
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2FF92B1D&0&71
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2411E6FE&0&74
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2FF92B1D&0&76
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 CHA Registers - 208E
+  DeviceID: PCI\VEN_8086&DEV_208E&SUBSYS_00008086&REV_07\3&2411E6FE&0&77
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 DDRIO Registers - 2088
+  DeviceID: PCI\VEN_8086&DEV_2088&SUBSYS_00008086&REV_07\3&3AA59A3&0&B5
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 DDRIO Registers - 2088
+  DeviceID: PCI\VEN_8086&DEV_2088&SUBSYS_00008086&REV_07\3&3AA59A3&0&B1
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 DDRIO Registers - 2088
+  DeviceID: PCI\VEN_8086&DEV_2088&SUBSYS_00008086&REV_07\3&3AA59A3&0&A9
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 DDRIO Registers - 2088
+  DeviceID: PCI\VEN_8086&DEV_2088&SUBSYS_00008086&REV_07\3&A85C9D3&0&B5
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 DDRIO Registers - 2088
+  DeviceID: PCI\VEN_8086&DEV_2088&SUBSYS_00008086&REV_07\3&A85C9D3&0&B1
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 DDRIO Registers - 2088
+  DeviceID: PCI\VEN_8086&DEV_2088&SUBSYS_00008086&REV_07\3&A85C9D3&0&A9
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 DECS Channel 2 - 2048
+  DeviceID: PCI\VEN_8086&DEV_2048&SUBSYS_00008086&REV_07\3&1D3F7A78&0&68
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 DECS Channel 2 - 2048
+  DeviceID: PCI\VEN_8086&DEV_2048&SUBSYS_00008086&REV_07\3&36CB97A3&0&58
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 DECS Channel 2 - 2048
+  DeviceID: PCI\VEN_8086&DEV_2048&SUBSYS_00008086&REV_07\3&36CB97A3&0&68
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 DECS Channel 2 - 2048
+  DeviceID: PCI\VEN_8086&DEV_2048&SUBSYS_00008086&REV_07\3&1D3F7A78&0&58
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 DMI3 Port - 2020
+  DeviceID: PCI\VEN_8086&DEV_2020&SUBSYS_00008086&REV_07\3&11583659&0&00
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2040
+  DeviceID: PCI\VEN_8086&DEV_2040&SUBSYS_00008086&REV_07\3&36CB97A3&0&50
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2040
+  DeviceID: PCI\VEN_8086&DEV_2040&SUBSYS_00008086&REV_07\3&36CB97A3&0&60
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2040
+  DeviceID: PCI\VEN_8086&DEV_2040&SUBSYS_00008086&REV_07\3&1D3F7A78&0&60
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2040
+  DeviceID: PCI\VEN_8086&DEV_2040&SUBSYS_00008086&REV_07\3&1D3F7A78&0&50
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2041
+  DeviceID: PCI\VEN_8086&DEV_2041&SUBSYS_00008086&REV_07\3&1D3F7A78&0&61
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2041
+  DeviceID: PCI\VEN_8086&DEV_2041&SUBSYS_00008086&REV_07\3&1D3F7A78&0&51
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2041
+  DeviceID: PCI\VEN_8086&DEV_2041&SUBSYS_00008086&REV_07\3&36CB97A3&0&61
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2041
+  DeviceID: PCI\VEN_8086&DEV_2041&SUBSYS_00008086&REV_07\3&36CB97A3&0&51
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2042
+  DeviceID: PCI\VEN_8086&DEV_2042&SUBSYS_00008086&REV_07\3&36CB97A3&0&62
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2042
+  DeviceID: PCI\VEN_8086&DEV_2042&SUBSYS_00008086&REV_07\3&36CB97A3&0&52
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2042
+  DeviceID: PCI\VEN_8086&DEV_2042&SUBSYS_00008086&REV_07\3&1D3F7A78&0&62
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2042
+  DeviceID: PCI\VEN_8086&DEV_2042&SUBSYS_00008086&REV_07\3&1D3F7A78&0&52
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2043
+  DeviceID: PCI\VEN_8086&DEV_2043&SUBSYS_00008086&REV_07\3&36CB97A3&0&63
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2043
+  DeviceID: PCI\VEN_8086&DEV_2043&SUBSYS_00008086&REV_07\3&36CB97A3&0&53
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2043
+  DeviceID: PCI\VEN_8086&DEV_2043&SUBSYS_00008086&REV_07\3&1D3F7A78&0&53
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2043
+  DeviceID: PCI\VEN_8086&DEV_2043&SUBSYS_00008086&REV_07\3&1D3F7A78&0&63
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2044
+  DeviceID: PCI\VEN_8086&DEV_2044&SUBSYS_00008086&REV_07\3&1D3F7A78&0&54
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2044
+  DeviceID: PCI\VEN_8086&DEV_2044&SUBSYS_00008086&REV_07\3&36CB97A3&0&64
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2044
+  DeviceID: PCI\VEN_8086&DEV_2044&SUBSYS_00008086&REV_07\3&36CB97A3&0&54
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2044
+  DeviceID: PCI\VEN_8086&DEV_2044&SUBSYS_00008086&REV_07\3&1D3F7A78&0&64
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2066
+  DeviceID: PCI\VEN_8086&DEV_2066&SUBSYS_00008086&REV_07\3&1D3F7A78&0&40
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2066
+  DeviceID: PCI\VEN_8086&DEV_2066&SUBSYS_00008086&REV_07\3&36CB97A3&0&48
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2066
+  DeviceID: PCI\VEN_8086&DEV_2066&SUBSYS_00008086&REV_07\3&36CB97A3&0&40
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Integrated Memory Controller - 2066
+  DeviceID: PCI\VEN_8086&DEV_2066&SUBSYS_00008086&REV_07\3&1D3F7A78&0&48
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Intel VT - D - 2034
+  DeviceID: PCI\VEN_8086&DEV_2034&SUBSYS_00008086&REV_07\3&2FF92B1D&0&28
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Intel VT - D - 2034
+  DeviceID: PCI\VEN_8086&DEV_2034&SUBSYS_00008086&REV_07\3&36CB97A3&0&28
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Intel VT - D - 2034
+  DeviceID: PCI\VEN_8086&DEV_2034&SUBSYS_00008086&REV_07\3&3AA59A3&0&28
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Intel VT - D - 2034
+  DeviceID: PCI\VEN_8086&DEV_2034&SUBSYS_00008086&REV_07\3&2411E6FE&0&28
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Intel VT - D - 2034
+  DeviceID: PCI\VEN_8086&DEV_2034&SUBSYS_00008086&REV_07\3&A85C9D3&0&28
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Intel VT - D - 2034
+  DeviceID: PCI\VEN_8086&DEV_2034&SUBSYS_00008086&REV_07\3&1D3F7A78&0&28
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 IOAPIC - 2026
+  DeviceID: PCI\VEN_8086&DEV_2026&SUBSYS_20268086&REV_07\3&71811BB&0&2C
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 IOAPIC - 2026
+  DeviceID: PCI\VEN_8086&DEV_2026&SUBSYS_20268086&REV_07\3&11583659&0&2C
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 IOxAPIC Configuration Registers - 2036
+  DeviceID: PCI\VEN_8086&DEV_2036&SUBSYS_20368086&REV_07\3&36CB97A3&0&2C
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 IOxAPIC Configuration Registers - 2036
+  DeviceID: PCI\VEN_8086&DEV_2036&SUBSYS_20368086&REV_07\3&2FF92B1D&0&2C
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 IOxAPIC Configuration Registers - 2036
+  DeviceID: PCI\VEN_8086&DEV_2036&SUBSYS_20368086&REV_07\3&1D3F7A78&0&2C
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 IOxAPIC Configuration Registers - 2036
+  DeviceID: PCI\VEN_8086&DEV_2036&SUBSYS_20368086&REV_07\3&A85C9D3&0&2C
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 IOxAPIC Configuration Registers - 2036
+  DeviceID: PCI\VEN_8086&DEV_2036&SUBSYS_20368086&REV_07\3&3AA59A3&0&2C
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 IOxAPIC Configuration Registers - 2036
+  DeviceID: PCI\VEN_8086&DEV_2036&SUBSYS_20368086&REV_07\3&2411E6FE&0&2C
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 KTI 0 - 2058
+  DeviceID: PCI\VEN_8086&DEV_2058&SUBSYS_00008086&REV_07\3&3AA59A3&0&78
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 KTI 0 - 2058
+  DeviceID: PCI\VEN_8086&DEV_2058&SUBSYS_00008086&REV_07\3&A85C9D3&0&70
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 KTI 0 - 2058
+  DeviceID: PCI\VEN_8086&DEV_2058&SUBSYS_00008086&REV_07\3&A85C9D3&0&78
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 KTI 0 - 2058
+  DeviceID: PCI\VEN_8086&DEV_2058&SUBSYS_00008086&REV_07\3&3AA59A3&0&70
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LM Channel 1 - 2045
+  DeviceID: PCI\VEN_8086&DEV_2045&SUBSYS_00008086&REV_07\3&1D3F7A78&0&55
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LM Channel 1 - 2045
+  DeviceID: PCI\VEN_8086&DEV_2045&SUBSYS_00008086&REV_07\3&36CB97A3&0&65
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LM Channel 1 - 2045
+  DeviceID: PCI\VEN_8086&DEV_2045&SUBSYS_00008086&REV_07\3&36CB97A3&0&55
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LM Channel 1 - 2045
+  DeviceID: PCI\VEN_8086&DEV_2045&SUBSYS_00008086&REV_07\3&1D3F7A78&0&65
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LM Channel 2 - 2049
+  DeviceID: PCI\VEN_8086&DEV_2049&SUBSYS_00008086&REV_07\3&36CB97A3&0&59
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LM Channel 2 - 2049
+  DeviceID: PCI\VEN_8086&DEV_2049&SUBSYS_00008086&REV_07\3&36CB97A3&0&69
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LM Channel 2 - 2049
+  DeviceID: PCI\VEN_8086&DEV_2049&SUBSYS_00008086&REV_07\3&1D3F7A78&0&69
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LM Channel 2 - 2049
+  DeviceID: PCI\VEN_8086&DEV_2049&SUBSYS_00008086&REV_07\3&1D3F7A78&0&59
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMDP Channel 1 - 2047
+  DeviceID: PCI\VEN_8086&DEV_2047&SUBSYS_00008086&REV_07\3&1D3F7A78&0&57
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMDP Channel 1 - 2047
+  DeviceID: PCI\VEN_8086&DEV_2047&SUBSYS_00008086&REV_07\3&36CB97A3&0&57
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMDP Channel 1 - 2047
+  DeviceID: PCI\VEN_8086&DEV_2047&SUBSYS_00008086&REV_07\3&36CB97A3&0&67
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMDP Channel 1 - 2047
+  DeviceID: PCI\VEN_8086&DEV_2047&SUBSYS_00008086&REV_07\3&1D3F7A78&0&67
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMDP Channel 2 - 204B
+  DeviceID: PCI\VEN_8086&DEV_204B&SUBSYS_00008086&REV_07\3&1D3F7A78&0&5B
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMDP Channel 2 - 204B
+  DeviceID: PCI\VEN_8086&DEV_204B&SUBSYS_00008086&REV_07\3&36CB97A3&0&6B
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMDP Channel 2 - 204B
+  DeviceID: PCI\VEN_8086&DEV_204B&SUBSYS_00008086&REV_07\3&36CB97A3&0&5B
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMDP Channel 2 - 204B
+  DeviceID: PCI\VEN_8086&DEV_204B&SUBSYS_00008086&REV_07\3&1D3F7A78&0&6B
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMS Channel 1 - 2046
+  DeviceID: PCI\VEN_8086&DEV_2046&SUBSYS_00008086&REV_07\3&36CB97A3&0&56
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMS Channel 1 - 2046
+  DeviceID: PCI\VEN_8086&DEV_2046&SUBSYS_00008086&REV_07\3&36CB97A3&0&66
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMS Channel 1 - 2046
+  DeviceID: PCI\VEN_8086&DEV_2046&SUBSYS_00008086&REV_07\3&1D3F7A78&0&66
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMS Channel 1 - 2046
+  DeviceID: PCI\VEN_8086&DEV_2046&SUBSYS_00008086&REV_07\3&1D3F7A78&0&56
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMS Channel 2 - 204A
+  DeviceID: PCI\VEN_8086&DEV_204A&SUBSYS_00008086&REV_07\3&36CB97A3&0&6A
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMS Channel 2 - 204A
+  DeviceID: PCI\VEN_8086&DEV_204A&SUBSYS_00008086&REV_07\3&36CB97A3&0&5A
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMS Channel 2 - 204A
+  DeviceID: PCI\VEN_8086&DEV_204A&SUBSYS_00008086&REV_07\3&1D3F7A78&0&5A
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 LMS Channel 2 - 204A
+  DeviceID: PCI\VEN_8086&DEV_204A&SUBSYS_00008086&REV_07\3&1D3F7A78&0&6A
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 M2PCI Registers - 2018
+  DeviceID: PCI\VEN_8086&DEV_2018&SUBSYS_00008086&REV_07\3&3AA59A3&0&A8
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 M2PCI Registers - 2018
+  DeviceID: PCI\VEN_8086&DEV_2018&SUBSYS_00008086&REV_07\3&A85C9D3&0&A8
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 M2PCI Registers - 2018
+  DeviceID: PCI\VEN_8086&DEV_2018&SUBSYS_00008086&REV_07\3&A85C9D3&0&B0
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 M2PCI Registers - 2018
+  DeviceID: PCI\VEN_8086&DEV_2018&SUBSYS_00008086&REV_07\3&A85C9D3&0&B4
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 M2PCI Registers - 2018
+  DeviceID: PCI\VEN_8086&DEV_2018&SUBSYS_00008086&REV_07\3&3AA59A3&0&B4
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 M2PCI Registers - 2018
+  DeviceID: PCI\VEN_8086&DEV_2018&SUBSYS_00008086&REV_07\3&3AA59A3&0&B0
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 M3KTI Registers - 204C
+  DeviceID: PCI\VEN_8086&DEV_204C&SUBSYS_00008086&REV_07\3&A85C9D3&0&90
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 M3KTI Registers - 204C
+  DeviceID: PCI\VEN_8086&DEV_204C&SUBSYS_00008086&REV_07\3&3AA59A3&0&90
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 M3KTI Registers - 204D
+  DeviceID: PCI\VEN_8086&DEV_204D&SUBSYS_00008086&REV_07\3&3AA59A3&0&91
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 M3KTI Registers - 204D
+  DeviceID: PCI\VEN_8086&DEV_204D&SUBSYS_00008086&REV_07\3&A85C9D3&0&91
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 M3KTI Registers - 204E
+  DeviceID: PCI\VEN_8086&DEV_204E&SUBSYS_00008086&REV_07\3&A85C9D3&0&92
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 M3KTI Registers - 204E
+  DeviceID: PCI\VEN_8086&DEV_204E&SUBSYS_00008086&REV_07\3&3AA59A3&0&92
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 MM/Vt - d Configuration Registers - 2024
+  DeviceID: PCI\VEN_8086&DEV_2024&SUBSYS_00008086&REV_07\3&11583659&0&28
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 MM/Vt - d Configuration Registers - 2024
+  DeviceID: PCI\VEN_8086&DEV_2024&SUBSYS_00008086&REV_07\3&71811BB&0&28
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCI Express Root Port C - 2032
+  DeviceID: PCI\VEN_8086&DEV_2032&SUBSYS_00008086&REV_07\3&2411E6FE&0&10
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2080
+  DeviceID: PCI\VEN_8086&DEV_2080&SUBSYS_00008086&REV_07\3&2411E6FE&0&F0
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2080
+  DeviceID: PCI\VEN_8086&DEV_2080&SUBSYS_00008086&REV_07\3&2FF92B1D&0&F0
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2081
+  DeviceID: PCI\VEN_8086&DEV_2081&SUBSYS_00008086&REV_07\3&2FF92B1D&0&F1
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2081
+  DeviceID: PCI\VEN_8086&DEV_2081&SUBSYS_00008086&REV_07\3&2411E6FE&0&F1
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2082
+  DeviceID: PCI\VEN_8086&DEV_2082&SUBSYS_00008086&REV_07\3&2FF92B1D&0&F2
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2082
+  DeviceID: PCI\VEN_8086&DEV_2082&SUBSYS_00008086&REV_07\3&2411E6FE&0&F2
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2083
+  DeviceID: PCI\VEN_8086&DEV_2083&SUBSYS_00008086&REV_07\3&2FF92B1D&0&F3
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2083
+  DeviceID: PCI\VEN_8086&DEV_2083&SUBSYS_00008086&REV_07\3&2411E6FE&0&F3
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2084
+  DeviceID: PCI\VEN_8086&DEV_2084&SUBSYS_00008086&REV_07\3&2411E6FE&0&F4
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2084
+  DeviceID: PCI\VEN_8086&DEV_2084&SUBSYS_00008086&REV_07\3&2FF92B1D&0&F4
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2085
+  DeviceID: PCI\VEN_8086&DEV_2085&SUBSYS_00008086&REV_07\3&2411E6FE&0&F5
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2085
+  DeviceID: PCI\VEN_8086&DEV_2085&SUBSYS_00008086&REV_07\3&2FF92B1D&0&F5
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2086
+  DeviceID: PCI\VEN_8086&DEV_2086&SUBSYS_00008086&REV_07\3&2FF92B1D&0&F6
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 PCU Registers - 2086
+  DeviceID: PCI\VEN_8086&DEV_2086&SUBSYS_00008086&REV_07\3&2411E6FE&0&F6
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 RAS - 2025
+  DeviceID: PCI\VEN_8086&DEV_2025&SUBSYS_00000000&REV_07\3&11583659&0&2A
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 RAS - 2025
+  DeviceID: PCI\VEN_8086&DEV_2025&SUBSYS_00000000&REV_07\3&71811BB&0&2A
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 RAS Configuration Registers - 2035
+  DeviceID: PCI\VEN_8086&DEV_2035&SUBSYS_00000000&REV_07\3&2FF92B1D&0&2A
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 RAS Configuration Registers - 2035
+  DeviceID: PCI\VEN_8086&DEV_2035&SUBSYS_00000000&REV_07\3&2411E6FE&0&2A
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 RAS Configuration Registers - 2035
+  DeviceID: PCI\VEN_8086&DEV_2035&SUBSYS_00000000&REV_07\3&3AA59A3&0&2A
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 RAS Configuration Registers - 2035
+  DeviceID: PCI\VEN_8086&DEV_2035&SUBSYS_00000000&REV_07\3&1D3F7A78&0&2A
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 RAS Configuration Registers - 2035
+  DeviceID: PCI\VEN_8086&DEV_2035&SUBSYS_00000000&REV_07\3&A85C9D3&0&2A
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 RAS Configuration Registers - 2035
+  DeviceID: PCI\VEN_8086&DEV_2035&SUBSYS_00000000&REV_07\3&36CB97A3&0&2A
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Ubox Registers - 2014
+  DeviceID: PCI\VEN_8086&DEV_2014&SUBSYS_00008086&REV_07\3&11583659&0&40
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Ubox Registers - 2014
+  DeviceID: PCI\VEN_8086&DEV_2014&SUBSYS_00008086&REV_07\3&71811BB&0&40
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Ubox Registers - 2015
+  DeviceID: PCI\VEN_8086&DEV_2015&SUBSYS_00008086&REV_07\3&11583659&0&41
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Ubox Registers - 2015
+  DeviceID: PCI\VEN_8086&DEV_2015&SUBSYS_00008086&REV_07\3&71811BB&0&41
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Ubox Registers - 2016
+  DeviceID: PCI\VEN_8086&DEV_2016&SUBSYS_00008086&REV_07\3&71811BB&0&42
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 Ubox Registers - 2016
+  DeviceID: PCI\VEN_8086&DEV_2016&SUBSYS_00008086&REV_07\3&11583659&0&42
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 UPI Registers - 2059
+  DeviceID: PCI\VEN_8086&DEV_2059&SUBSYS_00008086&REV_07\3&A85C9D3&0&79
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 UPI Registers - 2059
+  DeviceID: PCI\VEN_8086&DEV_2059&SUBSYS_00008086&REV_07\3&A85C9D3&0&71
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 UPI Registers - 2059
+  DeviceID: PCI\VEN_8086&DEV_2059&SUBSYS_00008086&REV_07\3&3AA59A3&0&79
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Intel(R) Xeon(R) processor P family/Core i7 UPI Registers - 2059
+  DeviceID: PCI\VEN_8086&DEV_2059&SUBSYS_00008086&REV_07\3&3AA59A3&0&71
+  Status: OK
+  Manufacturer: INTEL
+
+- Name: Microsoft ACPI-Compliant Power Meter Device
+  DeviceID: ACPI\ACPI000D\PMI
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Microsoft ACPI-Compliant System
+  DeviceID: ACPI_HAL\PNP0C08\0
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Microsoft Basic Display Driver
+  DeviceID: ROOT\BASICDISPLAY\0000
+  Status: OK
+  Manufacturer: (Standard display types)
+
+- Name: Microsoft Basic Render Driver
+  DeviceID: ROOT\BASICRENDER\0000
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Microsoft Generic IPMI Compliant Device
+  DeviceID: ACPI\IPI0001\IPMI_DEVICE
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Microsoft Hardware Error Device
+  DeviceID: ACPI\PNP0C33\0
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Microsoft System Management BIOS Driver
+  DeviceID: ROOT\MSSMBIOS\0000
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: Microsoft Virtual Drive Enumerator
+  DeviceID: ROOT\VDRVROOT\0000
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Microsoft Windows Management Interface for ACPI
+  DeviceID: ACPI\PNP0C14\0
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Motherboard resources
+  DeviceID: ACPI\PNP0C02\4&2DD78CC&0
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: Motherboard resources
+  DeviceID: ACPI\PNP0C02\PCHRESV
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: Motherboard resources
+  DeviceID: ACPI\PNP0C02\IOTRAPS
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: NDIS Virtual Network Adapter Enumerator
+  DeviceID: ROOT\NDISVIRTUALBUS\0000
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Numeric data processor
+  DeviceID: ACPI\PNP0C04\4&2DD78CC&0
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: PCI Express Root Complex
+  DeviceID: ACPI\PNP0A08\6
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: PCI Express Root Complex
+  DeviceID: ACPI\PNP0A08\0
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: PCI Express Root Complex
+  DeviceID: ACPI\PNP0A08\1
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: PCI Express Root Complex
+  DeviceID: ACPI\PNP0A08\2
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: PCI Express Root Complex
+  DeviceID: ACPI\PNP0A08\3
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: PCI Express Root Complex
+  DeviceID: ACPI\PNP0A08\7
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: PCI Express Root Complex
+  DeviceID: ACPI\PNP0A08\8
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: PCI Express Root Complex
+  DeviceID: ACPI\PNP0A08\9
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: PCI Express to PCI/PCI-X Bridge
+  DeviceID: PCI\VEN_1556&DEV_BE00&SUBSYS_00000000&REV_02\4&12F226F6&0&00E4
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: Plug and Play Software Device Enumerator
+  DeviceID: ROOT\SYSTEM\0000
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: Programmable interrupt controller
+  DeviceID: ACPI\PNP0000\4&2DD78CC&0
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: RAID Virtual Device
+  DeviceID: SCSI\OTHER&VEN___RAID&PROD__DUMMYDEVICE\5&2DFAA99E&0&01FE00
+  Status: OK
+  Manufacturer: American Megatrends, Inc.
+
+- Name: Remote Desktop Device Redirector Bus
+  DeviceID: ROOT\RDPBUS\0000
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: System CMOS/real time clock
+  DeviceID: ACPI\PNP0B00\4&2DD78CC&0
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: System speaker
+  DeviceID: ACPI\PNP0800\4&2DD78CC&0
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: System timer
+  DeviceID: ACPI\PNP0100\4&2DD78CC&0
+  Status: OK
+  Manufacturer: (Standard system devices)
+
+- Name: UMBus Enumerator
+  DeviceID: UMB\UMB\1&841921D&0&TERMINPUT_BUS
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: UMBus Root Bus Enumerator
+  DeviceID: ROOT\UMBUS\0000
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Volume Manager
+  DeviceID: ROOT\VOLMGR\0000
+  Status: OK
+  Manufacturer: Microsoft
+
+-----------------------------------------------
+
+### CLASS: USB
+Count: 6
+
+- Name: Generic USB Hub
+  DeviceID: USB\VID_1604&PID_10C0\5&866022A&0&14
+  Status: OK
+  Manufacturer: (Standard USB HUBs)
+
+- Name: Generic USB Hub
+  DeviceID: USB\VID_1604&PID_10C0\6&5EAA01E&0&1
+  Status: OK
+  Manufacturer: (Standard USB HUBs)
+
+- Name: Generic USB Hub
+  DeviceID: USB\VID_1604&PID_10C0\6&5EAA01E&0&4
+  Status: OK
+  Manufacturer: (Standard USB HUBs)
+
+- Name: Intel(R) USB 3.0 eXtensible Host Controller - 1.0 (Microsoft)
+  DeviceID: PCI\VEN_8086&DEV_A1AF&SUBSYS_07CA1028&REV_09\3&11583659&0&A0
+  Status: OK
+  Manufacturer: Generic USB xHCI Host Controller
+
+- Name: USB Composite Device
+  DeviceID: USB\VID_046D&PID_C31C\5&866022A&0&10
+  Status: OK
+  Manufacturer: (Standardowy kontroler hosta USB)
+
+- Name: USB Root Hub (USB 3.0)
+  DeviceID: USB\ROOT_HUB30\4&37FE8427&0&0
+  Status: OK
+  Manufacturer: (Standard USB HUBs)
+
+-----------------------------------------------
+
+### CLASS: Volume
+Count: 2
+
+- Name: Volume
+  DeviceID: STORAGE\VOLUME\{95EC2AF7-FF5E-11EA-BA2D-806E6F6E6963}#0000000000100000
+  Status: OK
+  Manufacturer: Microsoft
+
+- Name: Volume
+  DeviceID: STORAGE\VOLUME\{95EC2AF7-FF5E-11EA-BA2D-806E6F6E6963}#0000000022600000
+  Status: OK
+  Manufacturer: Microsoft
+
+-----------------------------------------------

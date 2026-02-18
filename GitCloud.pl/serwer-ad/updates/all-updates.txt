@@ -1,0 +1,241 @@
+===== WINDOWS UPDATE HISTORY =====
+Server: SERWER-AD
+Generated: 2025-12-16 14:02:27
+
+-----------------------------------
+KB          : KB4549947
+Description : Security Update
+Installed   : 2020-04-13 00:00:00
+InstalledBy : 
+-----------------------------------
+KB          : KB4570332
+Description : Security Update
+Installed   : 2020-09-25 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB4577667
+Description : Security Update
+Installed   : 2020-10-14 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB4587735
+Description : Security Update
+Installed   : 2020-11-16 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB4535680
+Description : Security Update
+Installed   : 2021-01-25 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB4598480
+Description : Security Update
+Installed   : 2021-01-25 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB4601393
+Description : Security Update
+Installed   : 2021-02-22 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB4577586
+Description : Update
+Installed   : 2021-02-22 00:00:00
+InstalledBy : SP6ZABKI\Administrator
+-----------------------------------
+KB          : KB5000859
+Description : Security Update
+Installed   : 2021-03-22 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5001404
+Description : Security Update
+Installed   : 2021-04-20 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB4589208
+Description : Update
+Installed   : 2021-04-21 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5001407
+Description : Update
+Installed   : 2021-05-05 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5003243
+Description : Security Update
+Installed   : 2021-05-14 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5003711
+Description : Security Update
+Installed   : 2021-06-10 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5004424
+Description : Update
+Installed   : 2021-08-06 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5005112
+Description : Security Update
+Installed   : 2021-08-16 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5005701
+Description : Security Update
+Installed   : 2021-09-15 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5006754
+Description : Update
+Installed   : 2021-10-25 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5008539
+Description : Update
+Installed   : 2021-12-06 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5008287
+Description : Security Update
+Installed   : 2021-12-20 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5009642
+Description : Update
+Installed   : 2022-01-30 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5011574
+Description : Update
+Installed   : 2022-03-23 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5012675
+Description : Update
+Installed   : 2022-04-25 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5014031
+Description : Update
+Installed   : 2022-05-26 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5014797
+Description : Update
+Installed   : 2022-07-07 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5015896
+Description : Update
+Installed   : 2022-07-27 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5017400
+Description : Update
+Installed   : 2022-09-22 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5020374
+Description : Security Update
+Installed   : 2022-11-09 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5023789
+Description : Security Update
+Installed   : 2023-03-15 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5028316
+Description : Security Update
+Installed   : 2023-07-11 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5030505
+Description : Security Update
+Installed   : 2023-09-14 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5031589
+Description : Security Update
+Installed   : 2023-10-11 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB4486153
+Description : Update
+Installed   : 2023-11-16 00:00:00
+InstalledBy : SP6ZABKI\kowalskam
+-----------------------------------
+KB          : KB5032306
+Description : Security Update
+Installed   : 2023-11-16 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5034863
+Description : Security Update
+Installed   : 2024-03-16 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5041577
+Description : Security Update
+Installed   : 2024-08-21 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5043126
+Description : Security Update
+Installed   : 2024-10-04 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5050110
+Description : Security Update
+Installed   : 2025-01-15 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5054007
+Description : Security Update
+Installed   : 2025-03-21 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5055662
+Description : Security Update
+Installed   : 2025-04-11 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5058525
+Description : Security Update
+Installed   : 2025-05-19 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5062800
+Description : Security Update
+Installed   : 2025-08-11 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5065765
+Description : Security Update
+Installed   : 2025-09-19 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5066585
+Description : Security Update
+Installed   : 2025-10-24 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5066137
+Description : Update
+Installed   : 2025-10-25 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5070248
+Description : Security Update
+Installed   : 2025-11-12 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+-----------------------------------
+KB          : KB5071544
+Description : Security Update
+Installed   : 2025-12-12 00:00:00
+InstalledBy : ZARZĄDZANIE NT\SYSTEM
+
+Total updates: 47

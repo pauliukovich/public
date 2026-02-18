@@ -1,0 +1,105 @@
+===== UPS / BATTERY INVENTORY =====
+Server: SERWER-AD
+Date:   2025-12-19 00:00:02
+
+=== Win32_Battery ===
+
+Caption                     : Bateria wewnętrzna
+Description                 : Bateria wewnętrzna
+InstallDate                 : 
+Name                        : Eaton 5SC
+Status                      : OK
+Availability                : 2
+ConfigManagerErrorCode      : 
+ConfigManagerUserConfig     : 
+CreationClassName           : Win32_Battery
+DeviceID                    : G145L14061EATONEaton 5SC
+ErrorCleared                : 
+ErrorDescription            : 
+LastErrorCode               : 
+PNPDeviceID                 : 
+PowerManagementCapabilities : {1}
+PowerManagementSupported    : False
+StatusInfo                  : 
+SystemCreationClassName     : Win32_ComputerSystem
+SystemName                  : SERWER-AD
+BatteryStatus               : 2
+Chemistry                   : 3
+DesignCapacity              : 
+DesignVoltage               : 26100
+EstimatedChargeRemaining    : 100
+EstimatedRunTime            : 20
+ExpectedLife                : 
+FullChargeCapacity          : 
+MaxRechargeTime             : 
+SmartBatteryVersion         : 
+TimeOnBattery               : 
+TimeToFullCharge            : 
+BatteryRechargeTime         : 
+ExpectedBatteryLife         : 
+PSComputerName              : 
+CimClass                    : root/cimv2:Win32_Battery
+CimInstanceProperties       : {Caption, Description, InstallDate, Name…}
+CimSystemProperties         : Microsoft.Management.Infrastructure.CimSystemProperties
+
+=== Win32_UninterruptiblePowerSupply ===
+No UPS WMI class detected.
+
+=== Win32_PowerSupply ===
+No Win32_PowerSupply data.
+
+=== Power Management Events (last 20) ===
+ID: 109 Time: 12/12/2025 20:57:51 - Menedżer zasilania jądra zainicjował przejście do zamykania.
+
+Przyczyna zamknięcia: Kernel API
+ID: 109 Time: 11/28/2025 10:59:13 - Menedżer zasilania jądra zainicjował przejście do zamykania.
+
+Przyczyna zamknięcia: Kernel API
+ID: 105 Time: 11/17/2025 07:34:36 - Zmiana źródła zasilania.
+ID: 105 Time: 11/17/2025 07:34:31 - Zmiana źródła zasilania.
+ID: 109 Time: 11/12/2025 20:22:59 - Menedżer zasilania jądra zainicjował przejście do zamykania.
+
+Przyczyna zamknięcia: Kernel API
+ID: 109 Time: 11/07/2025 13:31:09 - Menedżer zasilania jądra zainicjował przejście do zamykania.
+
+Przyczyna zamknięcia: Kernel API
+ID: 109 Time: 10/28/2025 03:52:22 - Menedżer zasilania jądra zainicjował przejście do zamykania.
+
+Przyczyna zamknięcia: Kernel API
+ID: 109 Time: 10/25/2025 20:26:55 - Menedżer zasilania jądra zainicjował przejście do zamykania.
+
+Przyczyna zamknięcia: Kernel API
+ID: 109 Time: 09/23/2025 22:45:51 - Menedżer zasilania jądra zainicjował przejście do zamykania.
+
+Przyczyna zamknięcia: Kernel API
+ID: 105 Time: 09/14/2025 08:53:45 - Zmiana źródła zasilania.
+ID: 105 Time: 09/14/2025 08:53:40 - Zmiana źródła zasilania.
+
+Battery report could not be generated.
+
+=== UPS / Battery PnP Devices ===
+Name: Microsoft ACPI-Compliant Power Meter Device
+Class: System
+Status: OK
+Instance ID: ACPI\ACPI000D\PMI
+
+Name: HID UPS Battery
+Class: Battery
+Status: OK
+Instance ID: HID\VID_0463&PID_FFFF\6&31F6915D&0&0000
+
+Name: MGE USB UPS
+Class: HIDClass
+Status: Unknown
+Instance ID: USB\VID_0463&PID_FFFF\G145L14051
+
+Name: MGE USB UPS
+Class: HIDClass
+Status: OK
+Instance ID: USB\VID_0463&PID_FFFF\G145L14061
+
+Name: HID UPS Battery
+Class: Battery
+Status: Unknown
+Instance ID: HID\VID_0463&PID_FFFF\6&BAA626E&0&0000
+

@@ -1,0 +1,116 @@
+===== SERVER INVENTORY =====
+Date   : 2025-12-19 13:36:02
+Server : SERWER-AD
+
+[OPERATING SYSTEM]
+Caption      : Microsoft Windows Server 2019 Standard
+Version      : 10.0.17763
+Build Number : 17763
+Architecture : 64-bitowy
+Install Date : 09/25/2020 19:42:55
+
+[DOMAIN]
+Domain       : sp6zabki.local
+Domain Role  : 5
+Workgroup    : 
+
+[CPU - CPU0]
+Name                  : Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+Manufacturer          : GenuineIntel
+Description           : Intel64 Family 6 Model 85 Stepping 7
+Socket                : CPU1
+Cores                 : 6
+Logical Processors    : 6
+Max Clock Speed (MHz) : 1896
+Current Clock (MHz)   : 1896
+L2 Cache (KB)         : 6144
+L3 Cache (KB)         : 8448
+Processor Id          : BFEBFBFF00050657
+
+[CPU - CPU1]
+Name                  : Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+Manufacturer          : GenuineIntel
+Description           : Intel64 Family 6 Model 85 Stepping 7
+Socket                : CPU2
+Cores                 : 6
+Logical Processors    : 6
+Max Clock Speed (MHz) : 1896
+Current Clock (MHz)   : 1896
+L2 Cache (KB)         : 6144
+L3 Cache (KB)         : 8448
+Processor Id          : BFEBFBFF00050657
+
+[RAM - SUMMARY]
+Total Physical (GB)   : 32
+Total Visible (GB)    : 31.63
+Used (GB)             : 10.48
+Free (GB)             : 21.16
+Used (%)              : 33.1
+
+[RAM MODULE #1]
+Bank / Slot    :  / A1
+Manufacturer   : 002C00B3002C
+Model          : 
+Part Number    : 18ASF2G72PDZ-2G6J1
+Serial Number  : 28C8E220
+Capacity (GB)  : 16
+Speed (MHz)    : 2666
+ConfiguredClk  : 2133
+Memory Type    : DDR4
+Form Factor    : 8
+Data Width (b) : 64
+Total Width(b) : 72
+ECC            : Yes
+Voltage (V)    : 1.2
+
+[RAM MODULE #2]
+Bank / Slot    :  / B1
+Manufacturer   : 002C00B3002C
+Model          : 
+Part Number    : 18ASF2G72PDZ-2G6J1
+Serial Number  : 28C8D525
+Capacity (GB)  : 16
+Speed (MHz)    : 2666
+ConfiguredClk  : 2133
+Memory Type    : DDR4
+Form Factor    : 8
+Data Width (b) : 64
+Total Width(b) : 72
+ECC            : Yes
+Voltage (V)    : 1.2
+
+[PHYSICAL DISK - \\.\PHYSICALDRIVE0]
+Model            : DELL PERC H740P Adp SCSI Disk Device
+Manufacturer     : (Standard disk drives)
+Serial Number    : 0043a9927bfedbae26008e575af0a7ce
+Interface Type   : SCSI
+Media Type       : Fixed hard disk media
+Firmware         : 5.09
+Size (GB)        : 1786.49
+
+[LOGICAL DISKS]
+Drive            : C:
+Label            : System
+File System      : NTFS
+Size (GB)        : 1785.96
+Used (GB)        : 353.88
+Free (GB)        : 1432.08
+Used (%)         : 19.8
+
+[NETWORK ADAPTERS]
+Adapter Name     : WAN
+Description      : Broadcom NetXtreme Gigabit Ethernet
+MAC Address      : 2C-EA-7F-52-3D-39
+Link Speed Raw   : 1 Gbps
+Link Speed (Gbps): 1
+IPv4 Address     : 192.168.20.2/24
+DNS Servers      : 127.0.0.1, 8.8.8.8
+
+Adapter Name     : LAN
+Description      : Broadcom NetXtreme Gigabit Ethernet #2
+MAC Address      : 2C-EA-7F-52-3D-3A
+Link Speed Raw   : 1 Gbps
+Link Speed (Gbps): 1
+IPv4 Address     : 192.168.10.1/24
+DNS Servers      : 192.168.10.1
+

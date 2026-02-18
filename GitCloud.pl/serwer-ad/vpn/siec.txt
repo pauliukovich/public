@@ -1,0 +1,15 @@
+===== VIRTUAL / VPN NETWORK ADAPTERS =====
+Generated: 2025-12-13 19:36:11
+Total adapters: 1
+
+----------------------------------------
+Name        : Tailscale
+Description : Tailscale Tunnel
+Status      : Up
+MAC         : 
+Link Speed  : 100 Gbps
+ifIndex     : 29
+IPv4        : 100.113.18.50/32
+Gateway     : none
+
+===== END OF REPORT =====

@@ -1,0 +1,104 @@
+
+===== DISK AUDIT REPORT =====
+Date : 2025-12-12 11:12:52
+
+----------------------------------------
+Computer : s10komp01
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp02
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp03
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp04
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp05
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp06
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp07
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp08
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp09
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp10
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp11
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp12
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp13
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp14
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp15
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp16
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp17
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp18
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp19
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp20
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp21
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp22
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp23
+STATUS   : OFFLINE
+
+----------------------------------------
+Computer : s10komp24
+Disk      : C:
+Size (GB) : 237.65
+Free (GB) : 33.29
+Free (%)  : 14
+
+===== END OF REPORT =====

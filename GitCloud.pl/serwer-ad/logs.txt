@@ -1,0 +1,443 @@
+===== SYSTEM LOGS – DIAGNOSTIC REPORT =====
+Server : SERWER-AD
+Date   : 2025-12-13 11:53:27
+Range  : last 30 days (since 2025-11-13 11:53:27)
+
+System logs are the memory of the server. Without them, the system exists only in the present moment.
+
+===== SUMMARY (STATUS) =====
+
+Overall        : ATTENTION
+Stability      : LOW (score 0/100)
+Backup/VSS     : PROBLEM (events 67)
+Storage/Disk   : ATTENTION (Disk51=68, FilterMgr3=175, ESENT=20)
+Security       : ATTENTION (4625=37, 4740=0, NTLM=9)
+Crash/BSOD     : 18 (dump=YES)
+Last crash     : 2025-12-11 10:49:58
+
+===== TOP PROBLEM CATEGORIES (Errors) =====
+
+ - Backup/VSS     : 343
+ - Other          : 228
+ - Storage/Disk   : 195
+ - AD/Kerberos    : 74
+ - Crash/Power    : 18
+ - Services       : 10
+
+===== TOP RECURRING ERRORS (from full range) =====
+
+No error patterns.
+
+===== TOP RECURRING WARNINGS (filtered) =====
+
+Warnings kept      : 120
+Warnings suppressed: 1469
+No warning patterns (after filtering).
+
+Top suppressed:
+ - (suppressed patterns not available)
+
+===== CRASH / BSOD (DETAILS) =====
+
+Crash events : 18
+Memory dump  : YES
+Top crash indicators:
+ - EventLog, 6008 : 7
+ - Microsoft-Windows-Kernel-Power, 41 : 7
+ - Microsoft-Windows-WER-SystemErrorReporting, 1001 : 4
+
+Last crash-related events:
+[2025-12-11 10:49:58] [Błędy] [Microsoft-Windows-WER-SystemErrorReporting] ID:1001 - Nastąpił ponowny rozruch komputera po operacji wykrywania błędów. Wyniki tej operacji były następujące: 0x00000133 (0x0000000000000001, 0x0000000000001e00, 0xfffff80164745380, 0x0000000000000000). Zrzut zapisano w: C:\Windows\MEMORY.DMP. Identyfikator raportu:...
+[2025-12-11 10:49:54] [Błędy] [EventLog] ID:6008 - Poprzednie zamknięcie systemu przy 10:45:16 na ‎11.‎12.‎2025 było nieoczekiwane.
+[2025-12-11 10:49:42] [Krytyczne] [Microsoft-Windows-Kernel-Power] ID:41 - System został uruchomiony ponownie bez uprzedniego czystego zamknięcia. Możliwe przyczyny błędu: system przestał odpowiadać lub uległ awarii albo nastąpiła nieoczekiwana utrata zasilania.
+[2025-12-08 09:50:15] [Błędy] [Microsoft-Windows-WER-SystemErrorReporting] ID:1001 - Nastąpił ponowny rozruch komputera po operacji wykrywania błędów. Wyniki tej operacji były następujące: 0x00000133 (0x0000000000000001, 0x0000000000001e00, 0xfffff8001055c380, 0x0000000000000000). Zrzut zapisano w: C:\Windows\MEMORY.DMP. Identyfikator raportu:...
+[2025-12-08 09:50:12] [Błędy] [EventLog] ID:6008 - Poprzednie zamknięcie systemu przy 09:46:10 na ‎08.‎12.‎2025 było nieoczekiwane.
+[2025-12-08 09:50:04] [Krytyczne] [Microsoft-Windows-Kernel-Power] ID:41 - System został uruchomiony ponownie bez uprzedniego czystego zamknięcia. Możliwe przyczyny błędu: system przestał odpowiadać lub uległ awarii albo nastąpiła nieoczekiwana utrata zasilania.
+[2025-12-03 14:46:22] [Błędy] [EventLog] ID:6008 - Poprzednie zamknięcie systemu przy 14:41:18 na ‎03.‎12.‎2025 było nieoczekiwane.
+[2025-12-03 14:46:10] [Krytyczne] [Microsoft-Windows-Kernel-Power] ID:41 - System został uruchomiony ponownie bez uprzedniego czystego zamknięcia. Możliwe przyczyny błędu: system przestał odpowiadać lub uległ awarii albo nastąpiła nieoczekiwana utrata zasilania.
+[2025-12-01 09:06:00] [Błędy] [Microsoft-Windows-WER-SystemErrorReporting] ID:1001 - Nastąpił ponowny rozruch komputera po operacji wykrywania błędów. Wyniki tej operacji były następujące: 0x00000133 (0x0000000000000001, 0x0000000000001e00, 0xfffff80313bf4380, 0x0000000000000000). Zrzut zapisano w: C:\Windows\MEMORY.DMP. Identyfikator raportu:...
+[2025-12-01 09:05:55] [Błędy] [EventLog] ID:6008 - Poprzednie zamknięcie systemu przy 09:02:11 na ‎01.‎12.‎2025 było nieoczekiwane.
+[2025-12-01 09:05:48] [Krytyczne] [Microsoft-Windows-Kernel-Power] ID:41 - System został uruchomiony ponownie bez uprzedniego czystego zamknięcia. Możliwe przyczyny błędu: system przestał odpowiadać lub uległ awarii albo nastąpiła nieoczekiwana utrata zasilania.
+[2025-11-25 11:57:01] [Błędy] [Microsoft-Windows-WER-SystemErrorReporting] ID:1001 - Nastąpił ponowny rozruch komputera po operacji wykrywania błędów. Wyniki tej operacji były następujące: 0x00000133 (0x0000000000000001, 0x0000000000001e00, 0xfffff8033c7e2380, 0x0000000000000000). Zrzut zapisano w: C:\Windows\MEMORY.DMP. Identyfikator raportu:...
+
+===== FORENSIC: EVENTS AROUND LAST CRASH (± min) =====
+
+Window : 2025-12-11 10:49:58 -> 2025-12-11 10:49:58
+Count  : 0
+No events in the forensic window.
+
+===== BACKUP / VSS (DETAILS) =====
+
+Status : PROBLEM
+Events : 67
+Top backup issues:
+ - VSS, 8193 : 36
+ - SQLWRITER, 24581 : 25
+ - VSS, 8224 : 6
+
+Latest backup-related events:
+[2025-12-12 22:14:48] [Informacje] [VSS] ID:8224 - Usługa VSS jest zamykana z powodu przekroczenia limitu czasu bezczynności.
+[2025-12-12 22:11:47] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-12 22:11:46] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-12 21:08:49] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-12 21:08:48] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-12 21:07:44] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-12 21:07:43] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-12 21:07:36] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-12 21:07:35] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-12 21:07:20] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-12 21:07:18] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-12 21:03:24] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-12 21:03:03] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-12 21:03:02] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-12 21:00:24] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-12 11:24:30] [Informacje] [VSS] ID:8224 - Usługa VSS jest zamykana z powodu przekroczenia limitu czasu bezczynności.
+[2025-12-11 22:06:30] [Informacje] [VSS] ID:8224 - Usługa VSS jest zamykana z powodu przekroczenia limitu czasu bezczynności.
+[2025-12-11 22:03:29] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-11 22:03:28] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-11 21:01:38] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-11 21:01:37] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-11 21:00:29] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-11 21:00:29] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-11 21:00:22] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-11 21:00:21] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-11 21:00:05] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-11 21:00:04] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-11 10:52:53] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-11 10:52:35] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-11 10:52:34] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-11 10:49:58] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-10 22:11:07] [Informacje] [VSS] ID:8224 - Usługa VSS jest zamykana z powodu przekroczenia limitu czasu bezczynności.
+[2025-12-10 22:08:06] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-10 22:08:05] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-10 21:01:27] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+
+===== SECURITY SIGNALS =====
+
+Failed logons (4625) : 37
+Account lockout (4740): 0
+NTLM detected (6038) : YES
+Latest NTLM event:
+[2025-12-13 10:22:24] [Ostrzeżenia] [LsaSrv] ID:6038 - System Microsoft Windows Server wykrył, że między klientami a tym serwerem jest obecnie używane uwierzytelnianie NTLM. To zdarzenie występuje raz przy każdym rozruchu serwera, gdy klient po raz pierwszy używa uwierzytelniania NTLM dla tego serwera. NTLM jest s...
+
+===== STORAGE / DISK SIGNALS =====
+
+Status : ATTENTION
+Disk warning 51 : 68
+FilterManager 3 : 175
+ESENT errors    : 20
+
+Latest Disk 51 warnings:
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+
+Latest FilterManager ID 3 errors:
+[2025-12-12 22:11:45] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume10. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-12 22:11:45] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume10. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-12 21:09:42] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume8. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-12 21:09:42] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume8. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-11 22:03:27] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume10. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-11 22:03:27] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume10. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-11 21:02:40] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume8. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-11 21:02:40] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume8. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-10 22:08:04] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume26. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-10 22:08:04] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume26. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+
+Latest ESENT errors:
+[2025-12-12 21:03:34] [Błędy] [ESENT] ID:413 - svchost (10248,R,98) SoftwareUsageMetrics-Api: Nie można utworzyć nowego pliku dziennika, ponieważ baza danych nie może dokonać zapisu na dysku dziennika. Dysk może być tylko do odczytu, zapełniony, niewłaściwie skonfigurowany lub uszkodzony. Błąd -1032.
+[2025-12-12 21:03:34] [Błędy] [ESENT] ID:488 - svchost (10248,R,98) SoftwareUsageMetrics-Api: Próba utworzenia pliku „C:\Windows\system32\LogFiles\Sum\Apitmp.log” zakończyła się niepomyślnie z błędem systemowym 5 (0x00000005): „Odmowa dostępu. ”. Operacja tworzenia pliku zostanie zakończona z błędem -1032 ...
+[2025-12-11 10:53:03] [Błędy] [ESENT] ID:413 - svchost (10252,R,98) SoftwareUsageMetrics-Api: Nie można utworzyć nowego pliku dziennika, ponieważ baza danych nie może dokonać zapisu na dysku dziennika. Dysk może być tylko do odczytu, zapełniony, niewłaściwie skonfigurowany lub uszkodzony. Błąd -1032.
+[2025-12-11 10:53:03] [Błędy] [ESENT] ID:488 - svchost (10252,R,98) SoftwareUsageMetrics-Api: Próba utworzenia pliku „C:\Windows\system32\LogFiles\Sum\Apitmp.log” zakończyła się niepomyślnie z błędem systemowym 5 (0x00000005): „Odmowa dostępu. ”. Operacja tworzenia pliku zostanie zakończona z błędem -1032 ...
+[2025-12-08 09:53:22] [Błędy] [ESENT] ID:413 - svchost (9548,R,98) SoftwareUsageMetrics-Api: Nie można utworzyć nowego pliku dziennika, ponieważ baza danych nie może dokonać zapisu na dysku dziennika. Dysk może być tylko do odczytu, zapełniony, niewłaściwie skonfigurowany lub uszkodzony. Błąd -1032.
+[2025-12-08 09:53:22] [Błędy] [ESENT] ID:488 - svchost (9548,R,98) SoftwareUsageMetrics-Api: Próba utworzenia pliku „C:\Windows\system32\LogFiles\Sum\Apitmp.log” zakończyła się niepomyślnie z błędem systemowym 5 (0x00000005): „Odmowa dostępu. ”. Operacja tworzenia pliku zostanie zakończona z błędem -1032 (...
+[2025-12-03 14:49:37] [Błędy] [ESENT] ID:413 - svchost (2012,R,98) SoftwareUsageMetrics-Api: Nie można utworzyć nowego pliku dziennika, ponieważ baza danych nie może dokonać zapisu na dysku dziennika. Dysk może być tylko do odczytu, zapełniony, niewłaściwie skonfigurowany lub uszkodzony. Błąd -1032.
+[2025-12-03 14:49:37] [Błędy] [ESENT] ID:488 - svchost (2012,R,98) SoftwareUsageMetrics-Api: Próba utworzenia pliku „C:\Windows\system32\LogFiles\Sum\Apitmp.log” zakończyła się niepomyślnie z błędem systemowym 5 (0x00000005): „Odmowa dostępu. ”. Operacja tworzenia pliku zostanie zakończona z błędem -1032 (...
+[2025-12-01 09:09:13] [Błędy] [ESENT] ID:413 - svchost (10372,R,98) SoftwareUsageMetrics-Api: Nie można utworzyć nowego pliku dziennika, ponieważ baza danych nie może dokonać zapisu na dysku dziennika. Dysk może być tylko do odczytu, zapełniony, niewłaściwie skonfigurowany lub uszkodzony. Błąd -1032.
+[2025-12-01 09:09:13] [Błędy] [ESENT] ID:488 - svchost (10372,R,98) SoftwareUsageMetrics-Api: Próba utworzenia pliku „C:\Windows\system32\LogFiles\Sum\Apitmp.log” zakończyła się niepomyślnie z błędem systemowym 5 (0x00000005): „Odmowa dostępu. ”. Operacja tworzenia pliku zostanie zakończona z błędem -1032 ...
+
+===== RESTARTS / SHUTDOWNS =====
+
+Count: 19
+[2025-12-12 21:00:14] [Informacje] [Microsoft-Windows-FilterManager] ID:1 - Filtr systemu plików CldFlt (wersja 10.0, ‎1972‎-‎06‎-‎29T17:09:36.000000000Z) został pomyślnie zwolniony.
+[2025-12-12 21:00:14] [Informacje] [EventLog] ID:6005 - Uruchomiono usługę Dziennik zdarzeń.
+[2025-12-12 20:59:59] [Informacje] [Microsoft-Windows-Kernel-General] ID:12 - System operacyjny został uruchomiony o czasie systemowym ‎2025‎-‎12‎-‎12T19:59:57.500000000Z.
+[2025-12-12 20:57:52] [Informacje] [Microsoft-Windows-Kernel-General] ID:13 - System operacyjny jest zamykany o czasie systemowym ‎2025‎-‎12‎-‎12T19:57:52.260911600Z.
+[2025-12-12 20:57:46] [Informacje] [EventLog] ID:6006 - Zatrzymano usługę Dziennik zdarzeń.
+[2025-12-12 20:57:46] [Informacje] [Microsoft-Windows-Kernel-General] ID:1 - Czas systemowy został zmieniony z ‎2025‎-‎12‎-‎12T19:57:46.422778800Z na ‎2025‎-‎12‎-‎12T19:57:46.429686200Z. Przyczyna zmiany: An application or system component changed the time. Proces: „\Device\HarddiskVolume2\Windows\System32\svchost.exe” (identyfikator P...
+[2025-12-12 20:57:00] [Informacje] [User32] ID:1074 - Proces C:\Windows\system32\svchost.exe (SERWER-AD) zainicjował uruchomienie ponowne komputera SERWER-AD w imieniu użytkownika ZARZĄDZANIE NT\SYSTEM z następującej przyczyny: System operacyjny: dodatek Service Pack (zaplanowany) Kod przyczyny: 0x80020010 Typ za...
+[2025-12-12 11:10:21] [Ostrzeżenia] [User32] ID:1076 - Przyczyna ostatniego nieoczekiwanego zakończenia pracy tego komputera podana przez użytkownika SP6ZABKI\Administrator to: Inne zadania (niezaplanowane) Kod przyczyny: 0xa000000 Identyfikator problemu: Ciąg operacji wykrywania błędów: Komentarz:
+[2025-12-11 10:49:54] [Informacje] [Microsoft-Windows-FilterManager] ID:1 - Filtr systemu plików CldFlt (wersja 10.0, ‎2004‎-‎09‎-‎10T02:15:28.000000000Z) został pomyślnie zwolniony.
+[2025-12-11 10:49:54] [Błędy] [EventLog] ID:6008 - Poprzednie zamknięcie systemu przy 10:45:16 na ‎11.‎12.‎2025 było nieoczekiwane.
+[2025-12-11 10:49:54] [Informacje] [EventLog] ID:6005 - Uruchomiono usługę Dziennik zdarzeń.
+[2025-12-11 10:49:42] [Krytyczne] [Microsoft-Windows-Kernel-Power] ID:41 - System został uruchomiony ponownie bez uprzedniego czystego zamknięcia. Możliwe przyczyny błędu: system przestał odpowiadać lub uległ awarii albo nastąpiła nieoczekiwana utrata zasilania.
+[2025-12-11 10:49:33] [Informacje] [Microsoft-Windows-Kernel-General] ID:12 - System operacyjny został uruchomiony o czasie systemowym ‎2025‎-‎12‎-‎11T09:49:31.500000000Z.
+[2025-12-08 10:29:46] [Ostrzeżenia] [User32] ID:1076 - Przyczyna ostatniego nieoczekiwanego zakończenia pracy tego komputera podana przez użytkownika SP6ZABKI\Administrator to: Inne zadania (niezaplanowane) Kod przyczyny: 0xa000000 Identyfikator problemu: Ciąg operacji wykrywania błędów: Komentarz:
+[2025-12-08 09:50:12] [Informacje] [Microsoft-Windows-FilterManager] ID:1 - Filtr systemu plików CldFlt (wersja 10.0, ‎2004‎-‎09‎-‎10T02:15:28.000000000Z) został pomyślnie zwolniony.
+[2025-12-08 09:50:12] [Informacje] [EventLog] ID:6005 - Uruchomiono usługę Dziennik zdarzeń.
+[2025-12-08 09:50:12] [Błędy] [EventLog] ID:6008 - Poprzednie zamknięcie systemu przy 09:46:10 na ‎08.‎12.‎2025 było nieoczekiwane.
+[2025-12-08 09:50:04] [Krytyczne] [Microsoft-Windows-Kernel-Power] ID:41 - System został uruchomiony ponownie bez uprzedniego czystego zamknięcia. Możliwe przyczyny błędu: system przestał odpowiadać lub uległ awarii albo nastąpiła nieoczekiwana utrata zasilania.
+[2025-12-08 09:49:56] [Informacje] [Microsoft-Windows-Kernel-General] ID:12 - System operacyjny został uruchomiony o czasie systemowym ‎2025‎-‎12‎-‎08T08:49:54.500000000Z.
+
+===== ERRORS (Critical + Error) – System + Application (latest) =====
+
+Count: 120 (displayed), 868 (collected for patterns)
+[2025-12-13 10:12:03] [Błędy] [Microsoft-Windows-Perflib] ID:1023 - System Windows nie może załadować biblioteki DLL rozszerzalnego licznika „C:\Windows\system32\ntdsperf.dll” (kod błędu systemu Win32: Nie można odnaleźć określonego modułu.).
+[2025-12-13 09:05:15] [Błędy] [Microsoft-Windows-TPM-WMI] ID:1801 - Secure Boot certificates have been updated but are not yet applied to the device firmware. Review the published guidance to complete the update and ensure full protection. This device signature information is included here. DeviceAttributes: FirmwareManufactur...
+[2025-12-12 22:11:47] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-12 22:11:46] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-12 22:11:45] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume10. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-12 22:11:45] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume10. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-12 21:09:42] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume8. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-12 21:09:42] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume8. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-12 21:08:49] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-12 21:08:48] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-12 21:07:44] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-12 21:07:43] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-12 21:07:36] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-12 21:07:35] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-12 21:07:20] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-12 21:07:18] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-12 21:07:14] [Błędy] [Microsoft-Windows-User Profiles Service] ID:1511 - System Windows nie może znaleźć profilu lokalnego i loguje użytkownika przy użyciu profilu tymczasowego. Zmiany wprowadzone w profilu zostaną utracone po wylogowaniu.
+[2025-12-12 21:07:14] [Błędy] [Microsoft-Windows-User Profiles Service] ID:1515 - System Windows wykonał kopię zapasową tego profilu użytkownika. System Windows automatycznie spróbuje użyć profilu z kopii zapasowej przy następnym logowaniu tego użytkownika.
+[2025-12-12 21:05:15] [Błędy] [Microsoft-Windows-TPM-WMI] ID:1801 - Secure Boot certificates have been updated but are not yet applied to the device firmware. Review the published guidance to complete the update and ensure full protection. This device signature information is included here. DeviceAttributes: FirmwareManufactur...
+[2025-12-12 21:03:34] [Błędy] [ESENT] ID:413 - svchost (10248,R,98) SoftwareUsageMetrics-Api: Nie można utworzyć nowego pliku dziennika, ponieważ baza danych nie może dokonać zapisu na dysku dziennika. Dysk może być tylko do odczytu, zapełniony, niewłaściwie skonfigurowany lub uszkodzony. Błąd -1032.
+[2025-12-12 21:03:34] [Błędy] [ESENT] ID:488 - svchost (10248,R,98) SoftwareUsageMetrics-Api: Próba utworzenia pliku „C:\Windows\system32\LogFiles\Sum\Apitmp.log” zakończyła się niepomyślnie z błędem systemowym 5 (0x00000005): „Odmowa dostępu. ”. Operacja tworzenia pliku zostanie zakończona z błędem -1032 ...
+[2025-12-12 21:03:24] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-12 21:03:03] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-12 21:03:02] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-12 21:00:24] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-12 20:57:41] [Błędy] [Service Control Manager] ID:7031 - Usługa OpenSSH SSH Server niespodziewanie zakończyła pracę. Wystąpiło to razy: 2. W przeciągu 0 milisekund zostanie podjęta następująca czynność korekcyjna: Uruchom usługę ponownie.
+[2025-12-12 20:57:36] [Błędy] [Service Control Manager] ID:7031 - Usługa OpenSSH SSH Server niespodziewanie zakończyła pracę. Wystąpiło to razy: 1. W przeciągu 0 milisekund zostanie podjęta następująca czynność korekcyjna: Uruchom usługę ponownie.
+[2025-12-12 20:57:07] [Błędy] [Service Control Manager] ID:7023 - Usługa Update Orchestrator Service zakończyła działanie; wystąpił następujący błąd: Operacja została zwrócona, ponieważ przekroczono limit czasu.
+[2025-12-12 11:12:12] [Błędy] [Microsoft-Windows-Security-Kerberos] ID:4 - Klient Kerberos odebrał błąd KRB_AP_ERR_MODIFIED z serwera s10komp21$. Używana nazwa docelowa: HTTP/s10komp14. Oznacza to, że serwer docelowy nie może odszyfrować biletu dostarczonego przez klienta. Taka sytuacja może wystąpić, gdy główna nazwa serwera docelow...
+[2025-12-12 10:54:55] [Błędy] [Microsoft-Windows-TPM-WMI] ID:1801 - Secure Boot certificates have been updated but are not yet applied to the device firmware. Review the published guidance to complete the update and ensure full protection. This device signature information is included here. DeviceAttributes: FirmwareManufactur...
+[2025-12-12 10:12:02] [Błędy] [Microsoft-Windows-Perflib] ID:1023 - System Windows nie może załadować biblioteki DLL rozszerzalnego licznika „C:\Windows\system32\ntdsperf.dll” (kod błędu systemu Win32: Nie można odnaleźć określonego modułu.).
+[2025-12-12 10:03:03] [Błędy] [Microsoft-Windows-Perflib] ID:1023 - System Windows nie może załadować biblioteki DLL rozszerzalnego licznika „C:\Windows\system32\ntdsperf.dll” (kod błędu systemu Win32: Nie można odnaleźć określonego modułu.).
+[2025-12-11 22:54:55] [Błędy] [Microsoft-Windows-TPM-WMI] ID:1801 - Secure Boot certificates have been updated but are not yet applied to the device firmware. Review the published guidance to complete the update and ensure full protection. This device signature information is included here. DeviceAttributes: FirmwareManufactur...
+[2025-12-11 22:03:29] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-11 22:03:28] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-11 22:03:27] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume10. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-11 22:03:27] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume10. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-11 21:02:40] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume8. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-11 21:02:40] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume8. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-11 21:01:38] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-11 21:01:37] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-11 21:00:29] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-11 21:00:29] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-11 21:00:22] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-11 21:00:21] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-11 21:00:05] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-11 21:00:04] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-11 21:00:00] [Błędy] [Microsoft-Windows-User Profiles Service] ID:1511 - System Windows nie może znaleźć profilu lokalnego i loguje użytkownika przy użyciu profilu tymczasowego. Zmiany wprowadzone w profilu zostaną utracone po wylogowaniu.
+[2025-12-11 21:00:00] [Błędy] [Microsoft-Windows-User Profiles Service] ID:1515 - System Windows wykonał kopię zapasową tego profilu użytkownika. System Windows automatycznie spróbuje użyć profilu z kopii zapasowej przy następnym logowaniu tego użytkownika.
+[2025-12-11 12:36:21] [Błędy] [Microsoft-Windows-Kerberos-Key-Distribution-Center] ID:19 - To zdarzenie wskazuje, że nastąpiła próba logowania przy użyciu karty inteligentnej, ale centrum dystrybucji kluczy nie może użyć protokołu PKINIT, ponieważ brakuje odpowiedniego certyfikatu.
+[2025-12-11 11:04:39] [Błędy] [Microsoft-Windows-TPM-WMI] ID:1801 - Secure Boot certificates have been updated but are not yet applied to the device firmware. Review the published guidance to complete the update and ensure full protection. This device signature information is included here. DeviceAttributes: FirmwareManufactur...
+[2025-12-11 10:53:03] [Błędy] [ESENT] ID:413 - svchost (10252,R,98) SoftwareUsageMetrics-Api: Nie można utworzyć nowego pliku dziennika, ponieważ baza danych nie może dokonać zapisu na dysku dziennika. Dysk może być tylko do odczytu, zapełniony, niewłaściwie skonfigurowany lub uszkodzony. Błąd -1032.
+[2025-12-11 10:53:03] [Błędy] [ESENT] ID:488 - svchost (10252,R,98) SoftwareUsageMetrics-Api: Próba utworzenia pliku „C:\Windows\system32\LogFiles\Sum\Apitmp.log” zakończyła się niepomyślnie z błędem systemowym 5 (0x00000005): „Odmowa dostępu. ”. Operacja tworzenia pliku zostanie zakończona z błędem -1032 ...
+[2025-12-11 10:52:53] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-11 10:52:35] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-11 10:52:34] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-11 10:50:32] [Błędy] [Server] ID:2505 - Serwer nie mógł utworzyć powiązania do transportu \Device\NetBT_Tcpip_{195ACFC9-2CDC-48F7-882E-5E88C18C854F}, ponieważ inny komputer w sieci ma tę samą nazwę. Nie można uruchomić serwera.
+[2025-12-11 10:50:32] [Błędy] [Server] ID:2505 - Serwer nie mógł utworzyć powiązania do transportu \Device\NetBT_Tcpip_{7C6B9DE8-AB3C-42A1-89B9-321C2CC701C3}, ponieważ inny komputer w sieci ma tę samą nazwę. Nie można uruchomić serwera.
+[2025-12-11 10:50:32] [Błędy] [Server] ID:2505 - Serwer nie mógł utworzyć powiązania do transportu \Device\NetBT_Tcpip_{195ACFC9-2CDC-48F7-882E-5E88C18C854F}, ponieważ inny komputer w sieci ma tę samą nazwę. Nie można uruchomić serwera.
+[2025-12-11 10:50:32] [Błędy] [Server] ID:2505 - Serwer nie mógł utworzyć powiązania do transportu \Device\NetBT_Tcpip_{7C6B9DE8-AB3C-42A1-89B9-321C2CC701C3}, ponieważ inny komputer w sieci ma tę samą nazwę. Nie można uruchomić serwera.
+[2025-12-11 10:50:32] [Błędy] [Server] ID:2505 - Serwer nie mógł utworzyć powiązania do transportu \Device\NetBT_Tcpip_{195ACFC9-2CDC-48F7-882E-5E88C18C854F}, ponieważ inny komputer w sieci ma tę samą nazwę. Nie można uruchomić serwera.
+[2025-12-11 10:50:32] [Błędy] [Server] ID:2505 - Serwer nie mógł utworzyć powiązania do transportu \Device\NetBT_Tcpip_{7C6B9DE8-AB3C-42A1-89B9-321C2CC701C3}, ponieważ inny komputer w sieci ma tę samą nazwę. Nie można uruchomić serwera.
+[2025-12-11 10:50:32] [Błędy] [Server] ID:2505 - Serwer nie mógł utworzyć powiązania do transportu \Device\NetBT_Tcpip_{195ACFC9-2CDC-48F7-882E-5E88C18C854F}, ponieważ inny komputer w sieci ma tę samą nazwę. Nie można uruchomić serwera.
+[2025-12-11 10:50:32] [Błędy] [Server] ID:2505 - Serwer nie mógł utworzyć powiązania do transportu \Device\NetBT_Tcpip_{7C6B9DE8-AB3C-42A1-89B9-321C2CC701C3}, ponieważ inny komputer w sieci ma tę samą nazwę. Nie można uruchomić serwera.
+[2025-12-11 10:49:58] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury RegOpenKeyExW(-2147483646,SYSTEM\CurrentControlSet\Services\VSS\Diag,...). hr = 0x80070005, Odmowa dostępu. . Operacja: Inicjowanie modułu zapisującego Kontekst: Identyfik...
+[2025-12-11 10:49:58] [Błędy] [Microsoft-Windows-WER-SystemErrorReporting] ID:1001 - Nastąpił ponowny rozruch komputera po operacji wykrywania błędów. Wyniki tej operacji były następujące: 0x00000133 (0x0000000000000001, 0x0000000000001e00, 0xfffff80164745380, 0x0000000000000000). Zrzut zapisano w: C:\Windows\MEMORY.DMP. Identyfikator raportu:...
+[2025-12-11 10:49:54] [Błędy] [EventLog] ID:6008 - Poprzednie zamknięcie systemu przy 10:45:16 na ‎11.‎12.‎2025 było nieoczekiwane.
+[2025-12-11 10:49:42] [Krytyczne] [Microsoft-Windows-Kernel-Power] ID:41 - System został uruchomiony ponownie bez uprzedniego czystego zamknięcia. Możliwe przyczyny błędu: system przestał odpowiadać lub uległ awarii albo nastąpiła nieoczekiwana utrata zasilania.
+[2025-12-11 10:44:25] [Błędy] [Microsoft-Windows-Spell-Checking] ID:31 - Nie można zaktualizować niestandardowej listy wyrazów użytkownika Wykluczone wyrazy: Wystąpił nieoczekiwany błąd sieciowy.. Funkcja sprawdzania pisowni pozostanie dostępna, ale lista wyrazów tego użytkownika nie będzie aktualizowana.
+[2025-12-11 10:42:39] [Błędy] [NETLOGON] ID:5805 - Nie powiodło się uwierzytelnienie konfiguracji sesji z komputera S10KOMP09. Wystąpił następujący błąd: Odmowa dostępu.
+[2025-12-11 10:00:06] [Błędy] [Microsoft-Windows-Perflib] ID:1023 - System Windows nie może załadować biblioteki DLL rozszerzalnego licznika „C:\Windows\system32\ntdsperf.dll” (kod błędu systemu Win32: Nie można odnaleźć określonego modułu.).
+[2025-12-11 09:55:13] [Błędy] [Microsoft-Windows-TPM-WMI] ID:1801 - Secure Boot certificates have been updated but are not yet applied to the device firmware. Review the published guidance to complete the update and ensure full protection. This device signature information is included here. DeviceAttributes: FirmwareManufactur...
+[2025-12-10 22:08:06] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-10 22:08:05] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-10 22:08:04] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume26. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-10 22:08:04] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume26. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-10 22:08:04] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume26. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-10 22:08:04] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume26. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-10 21:55:12] [Błędy] [Microsoft-Windows-TPM-WMI] ID:1801 - Secure Boot certificates have been updated but are not yet applied to the device firmware. Review the published guidance to complete the update and ensure full protection. This device signature information is included here. DeviceAttributes: FirmwareManufactur...
+[2025-12-10 21:02:30] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume24. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-10 21:02:30] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume24. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-10 21:02:30] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume24. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-10 21:02:30] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume24. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-10 21:01:27] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-10 21:01:26] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-10 21:00:19] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-10 21:00:18] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-10 21:00:12] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-10 21:00:11] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-10 21:00:05] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-10 21:00:04] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-10 21:00:00] [Błędy] [Microsoft-Windows-User Profiles Service] ID:1511 - System Windows nie może znaleźć profilu lokalnego i loguje użytkownika przy użyciu profilu tymczasowego. Zmiany wprowadzone w profilu zostaną utracone po wylogowaniu.
+[2025-12-10 21:00:00] [Błędy] [Microsoft-Windows-User Profiles Service] ID:1515 - System Windows wykonał kopię zapasową tego profilu użytkownika. System Windows automatycznie spróbuje użyć profilu z kopii zapasowej przy następnym logowaniu tego użytkownika.
+[2025-12-10 15:22:29] [Błędy] [Microsoft-Windows-Kerberos-Key-Distribution-Center] ID:19 - To zdarzenie wskazuje, że nastąpiła próba logowania przy użyciu karty inteligentnej, ale centrum dystrybucji kluczy nie może użyć protokołu PKINIT, ponieważ brakuje odpowiedniego certyfikatu.
+[2025-12-10 09:56:03] [Błędy] [Microsoft-Windows-Perflib] ID:1023 - System Windows nie może załadować biblioteki DLL rozszerzalnego licznika „C:\Windows\system32\ntdsperf.dll” (kod błędu systemu Win32: Nie można odnaleźć określonego modułu.).
+[2025-12-10 09:55:12] [Błędy] [Microsoft-Windows-TPM-WMI] ID:1801 - Secure Boot certificates have been updated but are not yet applied to the device firmware. Review the published guidance to complete the update and ensure full protection. This device signature information is included here. DeviceAttributes: FirmwareManufactur...
+[2025-12-09 22:06:42] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-09 22:06:40] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-09 22:06:39] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume18. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-09 22:06:39] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume18. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-09 22:06:39] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume18. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-09 22:06:39] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume18. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-09 21:55:12] [Błędy] [Microsoft-Windows-TPM-WMI] ID:1801 - Secure Boot certificates have been updated but are not yet applied to the device firmware. Review the published guidance to complete the update and ensure full protection. This device signature information is included here. DeviceAttributes: FirmwareManufactur...
+[2025-12-09 21:02:30] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume16. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-09 21:02:30] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume16. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+[2025-12-09 21:01:26] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-09 21:01:25] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-09 21:00:20] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-09 21:00:19] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-09 21:00:12] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-09 21:00:12] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-09 21:00:05] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-09 21:00:04] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-09 21:00:00] [Błędy] [Microsoft-Windows-User Profiles Service] ID:1511 - System Windows nie może znaleźć profilu lokalnego i loguje użytkownika przy użyciu profilu tymczasowego. Zmiany wprowadzone w profilu zostaną utracone po wylogowaniu.
+[2025-12-09 21:00:00] [Błędy] [Microsoft-Windows-User Profiles Service] ID:1515 - System Windows wykonał kopię zapasową tego profilu użytkownika. System Windows automatycznie spróbuje użyć profilu z kopii zapasowej przy następnym logowaniu tego użytkownika.
+[2025-12-09 09:55:13] [Błędy] [Microsoft-Windows-TPM-WMI] ID:1801 - Secure Boot certificates have been updated but are not yet applied to the device firmware. Review the published guidance to complete the update and ensure full protection. This device signature information is included here. DeviceAttributes: FirmwareManufactur...
+[2025-12-09 09:54:07] [Błędy] [Microsoft-Windows-Perflib] ID:1023 - System Windows nie może załadować biblioteki DLL rozszerzalnego licznika „C:\Windows\system32\ntdsperf.dll” (kod błędu systemu Win32: Nie można odnaleźć określonego modułu.).
+[2025-12-08 22:03:44] [Błędy] [SQLWRITER] ID:24581 - Sqllib error: System table sys.sysdatabases in SQL Server instance SERWER-AD\SQLEXPRESS is empty.
+[2025-12-08 22:03:43] [Błędy] [VSS] ID:8193 - Błąd Usługi kopiowania woluminów w tle: nieoczekiwany błąd podczas wywoływania procedury ConvertStringSidToSid(S-1-5-21-4252838159-4169207211-3843186139-1248.bak). hr = 0x80070539, Struktura identyfikatora zabezpieczenia jest nieprawidłowa. . Operacja: Zdarzen...
+[2025-12-08 22:03:42] [Błędy] [Microsoft-Windows-FilterManager] ID:3 - Menedżer filtrów nie może dołączyć do woluminu \Device\HarddiskVolume10. Do czasu ponownego rozruchu ten wolumin nie będzie dostępny do filtrowania. Stan końcowy: 0xC03A001C.
+
+===== WARNINGS – System + Application (filtered, latest) =====
+
+Count: 120 (kept), 1469 (suppressed)
+[2025-12-13 10:22:24] [Ostrzeżenia] [LsaSrv] ID:6038 - System Microsoft Windows Server wykrył, że między klientami a tym serwerem jest obecnie używane uwierzytelnianie NTLM. To zdarzenie występuje raz przy każdym rozruchu serwera, gdy klient po raz pierwszy używa uwierzytelniania NTLM dla tego serwera. NTLM jest s...
+[2025-12-13 03:00:02] [Ostrzeżenia] [Microsoft-Windows-Security-Kerberos] ID:14 - Hasło przechowywane w Menedżerze poświadczeń jest nieprawidłowe. Może to być spowodowane zmianą hasła przez użytkownika zalogowanego na tym lub innym komputerze. Aby rozwiązać ten problem, otwórz Menedżera poświadczeń w Panelu sterowania i wprowadź ponownie ha...
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:09:35] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-12 21:03:03] [Ostrzeżenia] [NPS] ID:4421 - Konfiguracja elementów requireMsgAuth i/lub limitProxyState jest w trybie Disable. Te ustawienia należy skonfigurować w trybie włączania ze względów bezpieczeństwa. Zobacz https://support.microsoft.com/help/5040268, aby dowiedzieć się więcej.
+[2025-12-12 21:01:06] [Ostrzeżenia] [Microsoft-Windows-WinRM] ID:10154 - Usługa WinRM nie może utworzyć następującej głównej nazwy usługi: WSMAN/Serwer-AD.sp6zabki.local; WSMAN/Serwer-AD. Dane dodatkowe Otrzymany błąd to 8344: %%8344. Akcja użytkownika Główną nazwę usługi może utworzyć administrator przy użyciu narzędzia setspn.exe...
+[2025-12-12 21:00:56] [Ostrzeżenia] [Microsoft-Windows-Time-Service] ID:134 - NtpClient was unable to set a manual peer to use as a time source because of DNS resolution error on 'time.microsoft.com,0x8'. NtpClient will try again in 15 minutes and double the reattempt interval thereafter. The error was: Nieznany host. (0x80072AF9)
+[2025-12-12 21:00:54] [Ostrzeżenia] [Microsoft-Windows-Time-Service] ID:134 - NtpClient was unable to set a manual peer to use as a time source because of DNS resolution error on 'time.microsoft.com,0x8'. NtpClient will try again in 15 minutes and double the reattempt interval thereafter. The error was: Nieznany host. (0x80072AF9)
+[2025-12-12 21:00:40] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:10020 - Ten komputer ma co najmniej jeden przypisany dynamicznie adres IPv6. Aby zapewnić niezawodne działanie serwera DHCPv6, należy używać tylko statycznych adresów IPv6.
+[2025-12-12 21:00:24] [Ostrzeżenia] [Server] ID:2511 - Usługa serwera nie może odtworzyć udziału NASK_cert, ponieważ katalog C:\Users\Public\NASK_cert już nie istnieje. Uruchom polecenie „net share NASK_cert /delete”, aby usunąć udział lub utworzyć ponownie katalog C:\Users\Public\NASK_cert.
+[2025-12-12 21:00:20] [Ostrzeżenia] [Microsoft-Windows-DNS-Client] ID:1014 - Upłynął limit czasu rozpoznawania nazwy wpad po tym, jak żaden ze skonfigurowanych serwerów DNS nie odpowiedział.
+[2025-12-12 21:00:16] [Ostrzeżenia] [Microsoft-Windows-DNS-Client] ID:1014 - Upłynął limit czasu rozpoznawania nazwy _ldap._tcp.dc._msdcs.sp6zabki.local. po tym, jak żaden ze skonfigurowanych serwerów DNS nie odpowiedział.
+[2025-12-12 21:00:14] [Ostrzeżenia] [Microsoft-Windows-DNS-Client] ID:1014 - Upłynął limit czasu rozpoznawania nazwy _ldap._tcp.dc._msdcs.sp6zabki.local. po tym, jak żaden ze skonfigurowanych serwerów DNS nie odpowiedział.
+[2025-12-12 21:00:14] [Ostrzeżenia] [Microsoft-Windows-DNS-Client] ID:1014 - Upłynął limit czasu rozpoznawania nazwy _ldap._tcp.dc._msdcs.sp6zabki.local. po tym, jak żaden ze skonfigurowanych serwerów DNS nie odpowiedział.
+[2025-12-12 20:57:45] [Ostrzeżenia] [Microsoft-Windows-Time-Service] ID:134 - NtpClient was unable to set a manual peer to use as a time source because of DNS resolution error on 'time.microsoft.com,0x8'. NtpClient will try again in 15 minutes and double the reattempt interval thereafter. The error was: Nieznany host. (0x80072AF9)
+[2025-12-12 20:57:42] [Ostrzeżenia] [Microsoft-Windows-Time-Service] ID:134 - NtpClient was unable to set a manual peer to use as a time source because of DNS resolution error on 'time.microsoft.com,0x8'. NtpClient will try again in 15 minutes and double the reattempt interval thereafter. The error was: Nieznany host. (0x80072AF9)
+[2025-12-12 17:00:00] [Ostrzeżenia] [Microsoft-Windows-Security-Kerberos] ID:14 - Hasło przechowywane w Menedżerze poświadczeń jest nieprawidłowe. Może to być spowodowane zmianą hasła przez użytkownika zalogowanego na tym lub innym komputerze. Aby rozwiązać ten problem, otwórz Menedżera poświadczeń w Panelu sterowania i wprowadź ponownie ha...
+[2025-12-12 11:10:21] [Ostrzeżenia] [User32] ID:1076 - Przyczyna ostatniego nieoczekiwanego zakończenia pracy tego komputera podana przez użytkownika SP6ZABKI\Administrator to: Inne zadania (niezaplanowane) Kod przyczyny: 0xa000000 Identyfikator problemu: Ciąg operacji wykrywania błędów: Komentarz:
+[2025-12-12 11:10:16] [Ostrzeżenia] [Microsoft-Windows-Security-Kerberos] ID:14 - Hasło przechowywane w Menedżerze poświadczeń jest nieprawidłowe. Może to być spowodowane zmianą hasła przez użytkownika zalogowanego na tym lub innym komputerze. Aby rozwiązać ten problem, otwórz Menedżera poświadczeń w Panelu sterowania i wprowadź ponownie ha...
+[2025-12-12 03:00:03] [Ostrzeżenia] [Microsoft-Windows-Security-Kerberos] ID:14 - Hasło przechowywane w Menedżerze poświadczeń jest nieprawidłowe. Może to być spowodowane zmianą hasła przez użytkownika zalogowanego na tym lub innym komputerze. Aby rozwiązać ten problem, otwórz Menedżera poświadczeń w Panelu sterowania i wprowadź ponownie ha...
+[2025-12-11 21:02:32] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-11 21:02:32] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-11 21:02:32] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-11 21:02:32] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-11 21:02:32] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-11 21:02:32] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-11 21:02:32] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-11 21:02:32] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-11 21:02:32] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-11 21:02:32] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR2.
+[2025-12-11 17:00:06] [Ostrzeżenia] [Microsoft-Windows-Security-Kerberos] ID:14 - Hasło przechowywane w Menedżerze poświadczeń jest nieprawidłowe. Może to być spowodowane zmianą hasła przez użytkownika zalogowanego na tym lub innym komputerze. Aby rozwiązać ten problem, otwórz Menedżera poświadczeń w Panelu sterowania i wprowadź ponownie ha...
+[2025-12-11 16:51:10] [Ostrzeżenia] [Microsoft-Windows-DNS-Client] ID:1014 - Upłynął limit czasu rozpoznawania nazwy 192.in-addr.arpa po tym, jak żaden ze skonfigurowanych serwerów DNS nie odpowiedział.
+[2025-12-11 14:50:21] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 90%%. Liczba dostępnych adresów IP: 19.
+[2025-12-11 14:50:21] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 90 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 19.
+[2025-12-11 13:50:21] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 93%%. Liczba dostępnych adresów IP: 12.
+[2025-12-11 13:50:21] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 93 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 12.
+[2025-12-11 12:50:21] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 91%%. Liczba dostępnych adresów IP: 17.
+[2025-12-11 12:50:21] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 91 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 17.
+[2025-12-11 12:36:21] [Ostrzeżenia] [Microsoft-Windows-Kerberos-Key-Distribution-Center] ID:29 - Centrum dystrybucji kluczy nie może odnaleźć certyfikatu potrzebnego przy logowaniu kart inteligentnych lub nie można zweryfikować certyfikatu centrum dystrybucji kluczy. Jeśli ten problem nie zostanie rozwiązany, logowanie kart inteligentnych może nie działać...
+[2025-12-11 11:50:21] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 91%%. Liczba dostępnych adresów IP: 17.
+[2025-12-11 11:50:21] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 91 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 17.
+[2025-12-11 10:52:35] [Ostrzeżenia] [NPS] ID:4421 - Konfiguracja elementów requireMsgAuth i/lub limitProxyState jest w trybie Disable. Te ustawienia należy skonfigurować w trybie włączania ze względów bezpieczeństwa. Zobacz https://support.microsoft.com/help/5040268, aby dowiedzieć się więcej.
+[2025-12-11 10:50:36] [Ostrzeżenia] [LsaSrv] ID:6038 - System Microsoft Windows Server wykrył, że między klientami a tym serwerem jest obecnie używane uwierzytelnianie NTLM. To zdarzenie występuje raz przy każdym rozruchu serwera, gdy klient po raz pierwszy używa uwierzytelniania NTLM dla tego serwera. NTLM jest s...
+[2025-12-11 10:50:36] [Ostrzeżenia] [Microsoft-Windows-Time-Service] ID:134 - NtpClient was unable to set a manual peer to use as a time source because of DNS resolution error on 'time.microsoft.com,0x8'. NtpClient will try again in 15 minutes and double the reattempt interval thereafter. The error was: Nieznany host. (0x80072AF9)
+[2025-12-11 10:50:35] [Ostrzeżenia] [Microsoft-Windows-WinRM] ID:10154 - Usługa WinRM nie może utworzyć następującej głównej nazwy usługi: WSMAN/Serwer-AD.sp6zabki.local; WSMAN/Serwer-AD. Dane dodatkowe Otrzymany błąd to 8344: %%8344. Akcja użytkownika Główną nazwę usługi może utworzyć administrator przy użyciu narzędzia setspn.exe...
+[2025-12-11 10:50:34] [Ostrzeżenia] [Microsoft-Windows-Time-Service] ID:134 - NtpClient was unable to set a manual peer to use as a time source because of DNS resolution error on 'time.microsoft.com,0x8'. NtpClient will try again in 15 minutes and double the reattempt interval thereafter. The error was: Nieznany host. (0x80072AF9)
+[2025-12-11 10:50:20] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:10020 - Ten komputer ma co najmniej jeden przypisany dynamicznie adres IPv6. Aby zapewnić niezawodne działanie serwera DHCPv6, należy używać tylko statycznych adresów IPv6.
+[2025-12-11 10:50:04] [Ostrzeżenia] [Server] ID:2511 - Usługa serwera nie może odtworzyć udziału NASK_cert, ponieważ katalog C:\Users\Public\NASK_cert już nie istnieje. Uruchom polecenie „net share NASK_cert /delete”, aby usunąć udział lub utworzyć ponownie katalog C:\Users\Public\NASK_cert.
+[2025-12-11 10:49:54] [Ostrzeżenia] [Microsoft-Windows-DNS-Client] ID:1014 - Upłynął limit czasu rozpoznawania nazwy _ldap._tcp.dc._msdcs.sp6zabki.local. po tym, jak żaden ze skonfigurowanych serwerów DNS nie odpowiedział.
+[2025-12-11 10:38:30] [Ostrzeżenia] [Microsoft-Windows-GroupPolicy] ID:1085 - System Windows nie może zastosować ustawień Group Policy Services. Ustawienia Group Policy Services mogą mieć własny plik dziennika. Kliknij link Więcej informacji.
+[2025-12-11 10:38:05] [Ostrzeżenia] [Microsoft-Windows-DNS-Client] ID:1014 - Upłynął limit czasu rozpoznawania nazwy wpad po tym, jak żaden ze skonfigurowanych serwerów DNS nie odpowiedział.
+[2025-12-11 10:37:56] [Ostrzeżenia] [Microsoft-Windows-GroupPolicy] ID:1085 - System Windows nie może zastosować ustawień Group Policy Files. Ustawienia Group Policy Files mogą mieć własny plik dziennika. Kliknij link Więcej informacji.
+[2025-12-11 09:46:29] [Ostrzeżenia] [Microsoft-Windows-GroupPolicy] ID:1085 - System Windows nie może zastosować ustawień Group Policy Services. Ustawienia Group Policy Services mogą mieć własny plik dziennika. Kliknij link Więcej informacji.
+[2025-12-11 09:46:22] [Ostrzeżenia] [Microsoft-Windows-GroupPolicy] ID:1085 - System Windows nie może zastosować ustawień Group Policy Files. Ustawienia Group Policy Files mogą mieć własny plik dziennika. Kliknij link Więcej informacji.
+[2025-12-11 03:00:00] [Ostrzeżenia] [Microsoft-Windows-Security-Kerberos] ID:14 - Hasło przechowywane w Menedżerze poświadczeń jest nieprawidłowe. Może to być spowodowane zmianą hasła przez użytkownika zalogowanego na tym lub innym komputerze. Aby rozwiązać ten problem, otwórz Menedżera poświadczeń w Panelu sterowania i wprowadź ponownie ha...
+[2025-12-10 21:02:23] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR10.
+[2025-12-10 21:02:23] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR10.
+[2025-12-10 21:02:23] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR10.
+[2025-12-10 21:02:23] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR10.
+[2025-12-10 21:02:23] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR10.
+[2025-12-10 21:02:23] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR10.
+[2025-12-10 21:02:23] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR10.
+[2025-12-10 21:02:23] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR10.
+[2025-12-10 17:50:50] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 83%%. Liczba dostępnych adresów IP: 31.
+[2025-12-10 17:50:50] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 83 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 31.
+[2025-12-10 17:00:02] [Ostrzeżenia] [Microsoft-Windows-Security-Kerberos] ID:14 - Hasło przechowywane w Menedżerze poświadczeń jest nieprawidłowe. Może to być spowodowane zmianą hasła przez użytkownika zalogowanego na tym lub innym komputerze. Aby rozwiązać ten problem, otwórz Menedżera poświadczeń w Panelu sterowania i wprowadź ponownie ha...
+[2025-12-10 16:50:49] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 88%%. Liczba dostępnych adresów IP: 22.
+[2025-12-10 16:50:49] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 88 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 22.
+[2025-12-10 15:50:49] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 87%%. Liczba dostępnych adresów IP: 23.
+[2025-12-10 15:50:49] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 87 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 23.
+[2025-12-10 15:22:29] [Ostrzeżenia] [Microsoft-Windows-Kerberos-Key-Distribution-Center] ID:29 - Centrum dystrybucji kluczy nie może odnaleźć certyfikatu potrzebnego przy logowaniu kart inteligentnych lub nie można zweryfikować certyfikatu centrum dystrybucji kluczy. Jeśli ten problem nie zostanie rozwiązany, logowanie kart inteligentnych może nie działać...
+[2025-12-10 14:50:49] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 88%%. Liczba dostępnych adresów IP: 22.
+[2025-12-10 14:50:49] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 88 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 22.
+[2025-12-10 14:31:39] [Ostrzeżenia] [Display] ID:4113 - Sterownik ekranu MxG2wDO64 przestał odpowiadać i został pomyślnie wyłączony.
+[2025-12-10 12:50:48] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 81%%. Liczba dostępnych adresów IP: 35.
+[2025-12-10 12:50:48] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 81 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 35.
+[2025-12-10 10:40:35] [Ostrzeżenia] [Microsoft-Windows-GroupPolicy] ID:1085 - System Windows nie może zastosować ustawień Group Policy Services. Ustawienia Group Policy Services mogą mieć własny plik dziennika. Kliknij link Więcej informacji.
+[2025-12-10 10:40:18] [Ostrzeżenia] [Microsoft-Windows-GroupPolicy] ID:1085 - System Windows nie może zastosować ustawień Group Policy Files. Ustawienia Group Policy Files mogą mieć własny plik dziennika. Kliknij link Więcej informacji.
+[2025-12-10 03:00:02] [Ostrzeżenia] [Microsoft-Windows-Security-Kerberos] ID:14 - Hasło przechowywane w Menedżerze poświadczeń jest nieprawidłowe. Może to być spowodowane zmianą hasła przez użytkownika zalogowanego na tym lub innym komputerze. Aby rozwiązać ten problem, otwórz Menedżera poświadczeń w Panelu sterowania i wprowadź ponownie ha...
+[2025-12-09 21:02:30] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR7.
+[2025-12-09 21:02:30] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR7.
+[2025-12-09 21:02:30] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR7.
+[2025-12-09 21:02:30] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR7.
+[2025-12-09 17:00:01] [Ostrzeżenia] [Microsoft-Windows-Security-Kerberos] ID:14 - Hasło przechowywane w Menedżerze poświadczeń jest nieprawidłowe. Może to być spowodowane zmianą hasła przez użytkownika zalogowanego na tym lub innym komputerze. Aby rozwiązać ten problem, otwórz Menedżera poświadczeń w Panelu sterowania i wprowadź ponownie ha...
+[2025-12-09 13:50:44] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 82%%. Liczba dostępnych adresów IP: 33.
+[2025-12-09 13:50:44] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 82 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 33.
+[2025-12-09 12:50:44] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 82%%. Liczba dostępnych adresów IP: 34.
+[2025-12-09 12:50:44] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 82 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 34.
+[2025-12-09 03:00:01] [Ostrzeżenia] [Microsoft-Windows-Security-Kerberos] ID:14 - Hasło przechowywane w Menedżerze poświadczeń jest nieprawidłowe. Może to być spowodowane zmianą hasła przez użytkownika zalogowanego na tym lub innym komputerze. Aby rozwiązać ten problem, otwórz Menedżera poświadczeń w Panelu sterowania i wprowadź ponownie ha...
+[2025-12-08 21:02:37] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR3.
+[2025-12-08 21:02:37] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR3.
+[2025-12-08 21:02:37] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR3.
+[2025-12-08 21:02:37] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR3.
+[2025-12-08 21:02:37] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR3.
+[2025-12-08 21:02:37] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR3.
+[2025-12-08 21:02:37] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR3.
+[2025-12-08 21:02:37] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR3.
+[2025-12-08 21:02:37] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR3.
+[2025-12-08 21:02:37] [Ostrzeżenia] [Disk] ID:51 - Podczas operacji stronicowania wykryto błąd urządzenia \Device\Harddisk1\DR3.
+[2025-12-08 17:00:06] [Ostrzeżenia] [Microsoft-Windows-Security-Kerberos] ID:14 - Hasło przechowywane w Menedżerze poświadczeń jest nieprawidłowe. Może to być spowodowane zmianą hasła przez użytkownika zalogowanego na tym lub innym komputerze. Aby rozwiązać ten problem, otwórz Menedżera poświadczeń w Panelu sterowania i wprowadź ponownie ha...
+[2025-12-08 12:50:38] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 83%%. Liczba dostępnych adresów IP: 31.
+[2025-12-08 12:50:38] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 83 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 31.
+[2025-12-08 11:50:38] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 87%%. Liczba dostępnych adresów IP: 24.
+[2025-12-08 11:50:38] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 87 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 24.
+[2025-12-08 10:50:38] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1376 - Podzakres adresów IP zakresu 192.168.10.0 jest zapełniony w 84%%. Liczba dostępnych adresów IP: 29.
+[2025-12-08 10:50:38] [Ostrzeżenia] [Microsoft-Windows-DHCP-Server] ID:1020 - Zakres, 192.168.10.0, jest w 84 procentach zapełniony - pozostała tylko następująca liczba adresów IP: 29.
+[2025-12-08 10:29:46] [Ostrzeżenia] [User32] ID:1076 - Przyczyna ostatniego nieoczekiwanego zakończenia pracy tego komputera podana przez użytkownika SP6ZABKI\Administrator to: Inne zadania (niezaplanowane) Kod przyczyny: 0xa000000 Identyfikator problemu: Ciąg operacji wykrywania błędów: Komentarz:
+[2025-12-08 10:29:42] [Ostrzeżenia] [Microsoft-Windows-Security-Kerberos] ID:14 - Hasło przechowywane w Menedżerze poświadczeń jest nieprawidłowe. Może to być spowodowane zmianą hasła przez użytkownika zalogowanego na tym lub innym komputerze. Aby rozwiązać ten problem, otwórz Menedżera poświadczeń w Panelu sterowania i wprowadź ponownie ha...
+[2025-12-08 10:11:08] [Ostrzeżenia] [NETLOGON] ID:5781 - Nie można dynamicznie zarejestrować lub usunąć co najmniej jednego rekordu DNS skojarzonego z domeną DNS 'DomainDnsZones.sp6zabki.local.'. Te rekordy są używane przez inne komputery do lokalizowania tego serwera jako kontrolera domeny (jeżeli określona domena ...
+[2025-12-08 10:06:23] [Ostrzeżenia] [Microsoft-Windows-DNS-Client] ID:1014 - Upłynął limit czasu rozpoznawania nazwy sp6zabki.local po tym, jak żaden ze skonfigurowanych serwerów DNS nie odpowiedział.
+[2025-12-08 09:56:44] [Ostrzeżenia] [NETLOGON] ID:5781 - Nie można dynamicznie zarejestrować lub usunąć co najmniej jednego rekordu DNS skojarzonego z domeną DNS 'sp6zabki.local.'. Te rekordy są używane przez inne komputery do lokalizowania tego serwera jako kontrolera domeny (jeżeli określona domena jest domeną usł...
+[2025-12-08 09:56:32] [Ostrzeżenia] [Microsoft-Windows-DNS-Client] ID:1014 - Upłynął limit czasu rozpoznawania nazwy sp6zabki.local po tym, jak żaden ze skonfigurowanych serwerów DNS nie odpowiedział.
+
+===== FINAL VERDICT =====
+
+Overall   : ATTENTION
+Stability : LOW (0/100)
+Backup    : PROBLEM
+Storage   : ATTENTION
+Security  : ATTENTION

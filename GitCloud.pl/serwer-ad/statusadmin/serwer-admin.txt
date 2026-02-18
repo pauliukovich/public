@@ -1,0 +1,92 @@
+DOMAIN CONTROLLER ADMIN RIGHTS REPORT
+Server: SERWER-AD
+Date: 12/12/2025 13:43:11
+=====================================
+
+Accounts with administrative rights:
+-------------------------------------
+Account: Administratorzy
+Class:   group
+Type:    Builtin Administrators
+Via:     Privileged group
+
+Account: informatyk
+Class:   user
+Type:    User with admin rights
+Via:     Member of 'Builtin Administrators'
+
+Account: stypulkowskam111
+Class:   user
+Type:    User with admin rights
+Via:     Member of 'Builtin Administrators'
+
+Account: serwis
+Class:   user
+Type:    User with admin rights
+Via:     Member of 'Builtin Administrators'
+
+Account: misiewicza
+Class:   user
+Type:    User with admin rights
+Via:     Member of 'Builtin Administrators'
+
+Account: uscinskad
+Class:   user
+Type:    User with admin rights
+Via:     Member of 'Builtin Administrators'
+
+Account: Administrator
+Class:   user
+Type:    User with admin rights
+Via:     Member of 'Builtin Administrators'
+
+Account: Operatorzy serwerów
+Class:   group
+Type:    Server Operators
+Via:     Privileged group
+
+Account: Operatorzy kont
+Class:   group
+Type:    Account Operators
+Via:     Privileged group
+
+Account: majewskaa
+Class:   user
+Type:    User with admin rights
+Via:     Member of 'Account Operators'
+
+Account: majewskaw
+Class:   user
+Type:    User with admin rights
+Via:     Member of 'Account Operators'
+
+Account: kowalskam
+Class:   user
+Type:    User with admin rights
+Via:     Member of 'Account Operators'
+
+Account: Operatorzy kopii zapasowych
+Class:   group
+Type:    Backup Operators
+Via:     Privileged group
+
+Account: backup
+Class:   user
+Type:    User with admin rights
+Via:     Member of 'Backup Operators'
+
+Account: Operatorzy drukowania
+Class:   group
+Type:    Print Operators
+Via:     Privileged group
+
+Account: Administratorzy domeny
+Class:   group
+Type:    Domain Admins
+Via:     Privileged group
+
+Account: Administratorzy przedsiębiorstwa
+Class:   group
+Type:    Enterprise Admins
+Via:     Privileged group
+

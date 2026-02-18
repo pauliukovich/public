@@ -1,0 +1,28 @@
+===== INTERNET MONITORING =====
+Date   : 2025-12-19 13:36:02
+Server : SERWER-AD
+
+[ISP]
+External IP     : 185.11.62.85
+Provider        : AS209399 Jaroslaw Legosz trading as Prime ISP
+Location        : Ząbki, PL
+
+[ROUTING]
+Internet Status : ONLINE
+Default Gateway : 192.168.20.1
+Route Metric    : 256
+Interface Alias : WAN
+Network Profile : sp6zabki.local (DomainAuthenticated)
+
+[INTERNET QUALITY]
+Target 1.1.1.1    : Avg 7,2 ms   Loss 0 % (Sent 4, Recv 4)
+Target 8.8.8.8    : Avg 30,8 ms  Loss 0 % (Sent 4, Recv 4)
+Target google.com : Avg 11,5 ms  Loss 0 % (Sent 4, Recv 4)
+
+[DNS]
+Resolver Status : OK
+google.com A    : 142.250.130.139, 142.250.130.102, 142.250.130.100
+
+[CONNECTIONS]
+TCP Established : 388
+

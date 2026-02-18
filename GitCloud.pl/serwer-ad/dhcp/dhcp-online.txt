@@ -1,0 +1,740 @@
+DHCP ONLINE REPORT
+Server: SERWER-AD
+Generated: 2025-12-12 13:43:06
+-----------------------------------------------
+
+Scope:            192.168.10.0
+IP Address:       192.168.10.50
+Client Name:      BRW44FA66220453.sp6zabki.local
+MAC (Unique ID):  44-fa-66-22-04-53
+Lease Expires:    12/12/2025 14:07:19
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.51
+Client Name:      SALA11-LAP.sp6zabki.local
+MAC (Unique ID):  c0-18-50-ae-11-fc
+Lease Expires:    12/12/2025 14:06:41
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.52
+Client Name:      
+MAC (Unique ID):  1c-1a-1b-e9-dc-17
+Lease Expires:    12/12/2025 13:59:22
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.53
+Client Name:      NAS-SP6.sp6zabki.local
+MAC (Unique ID):  00-00-c0-1f-32-9a
+Lease Expires:    12/12/2025 14:05:32
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.54
+Client Name:      SALA28-LAP.sp6zabki.local
+MAC (Unique ID):  c0-18-50-ae-11-29
+Lease Expires:    12/12/2025 14:03:55
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.55
+Client Name:      Galaxy-S25.sp6zabki.local
+MAC (Unique ID):  fa-a7-a3-11-c7-5f
+Lease Expires:    12/12/2025 14:01:47
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.56
+Client Name:      Bar Szko┼éa.sp6zabki.local
+MAC (Unique ID):  38-c4-e8-08-bf-51
+Lease Expires:    12/12/2025 13:58:59
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.57
+Client Name:      iDRAC-4JJGR53.sp6zabki.local
+MAC (Unique ID):  2c-ea-7f-52-3d-33
+Lease Expires:    12/12/2025 14:11:17
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.58
+Client Name:      Swietlica2-Lap.sp6zabki.local
+MAC (Unique ID):  70-66-55-a9-d8-77
+Lease Expires:    12/12/2025 14:12:53
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.59
+Client Name:      SWIETLICA3-LAP.sp6zabki.local
+MAC (Unique ID):  70-66-55-a8-bd-d9
+Lease Expires:    12/12/2025 14:12:58
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.60
+Client Name:      SALA16-LAP.sp6zabki.local
+MAC (Unique ID):  b0-5c-da-d6-8a-a6
+Lease Expires:    12/12/2025 14:08:23
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.62
+Client Name:      DESKTOP-36NDEJ2.sp6zabki.local
+MAC (Unique ID):  8c-c8-4b-ae-34-8f
+Lease Expires:    12/12/2025 13:23:50
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.63
+Client Name:      
+MAC (Unique ID):  b6-65-53-e5-b4-25
+Lease Expires:    12/12/2025 13:34:06
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.64
+Client Name:      Galaxy-S25.sp6zabki.local
+MAC (Unique ID):  ea-c2-6c-21-a4-1b
+Lease Expires:    12/12/2025 14:07:24
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.65
+Client Name:      Psycholog-Lap.sp6zabki.local
+MAC (Unique ID):  70-66-55-a8-45-59
+Lease Expires:    12/12/2025 13:33:24
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.66
+Client Name:      DESKTOP-OV181KL.sp6zabki.local
+MAC (Unique ID):  d0-46-0c-a5-2d-e2
+Lease Expires:    12/12/2025 14:05:07
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.67
+Client Name:      BIBLIOTEKARZ-PC1.sp6zabki.local
+MAC (Unique ID):  d0-37-45-0b-70-84
+Lease Expires:    12/12/2025 14:03:32
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.68
+Client Name:      SALA14-LAP.sp6zabki.local
+MAC (Unique ID):  70-66-55-a8-45-41
+Lease Expires:    12/12/2025 14:04:45
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.69
+Client Name:      
+MAC (Unique ID):  1e-b2-1e-46-7d-8b
+Lease Expires:    12/12/2025 14:06:17
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.70
+Client Name:      SALA17-LAP.sp6zabki.local
+MAC (Unique ID):  b0-5c-da-d6-8a-25
+Lease Expires:    12/12/2025 14:10:05
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.71
+Client Name:      SALA35-PC.sp6zabki.local
+MAC (Unique ID):  a4-17-91-03-b1-be
+Lease Expires:    12/12/2025 13:37:16
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.72
+Client Name:      S10komp06.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-97
+Lease Expires:    12/12/2025 14:02:54
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.73
+Client Name:      SALA24-LAP.sp6zabki.local
+MAC (Unique ID):  3c-21-9c-f3-f8-7c
+Lease Expires:    12/12/2025 14:01:34
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.75
+Client Name:      SALA34-LAP.sp6zabki.local
+MAC (Unique ID):  b0-5c-da-d6-89-fc
+Lease Expires:    12/12/2025 14:09:06
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.76
+Client Name:      SALA23-LAP.sp6zabki.local
+MAC (Unique ID):  b4-45-06-7c-08-e6
+Lease Expires:    12/12/2025 14:01:18
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.77
+Client Name:      SALA12-LAP.sp6zabki.local
+MAC (Unique ID):  b0-5c-da-d6-8b-c8
+Lease Expires:    12/12/2025 14:01:59
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.78
+Client Name:      SALA31-LAP.sp6zabki.local
+MAC (Unique ID):  b0-5c-da-d6-8b-7c
+Lease Expires:    12/12/2025 14:09:49
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.79
+Client Name:      
+MAC (Unique ID):  02-15-8f-6f-31-32
+Lease Expires:    12/12/2025 13:37:06
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.80
+Client Name:      SALA36-PC.sp6zabki.local
+MAC (Unique ID):  a4-17-91-03-a5-a5
+Lease Expires:    12/12/2025 14:05:51
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.81
+Client Name:      SALA29-LAP.sp6zabki.local
+MAC (Unique ID):  b0-5c-da-95-a7-d1
+Lease Expires:    12/12/2025 13:58:44
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.83
+Client Name:      SALA21-LAP.sp6zabki.local
+MAC (Unique ID):  b0-5c-da-d6-8b-52
+Lease Expires:    12/12/2025 14:02:10
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.86
+Client Name:      Logopeda-Lap.sp6zabki.local
+MAC (Unique ID):  70-66-55-a8-45-95
+Lease Expires:    12/12/2025 14:02:36
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.88
+Client Name:      
+MAC (Unique ID):  e8-62-be-d8-bb-66
+Lease Expires:    12/12/2025 13:40:22
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.91
+Client Name:      SALA10-LAP.sp6zabki.local
+MAC (Unique ID):  c0-18-50-ae-11-94
+Lease Expires:    12/12/2025 14:04:05
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.93
+Client Name:      SALA15-LAP.sp6zabki.local
+MAC (Unique ID):  b0-5c-da-d6-8b-53
+Lease Expires:    12/12/2025 13:58:16
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.94
+Client Name:      
+MAC (Unique ID):  86-8d-10-0f-77-03
+Lease Expires:    12/12/2025 14:02:38
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.95
+Client Name:      Kadry2-PC.sp6zabki.local
+MAC (Unique ID):  54-6c-eb-8d-3d-3a
+Lease Expires:    12/12/2025 13:58:33
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.96
+Client Name:      LAPTOP-N8S1GJ71.sp6zabki.local
+MAC (Unique ID):  3c-21-9c-4f-89-86
+Lease Expires:    12/12/2025 14:05:55
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.97
+Client Name:      
+MAC (Unique ID):  ba-06-33-b3-29-e4
+Lease Expires:    12/12/2025 14:03:43
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.98
+Client Name:      
+MAC (Unique ID):  c2-10-04-85-4b-4b
+Lease Expires:    12/12/2025 14:02:34
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.99
+Client Name:      SALA33-LAP.sp6zabki.local
+MAC (Unique ID):  3c-21-9c-f4-05-c9
+Lease Expires:    12/12/2025 14:06:07
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.100
+Client Name:      Natalia.sp6zabki.local
+MAC (Unique ID):  e4-0d-36-74-0c-de
+Lease Expires:    12/12/2025 14:10:47
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.101
+Client Name:      SALA30-LAP.sp6zabki.local
+MAC (Unique ID):  70-66-55-a8-bb-01
+Lease Expires:    12/12/2025 14:12:27
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.102
+Client Name:      LAPTOP-S1OM2D8I.sp6zabki.local
+MAC (Unique ID):  d8-f8-83-2f-5d-c8
+Lease Expires:    12/12/2025 13:34:54
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.103
+Client Name:      BRWC89402575609.sp6zabki.local
+MAC (Unique ID):  c8-94-02-57-56-09
+Lease Expires:    12/12/2025 14:06:27
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.105
+Client Name:      SALA25-LAP.sp6zabki.local
+MAC (Unique ID):  c0-18-50-b0-ab-97
+Lease Expires:    12/12/2025 14:10:10
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.106
+Client Name:      POKOJNAUCZ1-PC.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-e6
+Lease Expires:    12/12/2025 14:05:47
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.107
+Client Name:      SALA37-pc.sp6zabki.local
+MAC (Unique ID):  a4-17-91-03-a6-10
+Lease Expires:    12/12/2025 13:47:01
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.108
+Client Name:      SALA19-LAP.sp6zabki.local
+MAC (Unique ID):  70-66-55-a8-45-45
+Lease Expires:    12/12/2025 14:05:24
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.109
+Client Name:      SALA20-LAP.sp6zabki.local
+MAC (Unique ID):  b0-5c-da-d6-8b-cc
+Lease Expires:    12/12/2025 13:21:18
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.110
+Client Name:      S10komp02.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-26-b7
+Lease Expires:    12/12/2025 14:04:29
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.111
+Client Name:      S10komp01.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-ef
+Lease Expires:    12/12/2025 13:32:47
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.112
+Client Name:      SALA27-LAP.sp6zabki.local
+MAC (Unique ID):  b0-5c-da-d6-8a-32
+Lease Expires:    12/12/2025 14:08:03
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.113
+Client Name:      SALA22-LAP.sp6zabki.local
+MAC (Unique ID):  c0-18-50-ae-12-b7
+Lease Expires:    12/12/2025 14:06:22
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.114
+Client Name:      S10komp20.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-42-6a
+Lease Expires:    12/12/2025 14:02:35
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.116
+Client Name:      S10komp19.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-aa
+Lease Expires:    12/12/2025 14:02:36
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.118
+Client Name:      
+MAC (Unique ID):  aa-39-52-88-55-61
+Lease Expires:    12/12/2025 12:55:23
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.119
+Client Name:      SWIETLICA1-LAP.sp6zabki.local
+MAC (Unique ID):  3c-21-9c-4e-6a-47
+Lease Expires:    12/12/2025 14:01:01
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.120
+Client Name:      
+MAC (Unique ID):  cc-d3-9d-a6-b9-81
+Lease Expires:    12/12/2025 14:04:57
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.121
+Client Name:      BIBLIOTEKARZ-PC2.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-3e
+Lease Expires:    12/12/2025 14:06:17
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.122
+Client Name:      android-e2369743a620d27a.sp6zabki.local
+MAC (Unique ID):  74-f7-f6-12-14-1e
+Lease Expires:    12/12/2025 14:04:07
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.123
+Client Name:      Galaxy-A54-5G.sp6zabki.local
+MAC (Unique ID):  b2-2b-bc-9a-81-d6
+Lease Expires:    12/12/2025 13:58:50
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.124
+Client Name:      SALA32-LAP.sp6zabki.local
+MAC (Unique ID):  3c-21-9c-f4-f7-63
+Lease Expires:    12/12/2025 12:59:41
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.125
+Client Name:      S10KOMP11.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-e8
+Lease Expires:    12/12/2025 14:03:02
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.127
+Client Name:      S10komp24.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-37-04
+Lease Expires:    12/12/2025 14:03:11
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.128
+Client Name:      s10komp10.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-a2
+Lease Expires:    12/12/2025 14:05:07
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.129
+Client Name:      SALA32-LAP.sp6zabki.local
+MAC (Unique ID):  c0-18-50-ae-12-0e
+Lease Expires:    12/12/2025 14:11:08
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.130
+Client Name:      S10komp05.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-a8
+Lease Expires:    12/12/2025 14:02:50
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.131
+Client Name:      SALA26-LAP.sp6zabki.local
+MAC (Unique ID):  b0-5c-da-d6-8a-91
+Lease Expires:    12/12/2025 14:07:50
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.133
+Client Name:      s10komp12.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-ea
+Lease Expires:    12/12/2025 14:03:08
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.134
+Client Name:      s10komp13.sp6zabki.local
+MAC (Unique ID):  d0-37-45-0b-47-31
+Lease Expires:    12/12/2025 13:33:48
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.136
+Client Name:      s10komp17.sp6zabki.local
+MAC (Unique ID):  d0-37-45-0b-6f-86
+Lease Expires:    12/12/2025 14:04:34
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.137
+Client Name:      S10komp04.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-99
+Lease Expires:    12/12/2025 14:03:13
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.138
+Client Name:      s10komp18.sp6zabki.local
+MAC (Unique ID):  d0-37-45-89-6a-ca
+Lease Expires:    12/12/2025 14:08:19
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.141
+Client Name:      s10komp07.sp6zabki.local
+MAC (Unique ID):  d0-37-45-7b-0e-76
+Lease Expires:    12/12/2025 14:02:57
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.142
+Client Name:      
+MAC (Unique ID):  0a-92-57-ea-51-4d
+Lease Expires:    12/12/2025 13:33:54
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.144
+Client Name:      
+MAC (Unique ID):  e6-55-93-00-83-9c
+Lease Expires:    12/12/2025 12:56:08
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.145
+Client Name:      Roshan.sp6zabki.local
+MAC (Unique ID):  7e-56-51-c4-1e-5a
+Lease Expires:    12/12/2025 14:02:02
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.147
+Client Name:      Pedagog-Lap.sp6zabki.local
+MAC (Unique ID):  70-66-55-a8-bd-e5
+Lease Expires:    12/12/2025 14:10:03
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.148
+Client Name:      Lenard.sp6zabki.local
+MAC (Unique ID):  1c-70-c9-d6-42-36
+Lease Expires:    12/12/2025 13:13:24
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.150
+Client Name:      Socjo-Lap.sp6zabki.local
+MAC (Unique ID):  70-a6-cc-03-a1-e2
+Lease Expires:    12/12/2025 14:08:51
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.151
+Client Name:      s10komp14.sp6zabki.local
+MAC (Unique ID):  d0-37-45-0d-44-c3
+Lease Expires:    12/12/2025 13:32:59
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.152
+Client Name:      Lenovo-Tab-M10-3rd-Gen.sp6zabki.local
+MAC (Unique ID):  04-34-f6-a7-37-bd
+Lease Expires:    12/12/2025 13:58:42
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.153
+Client Name:      s10komp08.sp6zabki.local
+MAC (Unique ID):  d0-37-45-06-36-9f
+Lease Expires:    12/12/2025 14:03:29
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.154
+Client Name:      
+MAC (Unique ID):  2a-56-ce-41-c0-eb
+Lease Expires:    12/12/2025 14:03:17
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.155
+Client Name:      SALA28-LAP.sp6zabki.local
+MAC (Unique ID):  3c-21-9c-4d-ba-f7
+Lease Expires:    12/12/2025 14:03:31
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.156
+Client Name:      
+MAC (Unique ID):  9a-c9-30-8e-f1-04
+Lease Expires:    12/12/2025 14:11:05
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.173
+Client Name:      POKOJNAUCZ2-PC.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-40
+Lease Expires:    12/12/2025 14:09:17
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.174
+Client Name:      SALA18-LAP.sp6zabki.local
+MAC (Unique ID):  b0-5c-da-95-a7-c8
+Lease Expires:    12/12/2025 14:11:54
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.175
+Client Name:      Galaxy-S25.sp6zabki.local
+MAC (Unique ID):  72-20-ac-cb-a9-86
+Lease Expires:    12/12/2025 14:07:20
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.178
+Client Name:      POKOJNAUCZ3-PC.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-a5
+Lease Expires:    12/12/2025 14:01:33
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.183
+Client Name:      S10komp22.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-f8
+Lease Expires:    12/12/2025 14:02:47
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.186
+Client Name:      S22komp04.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-a7
+Lease Expires:    12/12/2025 13:06:31
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.187
+Client Name:      informatyk.sp6zabki.local
+MAC (Unique ID):  c0-18-50-ae-12-a7
+Lease Expires:    12/12/2025 13:58:09
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.199
+Client Name:      S10komp22.sp6zabki.local
+MAC (Unique ID):  d0-37-45-05-8b-a1
+Lease Expires:    12/12/2025 14:08:45
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.202
+Client Name:      S10komp03.sp6zabki.local
+MAC (Unique ID):  d0-37-45-85-76-f3
+Lease Expires:    12/12/2025 14:02:46
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.206
+Client Name:      S10komp23.sp6zabki.local
+MAC (Unique ID):  d0-37-45-06-36-92
+Lease Expires:    12/12/2025 14:02:36
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.209
+Client Name:      s22komp08.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-df
+Lease Expires:    12/12/2025 13:33:21
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.212
+Client Name:      S10komp23.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-9a
+Lease Expires:    12/12/2025 14:02:48
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.216
+Client Name:      S10komp21.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-27-19
+Lease Expires:    12/12/2025 14:02:40
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.218
+Client Name:      POKOJNAUCZ4-PC.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-39-2e
+Lease Expires:    12/12/2025 14:09:20
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.221
+Client Name:      DESKTOP-AGTJB0U.sp6zabki.local
+MAC (Unique ID):  cc-47-40-ad-17-8b
+Lease Expires:    12/12/2025 14:09:44
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.223
+Client Name:      SALA13-LAP.sp6zabki.local
+MAC (Unique ID):  b0-5c-da-d6-8a-cd
+Lease Expires:    12/12/2025 14:04:26
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.226
+Client Name:      s10komp09.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-36-3d
+Lease Expires:    12/12/2025 14:03:06
+State:            Active
+-----------------------------------------------
+Scope:            192.168.10.0
+IP Address:       192.168.10.238
+Client Name:      S10komp03.sp6zabki.local
+MAC (Unique ID):  2c-f0-5d-22-48-10
+Lease Expires:    12/12/2025 14:02:43
+State:            Active
+-----------------------------------------------

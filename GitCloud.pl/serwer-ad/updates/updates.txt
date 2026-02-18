@@ -1,0 +1,10 @@
+===== WINDOWS UPDATE STATUS =====
+Server : SERWER-AD
+Date   : 2025-12-19 00:00:17
+
+Pending Updates : 1
+Security Updates: 0
+Other Updates   : 1
+
+Top pending updates:
+ - SQL Server 2022 RTM Cumulative Update (CU) 22 KB5068450

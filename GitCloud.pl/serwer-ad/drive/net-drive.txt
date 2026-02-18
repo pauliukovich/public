@@ -1,0 +1,11 @@
+
+===== NET DRIVE STATUS =====
+Server : SERWER-AD
+Date   : 2025-12-19 13:36:02
+
+Path         : \\192.168.20.3\Gitcloud.pl
+
+Total Space  : 5539 GB
+Used Space   : 4388 GB
+Free Space   : 1151 GB
+Used Percent : 79,2 %

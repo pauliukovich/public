@@ -1,0 +1,247 @@
+===== SERVER PROFILE =====
+Server Name : SERWER-AD
+Domain      : SP6ZABKI
+OS          : Microsoft Windows Server 2019 Standard
+Last Boot   : 12/12/2025 20:59:57
+Uptime      : 0 days 13 hours
+
+===== ROLES & FEATURES =====
+Total Installed : 90
+
+- RemoteAccess [Dostęp zdalny]
+  Installed : Unknown
+- DirectAccess-VPN [DirectAccess i VPN (RAS)]
+  Installed : Unknown
+- Routing [Routing]
+  Installed : Unknown
+- DHCP [Serwer DHCP]
+  Installed : Unknown
+- DNS [Serwer DNS]
+  Installed : Unknown
+- Web-Server [Serwer sieci Web (IIS)]
+  Installed : Unknown
+- Web-WebServer [Serwer sieci Web]
+  Installed : Unknown
+- Web-Health [Kondycja i diagnostyka]
+  Installed : Unknown
+- Web-Http-Logging [Rejestrowanie HTTP]
+  Installed : Unknown
+- Web-Request-Monitor [Monitor żądań]
+  Installed : Unknown
+- Web-Log-Libraries [Narzędzia rejestrowania]
+  Installed : Unknown
+- Web-Http-Tracing [Śledzenie]
+  Installed : Unknown
+- Web-Common-Http [Wspólne funkcje HTTP]
+  Installed : Unknown
+- Web-Http-Errors [Błędy HTTP]
+  Installed : Unknown
+- Web-Default-Doc [Dokument domyślny]
+  Installed : Unknown
+- Web-Dir-Browsing [Przeglądanie katalogów]
+  Installed : Unknown
+- Web-Static-Content [Zawartość statyczna]
+  Installed : Unknown
+- Web-Http-Redirect [Przekierowywanie HTTP]
+  Installed : Unknown
+- Web-Performance [Wydajność]
+  Installed : Unknown
+- Web-Stat-Compression [Kompresja zawartości statycznej]
+  Installed : Unknown
+- Web-Security [Zabezpieczenia]
+  Installed : Unknown
+- Web-Filtering [Filtrowanie żądań]
+  Installed : Unknown
+- Web-IP-Security [Ograniczenia adresów IP i domen]
+  Installed : Unknown
+- Web-Client-Auth [Uwierzytelnianie mapowań certyfikatów klientów]
+  Installed : Unknown
+- Web-Basic-Auth [Uwierzytelnianie podstawowe]
+  Installed : Unknown
+- Web-Windows-Auth [Uwierzytelnianie systemu Windows]
+  Installed : Unknown
+- Web-App-Dev [Projektowanie aplikacji]
+  Installed : Unknown
+- Web-ISAPI-Filter [Filtry ISAPI]
+  Installed : Unknown
+- Web-CGI [Interfejs CGI]
+  Installed : Unknown
+- Web-ISAPI-Ext [Rozszerzenia ISAPI]
+  Installed : Unknown
+- Web-Mgmt-Tools [Narzędzia do zarządzania]
+  Installed : Unknown
+- Web-Mgmt-Console [Konsola zarządzania usługami IIS]
+  Installed : Unknown
+- Web-Scripting-Tools [Narzędzia i skrypty zarządzania usługami IIS]
+  Installed : Unknown
+- Web-Mgmt-Compat [Zgodność z narzędziami zarządzania usługami IIS w wersji 6]
+  Installed : Unknown
+- Web-Metabase [Zgodność z metabazą usług IIS 6]
+  Installed : Unknown
+- AD-Domain-Services [Usługi domenowe Active Directory]
+  Installed : Unknown
+- FileAndStorage-Services [Usługi plików i magazynowania]
+  Installed : Unknown
+- Storage-Services [Usługi magazynowania]
+  Installed : Unknown
+- File-Services [Usługi plików i iSCSI]
+  Installed : Unknown
+- FS-FileServer [Serwer plików]
+  Installed : Unknown
+- Remote-Desktop-Services [Usługi pulpitu zdalnego]
+  Installed : Unknown
+- RDS-Gateway [Brama usług pulpitu zdalnego]
+  Installed : Unknown
+- WDS [Usługi wdrażania systemu Windows]
+  Installed : Unknown
+- WDS-Transport [Serwer transportu]
+  Installed : Unknown
+- WDS-Deployment [Serwer wdrażania]
+  Installed : Unknown
+- NPAS [Usługi zasad sieciowych i dostępu sieciowego]
+  Installed : Unknown
+- NET-Framework-Features [Funkcje programu .NET Framework 3.5]
+  Installed : Unknown
+- NET-Framework-Core [.NET Framework 3.5 (zawiera wersje .NET 2.0 i 3.0)]
+  Installed : Unknown
+- NET-Framework-45-Features [Funkcje programu .NET Framework 4.7]
+  Installed : Unknown
+- NET-Framework-45-Core [.NET Framework 4.7]
+  Installed : Unknown
+- NET-WCF-Services45 [Usługi WCF]
+  Installed : Unknown
+- NET-WCF-TCP-PortSharing45 [Udostępnianie portów TCP]
+  Installed : Unknown
+- Windows-Server-Backup [Kopia zapasowa systemu Windows Server]
+  Installed : Unknown
+- RSAT [Narzędzia administracji zdalnej serwera]
+  Installed : Unknown
+- RSAT-Role-Tools [Narzędzia do administrowania rolami]
+  Installed : Unknown
+- RSAT-AD-Tools [Narzędzia usług AD DS i usług AD LDS]
+  Installed : Unknown
+- RSAT-AD-PowerShell [Moduł usługi Active Directory dla środowiska PowerShell]
+  Installed : Unknown
+- RSAT-ADDS [Narzędzia usług AD DS]
+  Installed : Unknown
+- RSAT-AD-AdminCenter [Centrum administracyjne usługi Active Directory]
+  Installed : Unknown
+- RSAT-ADDS-Tools [Narzędzia wiersza polecenia i przystawki usług AD DS]
+  Installed : Unknown
+- RSAT-RDS-Tools [Narzędzia usług pulpitu zdalnego]
+  Installed : Unknown
+- RSAT-RDS-Gateway [Narzędzia bramy usług pulpitu zdalnego]
+  Installed : Unknown
+- RSAT-RemoteAccess [Narzędzia do zarządzania dostępem zdalnym]
+  Installed : Unknown
+- RSAT-RemoteAccess-Mgmt [Graficzny interfejs i narzędzia wiersza polecenia dostępu zdalnego]
+  Installed : Unknown
+- RSAT-RemoteAccess-PowerShell [Moduł dostępu zdalnego dla programu Windows PowerShell]
+  Installed : Unknown
+- RSAT-DHCP [Narzędzia serwera DHCP]
+  Installed : Unknown
+- RSAT-DNS-Server [Narzędzia serwera DNS]
+  Installed : Unknown
+- RSAT-File-Services [Narzędzia usług plików]
+  Installed : Unknown
+- RSAT-DFS-Mgmt-Con [Narzędzia do zarządzania systemem plików DFS]
+  Installed : Unknown
+- RSAT-NFS-Admin [Narzędzia do zarządzania usługami dla systemu plików NFS]
+  Installed : Unknown
+- RSAT-FSRM-Mgmt [Narzędzia menedżera zasobów serwera plików]
+  Installed : Unknown
+- WDS-AdminPack [Narzędzia Usług wdrażania systemu Windows]
+  Installed : Unknown
+- RSAT-ADRMS [Narzędzia usług zarządzania prawami dostępu w usłudze Active Directory]
+  Installed : Unknown
+- RSAT-NPAS [Narzędzia usług zasad sieciowych i dostępu sieciowego]
+  Installed : Unknown
+- WoW64-Support [Obsługa emulatora WoW64]
+  Installed : Unknown
+- Microsoft-Windows-Subsystem-Linux [Podsystem Windows dla systemu Linux]
+  Installed : Unknown
+- CMAK [RAS Connection Manager Administration Kit (CMAK)]
+  Installed : Unknown
+- Simple-TCPIP [Simple TCP/IP Services]
+  Installed : Unknown
+- FS-SMB1 [SMB 1.0/CIFS File Sharing Support]
+  Installed : Unknown
+- FS-SMB1-CLIENT [SMB 1.0/CIFS Client]
+  Installed : Unknown
+- FS-SMB1-SERVER [SMB 1.0/CIFS Server]
+  Installed : Unknown
+- System-DataArchiver [System Data Archiver]
+  Installed : Unknown
+- Windows-Internal-Database [Wewnętrzna baza danych systemu Windows]
+  Installed : Unknown
+- PowerShellRoot [Windows PowerShell]
+  Installed : Unknown
+- PowerShell [Windows PowerShell 5.1]
+  Installed : Unknown
+- PowerShell-V2 [Aparat programu Windows PowerShell 2.0]
+  Installed : Unknown
+- PowerShell-ISE [Windows PowerShell ISE]
+  Installed : Unknown
+- XPS-Viewer [XPS Viewer]
+  Installed : Unknown
+- GPMC [Zarządzanie zasadami grupy]
+  Installed : Unknown
+- RPC-over-HTTP-Proxy [Zdalne wywoływanie procedur za pośrednictwem serwera proxy protokołu HTTP]
+  Installed : Unknown
+
+===== CRITICAL SERVICES =====
+NTDS                 : Running
+DNS                  : Running
+DHCPServer           : Running
+WinRM                : Running
+W32Time              : Running
+LanmanServer         : Running
+
+===== SECURITY BASELINE =====
+SMBv1 Enabled       : Enabled
+NTLM Restriction    : 
+UAC Enabled         : 1
+RDP Enabled         : True
+PS ExecutionPolicy  : RemoteSigned
+
+===== WINDOWS UPDATES =====
+Last Update Installed : 12/12/2025 00:00:00
+Pending Reboot        : False
+
+===== NETWORK CONFIGURATION =====
+Interface : WAN
+IP        : 192.168.20.2
+Gateway   : 192.168.20.1
+DNS       : 127.0.0.1, 8.8.8.8
+
+Interface : LAN
+IP        : 192.168.10.1
+Gateway   : 
+DNS       : 192.168.10.1
+
+Interface : Tailscale
+IP        : 100.113.18.50
+Gateway   : 
+DNS       : fec0:0:0:ffff::1, fec0:0:0:ffff::2, fec0:0:0:ffff::3
+
+NTP Source:
+ReferenceId: 0xA29FC87B (source IP:  162.159.200.123)
+Source: time.cloudflare.com,0x8 
+
+===== CUSTOM SCHEDULED TASKS =====
+- User_Feed_Synchronization-{24922EAB-DD17-4DE6-A04C-38E96570521D} [Ready]
+- User_Feed_Synchronization-{3D128F12-EF6C-4B92-88DB-93506A38E179} [Ready]
+- User_Feed_Synchronization-{CEFBB14E-3A9E-47E1-9C00-E4140FC37C22} [Ready]
+- backupad [Ready]
+- backupadministracja [Ready]
+- removebackupad [Ready]
+- removebackupadministracja [Disabled]
+- Microsoft-Windows-WindowsBackup [Ready]
+- Property Definition Sync [Disabled]
+- Background Synchronization [Disabled]
+- Logon Synchronization [Disabled]
+- RegIdleBackup [Ready]
+- ForceSynchronizeTime [Ready]
+- SynchronizeTime [Ready]
+- SynchronizeTimeZone [Ready]
+- Backup Scan [Ready]

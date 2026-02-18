@@ -1,0 +1,14 @@
+===== CPU LOAD =====
+Server : SERWER-AD
+Date   : 2025-12-19 13:36:29
+
+CPU Model        : Intel(R) Xeon(R) Bronze 3204 CPU @ 1.90GHz
+Cores / Logical  : 6 / 6
+
+Current Load     : 36 %
+Average Load 10s : 49.7 %
+Max Load 10s     : 87.5 %
+Min Load 10s     : 22 %
+
+CPU Temperature : N/A (no sensor available)
+Temp Source     : N/A

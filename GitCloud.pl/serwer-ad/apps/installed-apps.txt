@@ -1,0 +1,1691 @@
+===== INSTALLED APPLICATIONS INVENTORY =====
+Server : SERWER-AD
+Date   : 2025-12-19 00:00:03
+
+Total applications: 153
+
+-----------------------------------------------------------
+
+Name: 1527c705-839a-4832-9118-54d4Bd6a0c89
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: 7-Zip 25.01 (x64)
+Version: 25.01
+Publisher: Igor Pavlov
+Install Date: 
+Install Location: C:\Program Files\7-Zip\
+Estimated Size (MB): 5.6
+Uninstall String: "C:\Program Files\7-Zip\Uninstall.exe"
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\7-Zip
+
+-----------------------------------------------------------
+Name: Browser for SQL Server 2022
+Version: 16.0.1000.6
+Publisher: Microsoft Corporation
+Install Date: 11/12/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 71.3
+Uninstall String: MsiExec.exe /X{FDB357D5-CC78-480A-8D26-C15D1A877642}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{FDB357D5-CC78-480A-8D26-C15D1A877642}
+
+-----------------------------------------------------------
+Name: c5e2524a-ea46-4f67-841f-6a9465d9d515
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Composer - PHP Dependency Manager
+Version: 
+Publisher: getcomposer.org
+Install Date: 11/28/2025 00:00:00
+Install Location: C:\Program Files (x86)\ComposerSetup\
+Estimated Size (MB): 3.1
+Uninstall String: "C:\Program Files (x86)\ComposerSetup\unins000.exe"
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{7315AF68-E777-496A-A6A2-4763A98ED35A}_is1
+
+-----------------------------------------------------------
+Name: Dell SupportAssist
+Version: 4.10.6.48716
+Publisher: Dell Inc.
+Install Date: 11/30/2025 00:00:00
+Install Location: C:\Program Files\Dell\SupportAssistAgent\
+Estimated Size (MB): 853.1
+Uninstall String: MsiExec.exe /X{00B9D238-5A72-4BD9-B2DC-0144D8DBD5C8}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{00B9D238-5A72-4BD9-B2DC-0144D8DBD5C8}
+
+-----------------------------------------------------------
+Name: Dell SupportAssist OS Recovery Plugin for Dell Update
+Version: 5.5.14.0
+Publisher: Dell Inc.
+Install Date: 09/24/2025 00:00:00
+Install Location: C:\Program Files\Dell\SARemediation\plugin\
+Estimated Size (MB): 51
+Uninstall String: MsiExec.exe /I{6EBF5DC4-FA0B-4692-A954-E7470146943D}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{6EBF5DC4-FA0B-4692-A954-E7470146943D}
+
+-----------------------------------------------------------
+Name: E2A4F912-2574-4A75-9BB0-0D023378592B
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: GDR 1050 for SQL Server 2022 (KB5021522) (64-bit)
+Version: 16.0.1050.5
+Publisher: Microsoft Corporation
+Install Date: 03/16/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5021522\GDR\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5021522
+
+-----------------------------------------------------------
+Name: GDR 2070 for SQL Server 2019 (KB4517790) (64-bit)
+Version: 15.0.2070.41
+Publisher: Microsoft Corporation
+Install Date: 10/05/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Update Cache\KB4517790\GDR\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB4517790
+
+-----------------------------------------------------------
+Name: GDR 2080 for SQL Server 2019 (KB4583458) (64-bit)
+Version: 15.0.2080.9
+Publisher: Microsoft Corporation
+Install Date: 01/25/2021 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Update Cache\KB4583458\GDR\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB4583458
+
+-----------------------------------------------------------
+Name: GDR 2095 for SQL Server 2019 (KB5014356) (64-bit)
+Version: 15.0.2095.3
+Publisher: Microsoft Corporation
+Install Date: 06/15/2022 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Update Cache\KB5014356\GDR\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5014356
+
+-----------------------------------------------------------
+Name: GDR 2101 for SQL Server 2019 (KB5021125) (64-bit)
+Version: 15.0.2101.7
+Publisher: Microsoft Corporation
+Install Date: 02/15/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\150\Setup Bootstrap\Update Cache\KB5021125\GDR\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5021125
+
+-----------------------------------------------------------
+Name: Git
+Version: 2.52.0
+Publisher: The Git Development Community
+Install Date: 12/08/2025 00:00:00
+Install Location: C:\Program Files\Git\
+Estimated Size (MB): 346.3
+Uninstall String: "C:\Program Files\Git\unins001.exe"
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1
+
+-----------------------------------------------------------
+Name: GitHub CLI
+Version: 2.81.0
+Publisher: GitHub, Inc.
+Install Date: 10/15/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 53.3
+Uninstall String: MsiExec.exe /X{18A7303D-8274-4EFE-9181-F91CDB287366}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{18A7303D-8274-4EFE-9181-F91CDB287366}
+
+-----------------------------------------------------------
+Name: Hotfix 4035 for SQL Server 2022 (KB5026717) (64-bit)
+Version: 16.0.4035.4
+Publisher: Microsoft Corporation
+Install Date: 06/02/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5026717\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5026717
+
+-----------------------------------------------------------
+Name: Hotfix 4065 for SQL Server 2022 (KB5028743) (64-bit)
+Version: 16.0.4065.3
+Publisher: Microsoft Corporation
+Install Date: 08/16/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5028743\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5028743
+
+-----------------------------------------------------------
+Name: Hotfix 4080 for SQL Server 2022 (KB5029503) (64-bit)
+Version: 16.0.4080.1
+Publisher: Microsoft Corporation
+Install Date: 10/11/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5029503\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5029503
+
+-----------------------------------------------------------
+Name: Hotfix 4095 for SQL Server 2022 (KB5031778) (64-bit)
+Version: 16.0.4095.4
+Publisher: Microsoft Corporation
+Install Date: 11/28/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5031778\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5031778
+
+-----------------------------------------------------------
+Name: Hotfix 4100 for SQL Server 2022 (KB5033592) (64-bit)
+Version: 16.0.4100.1
+Publisher: Microsoft Corporation
+Install Date: 02/16/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5033592\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5033592
+
+-----------------------------------------------------------
+Name: Hotfix 4131 for SQL Server 2022 (KB5040939) (64-bit)
+Version: 16.0.4131.2
+Publisher: Microsoft Corporation
+Install Date: 08/21/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5040939\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5040939
+
+-----------------------------------------------------------
+Name: Hotfix 4140 for SQL Server 2022 (KB5042578) (64-bit)
+Version: 16.0.4140.3
+Publisher: Microsoft Corporation
+Install Date: 10/04/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5042578\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5042578
+
+-----------------------------------------------------------
+Name: Hotfix 4150 for SQL Server 2022 (KB5046059) (64-bit)
+Version: 16.0.4150.1
+Publisher: Microsoft Corporation
+Install Date: 11/04/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5046059\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5046059
+
+-----------------------------------------------------------
+Name: Hotfix 4155 for SQL Server 2022 (KB5046862) (64-bit)
+Version: 16.0.4155.4
+Publisher: Microsoft Corporation
+Install Date: 12/09/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5046862\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5046862
+
+-----------------------------------------------------------
+Name: Hotfix 4200 for SQL Server 2022 (KB5058721) (64-bit)
+Version: 16.0.4200.1
+Publisher: Microsoft Corporation
+Install Date: 08/11/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5058721\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5058721
+
+-----------------------------------------------------------
+Name: Hotfix 4210 for SQL Server 2022 (KB5063814) (64-bit)
+Version: 16.0.4210.1
+Publisher: Microsoft Corporation
+Install Date: 08/13/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5063814\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5063814
+
+-----------------------------------------------------------
+Name: Hotfix 4212 for SQL Server 2022 (KB5065220) (64-bit)
+Version: 16.0.4212.1
+Publisher: Microsoft Corporation
+Install Date: 09/19/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5065220\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5065220
+
+-----------------------------------------------------------
+Name: Hotfix 4215 for SQL Server 2022 (KB5065865) (64-bit)
+Version: 16.0.4215.2
+Publisher: Microsoft Corporation
+Install Date: 10/03/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5065865\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5065865
+
+-----------------------------------------------------------
+Name: Hotfix 4222 for SQL Server 2022 (KB5068406) (64-bit)
+Version: 16.0.4222.2
+Publisher: Microsoft Corporation
+Install Date: 11/12/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Microsoft SQL Server\160\Setup Bootstrap\Update Cache\KB5068406\QFE\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB5068406
+
+-----------------------------------------------------------
+Name: Hotfix for Microsoft Visual Studio 2007 Tools for Applications - ENU (KB946040)
+Version: 1
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: c:\Windows\SysWOW64\msiexec.exe /package {4ECF4BDC-8387-329A-ABE9-CF5798F84BB2} /uninstall  /qb+ REBOOTPROMPT=""
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{4ECF4BDC-8387-329A-ABE9-CF5798F84BB2}.KB946040
+
+-----------------------------------------------------------
+Name: Hotfix for Microsoft Visual Studio 2007 Tools for Applications - ENU (KB946308)
+Version: 1
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: c:\Windows\SysWOW64\msiexec.exe /package {4ECF4BDC-8387-329A-ABE9-CF5798F84BB2} /uninstall  /qb+ REBOOTPROMPT=""
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{4ECF4BDC-8387-329A-ABE9-CF5798F84BB2}.KB946308
+
+-----------------------------------------------------------
+Name: Hotfix for Microsoft Visual Studio 2007 Tools for Applications - ENU (KB946344)
+Version: 1
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: c:\Windows\SysWOW64\msiexec.exe /package {4ECF4BDC-8387-329A-ABE9-CF5798F84BB2} /uninstall  /qb+ REBOOTPROMPT=""
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{4ECF4BDC-8387-329A-ABE9-CF5798F84BB2}.KB946344
+
+-----------------------------------------------------------
+Name: Hotfix for Microsoft Visual Studio 2007 Tools for Applications - ENU (KB947540)
+Version: 1
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: c:\Windows\SysWOW64\msiexec.exe /package {4ECF4BDC-8387-329A-ABE9-CF5798F84BB2} /uninstall  /qb+ REBOOTPROMPT=""
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{4ECF4BDC-8387-329A-ABE9-CF5798F84BB2}.KB947540
+
+-----------------------------------------------------------
+Name: Hotfix for Microsoft Visual Studio 2007 Tools for Applications - ENU (KB947789)
+Version: 1
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: c:\Windows\SysWOW64\msiexec.exe /package {4ECF4BDC-8387-329A-ABE9-CF5798F84BB2} /uninstall  /qb+ REBOOTPROMPT=""
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{4ECF4BDC-8387-329A-ABE9-CF5798F84BB2}.KB947789
+
+-----------------------------------------------------------
+Name: IIS URL Rewrite Module 2
+Version: 7.2.1993
+Publisher: Microsoft Corporation
+Install Date: 11/24/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 4.2
+Uninstall String: MsiExec.exe /X{9BCA2118-F753-4A1E-BCF3-5A820729965C}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{9BCA2118-F753-4A1E-BCF3-5A820729965C}
+
+-----------------------------------------------------------
+Name: InputApp
+Version: 1000.17763.6054.0
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: InputApp
+Version: 1000.17763.1.0
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Integration Services
+Version: 16.0.5107.0
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 162.6
+Uninstall String: MsiExec.exe /I{F574EA39-DAA6-4D1B-A916-73205D1F2A7D}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{F574EA39-DAA6-4D1B-A916-73205D1F2A7D}
+
+-----------------------------------------------------------
+Name: Intel(R) Chipset Device Software
+Version: 10.1.18243.8188
+Publisher: Intel(R) Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 2.6
+Uninstall String: "C:\ProgramData\Package Cache\{f3b1c211-1159-4262-bb97-84150cda9096}\SetupChipset.exe"  /uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{f3b1c211-1159-4262-bb97-84150cda9096}
+
+-----------------------------------------------------------
+Name: Matrox Graphics Software (remove only)
+Version: 4.4.1.3
+Publisher: Matrox Graphics Inc.
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: C:\Windows\SysWOW64\Matrox\Matrox.WddmUninstaller.exe
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Matrox Vista Driver Uninstaller
+
+-----------------------------------------------------------
+Name: Microsoft .NET Host - 5.0.17 (x64)
+Version: 40.68.31213
+Publisher: Microsoft Corporation
+Install Date: 05/21/2022 00:00:00
+Install Location: 
+Estimated Size (MB): 0.4
+Uninstall String: MsiExec.exe /X{E663ED1E-899C-40E8-91D0-8D37B95E3C69}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{E663ED1E-899C-40E8-91D0-8D37B95E3C69}
+
+-----------------------------------------------------------
+Name: Microsoft .NET Host - 6.0.28 (x64)
+Version: 48.112.10439
+Publisher: Microsoft Corporation
+Install Date: 05/08/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 0.4
+Uninstall String: MsiExec.exe /X{CA84969C-64F9-4606-A998-E692A5DA9B9F}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{CA84969C-64F9-4606-A998-E692A5DA9B9F}
+
+-----------------------------------------------------------
+Name: Microsoft .NET Host - 8.0.11 (x64)
+Version: 64.44.23191
+Publisher: Microsoft Corporation
+Install Date: 11/30/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 0.5
+Uninstall String: MsiExec.exe /X{362B4D0D-8438-44DA-86B2-FEC44E000FCA}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{362B4D0D-8438-44DA-86B2-FEC44E000FCA}
+
+-----------------------------------------------------------
+Name: Microsoft .NET Host FX Resolver - 5.0.17 (x64)
+Version: 40.68.31213
+Publisher: Microsoft Corporation
+Install Date: 05/21/2022 00:00:00
+Install Location: 
+Estimated Size (MB): 0.3
+Uninstall String: MsiExec.exe /X{8BA25391-0BE6-443A-8EBF-86A29BAFC479}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{8BA25391-0BE6-443A-8EBF-86A29BAFC479}
+
+-----------------------------------------------------------
+Name: Microsoft .NET Host FX Resolver - 6.0.20 (x64)
+Version: 48.83.63169
+Publisher: Microsoft Corporation
+Install Date: 10/22/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 0.3
+Uninstall String: MsiExec.exe /X{76FA02FF-603F-48BB-9E3F-17ED5DB861E8}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{76FA02FF-603F-48BB-9E3F-17ED5DB861E8}
+
+-----------------------------------------------------------
+Name: Microsoft .NET Host FX Resolver - 6.0.28 (x64)
+Version: 48.112.10439
+Publisher: Microsoft Corporation
+Install Date: 05/08/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 0.3
+Uninstall String: MsiExec.exe /X{7C4254A1-17EE-4840-B9D3-7CA9B34C75CD}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{7C4254A1-17EE-4840-B9D3-7CA9B34C75CD}
+
+-----------------------------------------------------------
+Name: Microsoft .NET Host FX Resolver - 8.0.11 (x64)
+Version: 64.44.23191
+Publisher: Microsoft Corporation
+Install Date: 11/30/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 0.3
+Uninstall String: MsiExec.exe /X{F59C11F0-D73F-452B-8D1D-8C33B82D8507}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{F59C11F0-D73F-452B-8D1D-8C33B82D8507}
+
+-----------------------------------------------------------
+Name: Microsoft .NET Runtime - 5.0.17 (x64)
+Version: 40.68.31213
+Publisher: Microsoft Corporation
+Install Date: 05/21/2022 00:00:00
+Install Location: 
+Estimated Size (MB): 65
+Uninstall String: MsiExec.exe /X{5A66E598-37BD-4C8A-A7CB-A71C32ABCD78}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{5A66E598-37BD-4C8A-A7CB-A71C32ABCD78}
+
+-----------------------------------------------------------
+Name: Microsoft .NET Runtime - 5.0.17 (x64)
+Version: 5.0.17.31213
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 91.1
+Uninstall String: "C:\ProgramData\Package Cache\{a699b48e-5748-4980-ad92-0b61b1d9d718}\dotnet-runtime-5.0.17-win-x64.exe"  /uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{a699b48e-5748-4980-ad92-0b61b1d9d718}
+
+-----------------------------------------------------------
+Name: Microsoft .NET Runtime - 6.0.20 (x64)
+Version: 48.83.63169
+Publisher: Microsoft Corporation
+Install Date: 10/22/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 68.1
+Uninstall String: MsiExec.exe /X{6CE8AD8C-E6D5-4BF7-91C3-7F8106A5CD93}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{6CE8AD8C-E6D5-4BF7-91C3-7F8106A5CD93}
+
+-----------------------------------------------------------
+Name: Microsoft .NET Runtime - 6.0.20 (x64)
+Version: 6.0.20.32620
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 95.6
+Uninstall String: "C:\ProgramData\Package Cache\{403b0cfe-5969-462d-8eb2-aafde344360e}\dotnet-runtime-6.0.20-win-x64.exe"  /uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{403b0cfe-5969-462d-8eb2-aafde344360e}
+
+-----------------------------------------------------------
+Name: Microsoft .NET Runtime - 6.0.28 (x64)
+Version: 48.112.10439
+Publisher: Microsoft Corporation
+Install Date: 05/08/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 68.1
+Uninstall String: MsiExec.exe /X{4BCC5DFD-5D10-4ACC-AAA9-8A1578A9F0C6}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{4BCC5DFD-5D10-4ACC-AAA9-8A1578A9F0C6}
+
+-----------------------------------------------------------
+Name: Microsoft .NET Runtime - 8.0.11 (x64)
+Version: 64.44.23191
+Publisher: Microsoft Corporation
+Install Date: 11/30/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 70.4
+Uninstall String: MsiExec.exe /X{9C80213E-9079-4561-8D57-1FDD0D62251F}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{9C80213E-9079-4561-8D57-1FDD0D62251F}
+
+-----------------------------------------------------------
+Name: Microsoft Analysis Services OLE DB Provider
+Version: 15.0.2000.832
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 487.8
+Uninstall String: MsiExec.exe /I{7EA2A3F7-A6D2-4D28-B3C4-4C32BCF4A0A2}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{7EA2A3F7-A6D2-4D28-B3C4-4C32BCF4A0A2}
+
+-----------------------------------------------------------
+Name: Microsoft Application Request Routing 3.0
+Version: 3.0.05311
+Publisher: Microsoft Corporation
+Install Date: 11/24/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 3.5
+Uninstall String: MsiExec.exe /X{3C876E4D-B486-49FA-AB33-D94367357A69}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{3C876E4D-B486-49FA-AB33-D94367357A69}
+
+-----------------------------------------------------------
+Name: Microsoft Edge
+Version: 143.0.3650.80
+Publisher: Microsoft Corporation
+Install Date: 12/13/2025 00:00:00
+Install Location: C:\Program Files (x86)\Microsoft\Edge\Application
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files (x86)\Microsoft\Edge\Application\143.0.3650.80\Installer\setup.exe" --uninstall --msedge --channel=stable --system-level --verbose-logging
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Edge
+
+-----------------------------------------------------------
+Name: Microsoft Help Viewer 2.3
+Version: 2.3.28307
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 13
+Uninstall String: MsiExec.exe /X{99DC6816-30B2-32EB-9E12-AF8944C4FA4E}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{99DC6816-30B2-32EB-9E12-AF8944C4FA4E}
+
+-----------------------------------------------------------
+Name: Microsoft ODBC Driver 17 for SQL Server
+Version: 17.10.6.1
+Publisher: Microsoft Corporation
+Install Date: 08/21/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 4.1
+Uninstall String: MsiExec.exe /I{0E0F96AC-80DE-4400-A40C-429D63293651}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{0E0F96AC-80DE-4400-A40C-429D63293651}
+
+-----------------------------------------------------------
+Name: Microsoft Office 2003 Web Components
+Version: 12.0.6213.1000
+Publisher: Microsoft Corporation
+Install Date: 10/05/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 89.3
+Uninstall String: MsiExec.exe /I{90120000-00A4-0409-0000-0000000FF1CE}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{90120000-00A4-0409-0000-0000000FF1CE}
+
+-----------------------------------------------------------
+Name: Microsoft Office LTSC Standard 2021 - pl-pl
+Version: 16.0.14334.20440
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: C:\Program Files\Microsoft Office
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe" scenario=install scenariosubtype=ARP sourcetype=None productstoremove=Standard2021Volume.16_pl-pl_x-none culture=pl-pl version.16=16.0
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Standard2021Volume - pl-pl
+
+-----------------------------------------------------------
+Name: Microsoft OLE DB Driver for SQL Server
+Version: 18.7.4.0
+Publisher: Microsoft Corporation
+Install Date: 08/21/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 8.5
+Uninstall String: MsiExec.exe /I{76EB75D2-CCF6-41A9-90B6-922DE9146276}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{76EB75D2-CCF6-41A9-90B6-922DE9146276}
+
+-----------------------------------------------------------
+Name: Microsoft OneDrive
+Version: 25.222.1112.0002
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 456.6
+Uninstall String: "C:\Program Files\Microsoft OneDrive\25.222.1112.0002\OneDriveSetup.exe"  /uninstall  /allusers 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\OneDriveSetup.exe
+
+-----------------------------------------------------------
+Name: Microsoft Report Viewer Redistributable 2008 (KB971119)
+Version: 9.0.30731
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 6.3
+Uninstall String: 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{CED243AB-C7BA-3D42-9609-14EF5A6FC601}
+
+-----------------------------------------------------------
+Name: Microsoft Report Viewer Redistributable 2008 SP1
+Version: 
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: c:\Windows\Microsoft.NET\Framework\v2.0.50727\
+Estimated Size (MB): 
+Uninstall String: c:\Windows\Microsoft.NET\Framework\v2.0.50727\Microsoft Report Viewer Redistributable 2008 (KB971119)\install.exe
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft Report Viewer Redistributable 2008 (KB971119)
+
+-----------------------------------------------------------
+Name: Microsoft Silverlight
+Version: 5.1.41212.0
+Publisher: Microsoft Corporation
+Install Date: 10/24/2025 00:00:00
+Install Location: C:\Program Files\Microsoft Silverlight\
+Estimated Size (MB): 50.7
+Uninstall String: MsiExec.exe /X{89F4137D-6C26-4A84-BDB8-2E5A4BB71E00}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{89F4137D-6C26-4A84-BDB8-2E5A4BB71E00}
+
+-----------------------------------------------------------
+Name: Microsoft SQL Server 2008 R2 (64-bit)
+Version: 
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "c:\Program Files\Microsoft SQL Server\100\Setup Bootstrap\SQLServer2008R2\x64\SetupARP.exe"
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft SQL Server 10
+
+-----------------------------------------------------------
+Name: Microsoft SQL Server 2008 R2 RsFx Driver
+Version: 10.53.6000.34
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 1.2
+Uninstall String: MsiExec.exe /I{8FB7A1C3-87C4-4933-BE1D-6372CAF6A72E}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{8FB7A1C3-87C4-4933-BE1D-6372CAF6A72E}
+
+-----------------------------------------------------------
+Name: Microsoft SQL Server 2008 R2 Setup (English)
+Version: 10.53.6000.34
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 31.1
+Uninstall String: MsiExec.exe /X{74964326-CB2C-413B-B574-C4A90B8033E3}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{74964326-CB2C-413B-B574-C4A90B8033E3}
+
+-----------------------------------------------------------
+Name: Microsoft SQL Server 2012 Native Client 
+Version: 11.4.7462.6
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 9.7
+Uninstall String: MsiExec.exe /I{9D93D367-A2CC-4378-BD63-79EF3FE76C78}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{9D93D367-A2CC-4378-BD63-79EF3FE76C78}
+
+-----------------------------------------------------------
+Name: Microsoft SQL Server 2019 T-SQL Language Service 
+Version: 15.0.2000.5
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 9.1
+Uninstall String: MsiExec.exe /I{31D27B41-A051-49D8-907A-62E0F4A2188C}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{31D27B41-A051-49D8-907A-62E0F4A2188C}
+
+-----------------------------------------------------------
+Name: Microsoft SQL Server 2022 (64-bit)
+Version: 
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\Microsoft SQL Server 16
+
+-----------------------------------------------------------
+Name: Microsoft SQL Server 2022 RsFx Driver
+Version: 16.0.1000.6
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 0.4
+Uninstall String: MsiExec.exe /I{629C8FC9-3763-4C58-8264-5288AE34AFEF}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{629C8FC9-3763-4C58-8264-5288AE34AFEF}
+
+-----------------------------------------------------------
+Name: Microsoft SQL Server 2022 Setup (English)
+Version: 16.0.4222.2
+Publisher: Microsoft Corporation
+Install Date: 11/12/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 103.7
+Uninstall String: MsiExec.exe /X{E86D9361-DF3A-48BA-B0D5-19F809EB505F}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{E86D9361-DF3A-48BA-B0D5-19F809EB505F}
+
+-----------------------------------------------------------
+Name: Microsoft SQL Server Management Studio - 19.0.1
+Version: 19.0.20200.0
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 2753.1
+Uninstall String: "C:\ProgramData\Package Cache\{a5bb0309-eac2-4466-8122-1bf8a9edaf1f}\SSMS-Setup-ENU.exe"  /uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{a5bb0309-eac2-4466-8122-1bf8a9edaf1f}
+
+-----------------------------------------------------------
+Name: Microsoft Sync Framework Runtime v1.0 (x64)
+Version: 1.0.1215.0
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 3.3
+Uninstall String: MsiExec.exe /I{53D7A054-4598-4947-A159-E8FCC77720AB}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{53D7A054-4598-4947-A159-E8FCC77720AB}
+
+-----------------------------------------------------------
+Name: Microsoft Sync Services for ADO.NET v2.0 (x64)
+Version: 2.0.1215.0
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 0.9
+Uninstall String: MsiExec.exe /I{817BCC2B-76A8-4C8B-8B55-FD916C6969CC}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{817BCC2B-76A8-4C8B-8B55-FD916C6969CC}
+
+-----------------------------------------------------------
+Name: Microsoft Visual C++ 2005 Redistributable
+Version: 8.0.61001
+Publisher: Microsoft Corporation
+Install Date: 07/06/2022 00:00:00
+Install Location: 
+Estimated Size (MB): 4.8
+Uninstall String: MsiExec.exe /X{710f4c1c-cc18-4c49-8cbf-51240c89a1a2}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{710f4c1c-cc18-4c49-8cbf-51240c89a1a2}
+
+-----------------------------------------------------------
+Name: Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.30501
+Version: 12.0.30501.0
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 17.2
+Uninstall String: "C:\ProgramData\Package Cache\{f65db027-aff3-4070-886a-0d87064aabb1}\vcredist_x86.exe"  /uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{f65db027-aff3-4070-886a-0d87064aabb1}
+
+-----------------------------------------------------------
+Name: Microsoft Visual C++ 2013 x86 Additional Runtime - 12.0.21005
+Version: 12.0.21005
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 9.2
+Uninstall String: MsiExec.exe /X{F8CFEB22-A2E7-3971-9EDA-4B11EDEFC185}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{F8CFEB22-A2E7-3971-9EDA-4B11EDEFC185}
+
+-----------------------------------------------------------
+Name: Microsoft Visual C++ 2013 x86 Minimum Runtime - 12.0.21005
+Version: 12.0.21005
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 2
+Uninstall String: MsiExec.exe /X{13A4EE12-23EA-3371-91EE-EFB36DDFFF3E}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{13A4EE12-23EA-3371-91EE-EFB36DDFFF3E}
+
+-----------------------------------------------------------
+Name: Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.29.30139
+Version: 14.29.30139.0
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 17.9
+Uninstall String: "C:\ProgramData\Package Cache\{8d5fdf81-7022-423f-bd8b-b513a1050ae1}\VC_redist.x86.exe"  /uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{8d5fdf81-7022-423f-bd8b-b513a1050ae1}
+
+-----------------------------------------------------------
+Name: Microsoft Visual C++ 2019 X86 Additional Runtime - 14.29.30139
+Version: 14.29.30139
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 10.2
+Uninstall String: MsiExec.exe /I{1AEA8854-7597-4CD3-948F-8DE364D94E07}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{1AEA8854-7597-4CD3-948F-8DE364D94E07}
+
+-----------------------------------------------------------
+Name: Microsoft Visual C++ 2019 X86 Minimum Runtime - 14.29.30139
+Version: 14.29.30139
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 1.7
+Uninstall String: MsiExec.exe /I{1679EF65-55F3-4248-B91E-6B3BE1A69CDF}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{1679EF65-55F3-4248-B91E-6B3BE1A69CDF}
+
+-----------------------------------------------------------
+Name: Microsoft Visual C++ 2022 X64 Additional Runtime - 14.50.35710
+Version: 14.50.35710
+Publisher: Microsoft Corporation
+Install Date: 11/23/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 11.6
+Uninstall String: MsiExec.exe /I{9393725C-A0DA-47F1-8DB9-D1C223A0DD5A}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{9393725C-A0DA-47F1-8DB9-D1C223A0DD5A}
+
+-----------------------------------------------------------
+Name: Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.50.35710
+Version: 14.50.35710
+Publisher: Microsoft Corporation
+Install Date: 11/23/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 2.3
+Uninstall String: MsiExec.exe /I{0BCFDDE2-AA44-4087-8E77-E0025551AC6E}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{0BCFDDE2-AA44-4087-8E77-E0025551AC6E}
+
+-----------------------------------------------------------
+Name: Microsoft Visual C++ v14 Redistributable (x64) - 14.50.35710
+Version: 14.50.35710.0
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 20.7
+Uninstall String: "C:\ProgramData\Package Cache\{b2f5e2cc-18af-40da-9bb9-c296da1cb96c}\VC_redist.x64.exe"  /uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{b2f5e2cc-18af-40da-9bb9-c296da1cb96c}
+
+-----------------------------------------------------------
+Name: Microsoft Visual Studio 2008 Shell (integrated mode) - ENU
+Version: 9.0.30729
+Publisher: Microsoft Corporation
+Install Date: 10/05/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 237.2
+Uninstall String: MsiExec.exe /I{BA0C9AAF-1327-3F06-B49C-349B4BE8F740}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{BA0C9AAF-1327-3F06-B49C-349B4BE8F740}
+
+-----------------------------------------------------------
+Name: Microsoft Visual Studio Tools for Applications 2.0 - ENU
+Version: 9.0.35191
+Publisher: Microsoft Corporation
+Install Date: 10/05/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 260.8
+Uninstall String: MsiExec.exe /X{4ECF4BDC-8387-329A-ABE9-CF5798F84BB2}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{4ECF4BDC-8387-329A-ABE9-CF5798F84BB2}
+
+-----------------------------------------------------------
+Name: Microsoft Visual Studio Tools for Applications 2017
+Version: 15.0.27520
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 19.2
+Uninstall String: "C:\ProgramData\Package Cache\{f895a2f1-ae3f-4212-8af1-7fa1f8c212ea}\vsta_setup.exe"  /uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{f895a2f1-ae3f-4212-8af1-7fa1f8c212ea}
+
+-----------------------------------------------------------
+Name: Microsoft Visual Studio Tools for Applications 2017 x64 Hosting Support
+Version: 15.0.27520
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 2.8
+Uninstall String: MsiExec.exe /X{AFFB9D8D-6E58-38A0-A7DD-F6F1F4247B36}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{AFFB9D8D-6E58-38A0-A7DD-F6F1F4247B36}
+
+-----------------------------------------------------------
+Name: Microsoft Visual Studio Tools for Applications 2017 x86 Hosting Support
+Version: 15.0.27520
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 3.7
+Uninstall String: MsiExec.exe /X{9594C97E-6A20-38B3-81BB-2778C4780BE1}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{9594C97E-6A20-38B3-81BB-2778C4780BE1}
+
+-----------------------------------------------------------
+Name: Microsoft Visual Studio Tools for Applications 2019
+Version: 16.0.31110
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 14.2
+Uninstall String: "C:\ProgramData\Package Cache\{f3fbabb4-bcfb-45eb-8fff-9b784fd68c38}\vsta_setup.exe"  /uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{f3fbabb4-bcfb-45eb-8fff-9b784fd68c38}
+
+-----------------------------------------------------------
+Name: Microsoft Visual Studio Tools for Applications 2019 x64 Hosting Support
+Version: 16.0.31110
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 2.5
+Uninstall String: MsiExec.exe /X{8E7A3713-551D-333A-9271-10EF4D77A80F}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{8E7A3713-551D-333A-9271-10EF4D77A80F}
+
+-----------------------------------------------------------
+Name: Microsoft Visual Studio Tools for Applications 2019 x86 Hosting Support
+Version: 16.0.31110
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 3
+Uninstall String: MsiExec.exe /X{E7A0CD34-1F9B-3496-ADB3-2F180D302F6A}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{E7A0CD34-1F9B-3496-ADB3-2F180D302F6A}
+
+-----------------------------------------------------------
+Name: Microsoft VSS Writer for SQL Server 2022
+Version: 16.0.1000.6
+Publisher: Microsoft Corporation
+Install Date: 11/12/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 9
+Uninstall String: MsiExec.exe /I{AB5D8778-81F3-47E2-87A4-35E776CD664B}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{AB5D8778-81F3-47E2-87A4-35E776CD664B}
+
+-----------------------------------------------------------
+Name: Microsoft Windows Desktop Runtime - 6.0.28 (x64)
+Version: 48.112.10435
+Publisher: Microsoft Corporation
+Install Date: 05/08/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 86.8
+Uninstall String: MsiExec.exe /X{443A7BE8-E5BE-4514-BDAB-0A872E3E846B}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{443A7BE8-E5BE-4514-BDAB-0A872E3E846B}
+
+-----------------------------------------------------------
+Name: Microsoft Windows Desktop Runtime - 6.0.28 (x64)
+Version: 6.0.28.33420
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 210.6
+Uninstall String: "C:\ProgramData\Package Cache\{bd3c5800-9256-43b9-97a7-eb349fc38d78}\windowsdesktop-runtime-6.0.28-win-x64.exe"  /uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{bd3c5800-9256-43b9-97a7-eb349fc38d78}
+
+-----------------------------------------------------------
+Name: Microsoft Windows Desktop Runtime - 8.0.11 (x64)
+Version: 64.44.23253
+Publisher: Microsoft Corporation
+Install Date: 11/30/2024 00:00:00
+Install Location: 
+Estimated Size (MB): 89.9
+Uninstall String: MsiExec.exe /X{C0790AA0-0F40-4836-85B2-677B87625E63}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{C0790AA0-0F40-4836-85B2-677B87625E63}
+
+-----------------------------------------------------------
+Name: Microsoft Windows Desktop Runtime - 8.0.11 (x64)
+Version: 8.0.11.34221
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 217.1
+Uninstall String: "C:\ProgramData\Package Cache\{bd40e761-3e88-4202-9b53-26c6bed3d467}\windowsdesktop-runtime-8.0.11-win-x64.exe"  /uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{bd40e761-3e88-4202-9b53-26c6bed3d467}
+
+-----------------------------------------------------------
+Name: Microsoft.AAD.BrokerPlugin
+Version: 1000.17763.1.0
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.AccountsControl
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.AsyncTextService
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.BioEnrollment
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.CredDialogHost
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.ECApp
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.ECApp
+Version: 10.0.17763.6054
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.LockApp
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.Win32WebViewHost
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.Windows.Apprep.ChxApp
+Version: 1000.17763.1.0
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.Windows.CapturePicker
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.Windows.CloudExperienceHost
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.Windows.Cortana
+Version: 1.11.6.17763
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.Windows.NarratorQuickStart
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.Windows.OOBENetworkCaptivePortal
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.Windows.OOBENetworkConnectionFlow
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.Windows.PeopleExperienceHost
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.Windows.PinningConfirmationDialog
+Version: 1000.17763.1.0
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.Windows.SecHealthUI
+Version: 10.0.17763.3232
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.Windows.ShellExperienceHost
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Microsoft.Windows.XGpuEjectDialog
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: mks_vir
+Version: 
+Publisher: Arcabit/mks_vir
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\mks_vir\bin\mks_virupdate.exe" /pre_uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\mks_vir
+
+-----------------------------------------------------------
+Name: mks_vir administrator
+Version: 
+Publisher: Arcabit/mks_vir
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "C:\Program Files\mks_vir_administrator\bin\mks_virupdate.exe" /pre_uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\mks_vir_administrator
+
+-----------------------------------------------------------
+Name: Office 16 Click-to-Run Extensibility Component
+Version: 16.0.14334.20440
+Publisher: Microsoft Corporation
+Install Date: 12/17/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 13.8
+Uninstall String: MsiExec.exe /X{90160000-008C-0000-1000-0000000FF1CE}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{90160000-008C-0000-1000-0000000FF1CE}
+
+-----------------------------------------------------------
+Name: Office 16 Click-to-Run Licensing Component
+Version: 16.0.14334.20440
+Publisher: Microsoft Corporation
+Install Date: 12/17/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 5.1
+Uninstall String: MsiExec.exe /I{90160000-007E-0000-1000-0000000FF1CE}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{90160000-007E-0000-1000-0000000FF1CE}
+
+-----------------------------------------------------------
+Name: Office 16 Click-to-Run Localization Component
+Version: 16.0.14334.20344
+Publisher: Microsoft Corporation
+Install Date: 11/28/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 1.1
+Uninstall String: MsiExec.exe /X{90160000-008C-0415-1000-0000000FF1CE}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{90160000-008C-0415-1000-0000000FF1CE}
+
+-----------------------------------------------------------
+Name: OpenSSH
+Version: 10.0.0.0
+Publisher: Microsoft Corporation
+Install Date: 11/07/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 11.9
+Uninstall String: MsiExec.exe /I{7E239BB2-181B-42C7-8C01-F0F0FC3F6CE7}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{7E239BB2-181B-42C7-8C01-F0F0FC3F6CE7}
+
+-----------------------------------------------------------
+Name: Pakiet sterowników systemu Windows - Zhejiang Flashforge 3D Technology Co., Ltd (WinUSB) 3D Printer  (08/08/2014 1.0.0.0)
+Version: 08/08/2014 1.0.0.0
+Publisher: Zhejiang Flashforge 3D Technology Co., Ltd
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: C:\PROGRA~1\DIFX\F944CE71332D24DA\dpinst_amd64.exe /u C:\Windows\System32\DriverStore\FileRepository\flashforge_3d_printer.inf_amd64_e1fd447c182c5974\flashforge_3d_printer.inf
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\C98F8FB2B5281BBE5ADDACC007A343E925CFA238
+
+-----------------------------------------------------------
+Name: PowerShell 7-x64
+Version: 7.5.4.0
+Publisher: Microsoft Corporation
+Install Date: 10/24/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 280.1
+Uninstall String: MsiExec.exe /X{E8159677-ACF8-4D64-9D36-5C36B8BBEA39}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{E8159677-ACF8-4D64-9D36-5C36B8BBEA39}
+
+-----------------------------------------------------------
+Name: PowerShell 7.5.3.0-x64
+Version: 7.5.3.0
+Publisher: Microsoft Corporation
+Install Date: 
+Install Location: 
+Estimated Size (MB): 387.3
+Uninstall String: "C:\ProgramData\Package Cache\{1285c164-e6ee-4760-9700-53b6d5151739}\PowerShell-7.5.3-win-x64.exe"  /uninstall
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{1285c164-e6ee-4760-9700-53b6d5151739}
+
+-----------------------------------------------------------
+Name: Service Pack 3 for SQL Server 2008 R2 (KB2979597) (64-bit)
+Version: 10.53.6000.34
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: "c:\Program Files\Microsoft SQL Server\100\Setup Bootstrap\Update Cache\KB2979597\ServicePack\setup.exe" /Action=RemovePatch /AllInstances 
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\KB2979597
+
+-----------------------------------------------------------
+Name: SQL Server 2008 R2 SP2 Common Files
+Version: 10.53.6000.34
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 73.3
+Uninstall String: MsiExec.exe /I{36F70DEE-1EBF-4707-AFA2-E035EEAEBAA1}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{36F70DEE-1EBF-4707-AFA2-E035EEAEBAA1}
+
+-----------------------------------------------------------
+Name: SQL Server 2008 R2 SP2 Database Engine Shared
+Version: 10.53.6000.34
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 47.2
+Uninstall String: MsiExec.exe /I{A2122A9C-A699-4365-ADF8-68FEAC125D61}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{A2122A9C-A699-4365-ADF8-68FEAC125D61}
+
+-----------------------------------------------------------
+Name: SQL Server 2008 R2 SP2 Full text search
+Version: 10.53.6000.34
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 326.3
+Uninstall String: MsiExec.exe /I{9DFA5914-C275-42E0-810E-C88E46A7F9EA}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{9DFA5914-C275-42E0-810E-C88E46A7F9EA}
+
+-----------------------------------------------------------
+Name: SQL Server 2022 Batch Parser
+Version: 16.0.1000.6
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 0.7
+Uninstall String: MsiExec.exe /I{7EFD8B19-A9E6-41CF-A96F-B9B6E30EC345}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{7EFD8B19-A9E6-41CF-A96F-B9B6E30EC345}
+
+-----------------------------------------------------------
+Name: SQL Server 2022 Common Files
+Version: 16.0.1000.6
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 0.8
+Uninstall String: MsiExec.exe /I{8770AF64-BB4B-4404-BDD6-6AF8E4C461FC}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{8770AF64-BB4B-4404-BDD6-6AF8E4C461FC}
+
+-----------------------------------------------------------
+Name: SQL Server 2022 Connection Info
+Version: 16.0.1000.6
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 0.3
+Uninstall String: MsiExec.exe /I{EAC54B82-7A37-4A9E-8953-474316BD40F6}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{EAC54B82-7A37-4A9E-8953-474316BD40F6}
+
+-----------------------------------------------------------
+Name: SQL Server 2022 Database Engine Services
+Version: 16.0.1000.6
+Publisher: Microsoft Corporation
+Install Date: 11/12/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 1065.2
+Uninstall String: MsiExec.exe /I{0029E33B-8F28-4225-9A4D-5CE25ABE529E}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{0029E33B-8F28-4225-9A4D-5CE25ABE529E}
+
+-----------------------------------------------------------
+Name: SQL Server 2022 Database Engine Shared
+Version: 16.0.1000.6
+Publisher: Microsoft Corporation
+Install Date: 11/12/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 153.8
+Uninstall String: MsiExec.exe /I{D6E82158-05B9-4A18-A624-EA135BC77766}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{D6E82158-05B9-4A18-A624-EA135BC77766}
+
+-----------------------------------------------------------
+Name: SQL Server 2022 DMF
+Version: 16.0.1000.6
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 0.1
+Uninstall String: MsiExec.exe /I{DCA0C2D6-83BF-41AE-B1AB-C4181002DE40}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{DCA0C2D6-83BF-41AE-B1AB-C4181002DE40}
+
+-----------------------------------------------------------
+Name: SQL Server 2022 Shared Management Objects
+Version: 16.0.1000.6
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 0.1
+Uninstall String: MsiExec.exe /I{12618131-AA9A-4DAE-9387-CE4417955B9F}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{12618131-AA9A-4DAE-9387-CE4417955B9F}
+
+-----------------------------------------------------------
+Name: SQL Server 2022 Shared Management Objects Extensions
+Version: 16.0.1000.6
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 0.1
+Uninstall String: MsiExec.exe /I{35EC6145-E333-42DB-BCB3-380DF6140C11}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{35EC6145-E333-42DB-BCB3-380DF6140C11}
+
+-----------------------------------------------------------
+Name: SQL Server 2022 SQL Diagnostics
+Version: 16.0.1000.6
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 0.5
+Uninstall String: MsiExec.exe /I{0CEFE958-E71A-4171-9DEF-77E9234A5613}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{0CEFE958-E71A-4171-9DEF-77E9234A5613}
+
+-----------------------------------------------------------
+Name: SQL Server 2022 XEvent
+Version: 16.0.1000.6
+Publisher: Microsoft Corporation
+Install Date: 11/12/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 9.9
+Uninstall String: MsiExec.exe /I{BD8B7339-7559-4FC3-95E6-264324D45235}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{BD8B7339-7559-4FC3-95E6-264324D45235}
+
+-----------------------------------------------------------
+Name: Sql Server Customer Experience Improvement Program
+Version: 10.53.6000.34
+Publisher: Microsoft Corporation
+Install Date: 10/01/2020 00:00:00
+Install Location: 
+Estimated Size (MB): 0.4
+Uninstall String: MsiExec.exe /I{F31183CF-E10F-4DE1-BB59-6C0FF38E481E}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{F31183CF-E10F-4DE1-BB59-6C0FF38E481E}
+
+-----------------------------------------------------------
+Name: SQL Server Management Studio
+Version: 19.0.20200.0
+Publisher: Microsoft Corp.
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 602
+Uninstall String: MsiExec.exe /I{6423D26F-D197-40D4-B05C-958283128732}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{6423D26F-D197-40D4-B05C-958283128732}
+
+-----------------------------------------------------------
+Name: SQL Server Management Studio Language Pack - English
+Version: 19.0.20200.0
+Publisher: Microsoft Corp.
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 0.3
+Uninstall String: MsiExec.exe /I{8AAF78E6-84DF-4A02-BB3F-BD7F90B6FF2E}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{8AAF78E6-84DF-4A02-BB3F-BD7F90B6FF2E}
+
+-----------------------------------------------------------
+Name: SSMS Post Install Tasks
+Version: 19.0.20200.0
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 0.3
+Uninstall String: MsiExec.exe /I{9D558D07-051A-41D4-89A4-86DCD09B9EEC}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{9D558D07-051A-41D4-89A4-86DCD09B9EEC}
+
+-----------------------------------------------------------
+Name: Tailscale
+Version: 1.90.9
+Publisher: Tailscale Inc.
+Install Date: 11/29/2025 00:00:00
+Install Location: 
+Estimated Size (MB): 60.8
+Uninstall String: MsiExec.exe /X{1BEE1BDE-145F-5841-BF87-297B7D0DD822}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Uninstall\{1BEE1BDE-145F-5841-BF87-297B7D0DD822}
+
+-----------------------------------------------------------
+Name: Visual Studio 2017 Isolated Shell for SSMS
+Version: 15.0.28307.421
+Publisher: Microsoft Corporation
+Install Date: 03/09/2023 00:00:00
+Install Location: 
+Estimated Size (MB): 402.9
+Uninstall String: MsiExec.exe /I{C59B373F-56D5-405C-AAD0-18FECB3B78B9}
+Source: Registry
+Registry Key: HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{C59B373F-56D5-405C-AAD0-18FECB3B78B9}
+
+-----------------------------------------------------------
+Name: Windows.CBSPreview
+Version: 10.0.17763.1
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: windows.immersivecontrolpanel
+Version: 10.0.2.1000
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------
+Name: Windows.PrintDialog
+Version: 6.2.1.0
+Publisher: 
+Install Date: 
+Install Location: 
+Estimated Size (MB): 
+Uninstall String: 
+Source: UWP
+Registry Key: 
+
+-----------------------------------------------------------

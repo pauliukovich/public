@@ -1,0 +1,14 @@
+[2025-12-26 16:54:15] Permission fix started
+[2025-12-26 16:54:15] chmod +x /home/gitcloud/scripts/scripts/cpu-load.sh
+[2025-12-26 16:54:15] chmod +x /home/gitcloud/scripts/scripts/cpu-top.sh
+[2025-12-26 16:54:15] chmod +x /home/gitcloud/scripts/scripts/monitoring.sh
+[2025-12-26 16:54:15] chmod +x /home/gitcloud/scripts/scripts/net-drive.sh
+[2025-12-26 16:54:15] chmod +x /home/gitcloud/scripts/scripts/ram-top.sh
+[2025-12-26 16:54:15] chmod +x /home/gitcloud/scripts/scripts/serverinfo.sh
+[2025-12-26 16:54:15] chmod +x /home/gitcloud/scripts/scripts/serwer-login.sh
+[2025-12-26 16:54:15] chmod +x /home/gitcloud/scripts/scripts/serwer-uptime.sh
+[2025-12-26 16:54:15] chmod +x /home/gitcloud/scripts/scripts/speed-drive.sh
+[2025-12-26 16:54:15] chmod +x /home/gitcloud/scripts/scripts/updates.sh
+[2025-12-26 16:54:15] chmod +x /home/gitcloud/scripts/scripts/vpn-siec.sh
+[2025-12-26 16:54:15] Permission fix finished
+--------------------------------

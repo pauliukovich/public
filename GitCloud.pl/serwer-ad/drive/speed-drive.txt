@@ -1,0 +1,10 @@
+Disk speed report (2025-12-19 13:36:03)
+----------------------------------------
+Drive: C:
+Read:  0 MB/s
+Write: 0.69 MB/s
+
+Drive: G:
+No data available
+
+

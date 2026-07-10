@@ -1,0 +1,444 @@
+#!/bin/bash
+
+# ============================================================
+#  ХИРУРГ ОБНОВЛЕНИЙ v1.0 — безопасный apt upgrade для Debian 13
+#  Автоопределение ФС и среды, бэкап, разделение security/non-security,
+#  откат при сбое.
+# ============================================================
+
+# ---------- Цвета ----------
+GREEN='\033[0;32m'
+LGREEN='\033[1;32m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+LRED='\033[1;31m'
+BLUE='\033[0;34m'
+CYAN='\033[0;36m'
+MAGENTA='\033[0;35m'
+BROWN='\033[0;33m'
+WHITE='\033[1;37m'
+GRAY='\033[1;30m'
+BOLD='\033[1m'
+DIM='\033[2m'
+NC='\033[0m'
+
+BACKUP_ROOT="/var/backups/patch-manager"
+STATE_FILE="/var/lib/patch-manager/state.env"
+LOG_FILE="/var/log/patch-manager.log"
+
+mkdir -p "$BACKUP_ROOT" "$(dirname "$STATE_FILE")" 2>/dev/null
+
+# ---------- Спиннер ----------
+spinner() {
+    local pid=$1
+    local delay=0.08
+    local spinstr='⠋⠙⠹⠸⠼⠴⠦⠧⠇⠏'
+    local i=0
+    while kill -0 "$pid" 2>/dev/null; do
+        i=$(( (i+1) % ${#spinstr} ))
+        printf "\r${CYAN}   %s${NC} ${DIM}обработка...${NC}" "${spinstr:$i:1}"
+        sleep $delay
+    done
+    printf "\r"
+}
+
+progress_bar() {
+    local percent=$1
+    local width=30
+    local filled=$(( percent * width / 100 ))
+    local empty=$(( width - filled ))
+    printf "${GRAY}["
+    printf "${LGREEN}%0.s█" $(seq 1 $filled) 2>/dev/null
+    printf "${GRAY}%0.s░" $(seq 1 $empty) 2>/dev/null
+    printf "${GRAY}]${NC} ${BOLD}%d%%${NC}" "$percent"
+}
+
+run_step() {
+    local name=$1
+    local cmd=$2
+    local icon=${3:-"⚙️"}
+
+    echo -e "${YELLOW}${BOLD}[+] ${icon}  ${name}...${NC}"
+    ( eval "$cmd" >> "$LOG_FILE" 2>&1 ) &
+    local pid=$!
+    spinner "$pid"
+    wait "$pid"
+    local status=$?
+    if [ $status -eq 0 ]; then
+        echo -e "   ${GREEN}✔ ${name} — успешно${NC}"
+    else
+        echo -e "   ${LRED}✘ ${name} — ОШИБКА (код $status). Смотри $LOG_FILE${NC}"
+    fi
+    return $status
+}
+
+log() { echo "$(date '+%Y-%m-%d %H:%M:%S') $1" >> "$LOG_FILE"; }
+
+# ============================================================
+#  АВТООПРЕДЕЛЕНИЕ СРЕДЫ И ФАЙЛОВОЙ СИСТЕМЫ
+# ============================================================
+
+ENV_TYPE=""
+FS_TYPE=""
+ROOT_SOURCE=""
+LVM_VG=""
+LVM_LV=""
+ZFS_DATASET=""
+BTRFS_DEVICE=""
+SNAPSHOT_METHOD="none"
+
+detect_environment() {
+    if command -v pveversion >/dev/null 2>&1; then
+        ENV_TYPE="proxmox-host"
+    else
+        local virt
+        virt=$(systemd-detect-virt 2>/dev/null)
+        case "$virt" in
+            lxc|lxc-libvirt) ENV_TYPE="lxc-guest" ;;
+            kvm|qemu|vmware|oracle|microsoft|xen) ENV_TYPE="vm-guest" ;;
+            none|"") ENV_TYPE="bare-metal" ;;
+            *) ENV_TYPE="unknown ($virt)" ;;
+        esac
+    fi
+}
+
+detect_filesystem() {
+    ROOT_SOURCE=$(findmnt -no SOURCE / 2>/dev/null)
+    FS_TYPE=$(findmnt -no FSTYPE / 2>/dev/null)
+
+    case "$FS_TYPE" in
+        zfs)
+            ZFS_DATASET="$ROOT_SOURCE"
+            SNAPSHOT_METHOD="zfs"
+            ;;
+        btrfs)
+            BTRFS_DEVICE="$ROOT_SOURCE"
+            SNAPSHOT_METHOD="btrfs"
+            ;;
+        *)
+            # Проверяем, не поверх ли LVM он лежит
+            if [[ "$ROOT_SOURCE" == /dev/mapper/* ]] && command -v lvs >/dev/null 2>&1; then
+                local lv_info
+                lv_info=$(lvs --noheadings -o vg_name,lv_name "$ROOT_SOURCE" 2>/dev/null)
+                if [ -n "$lv_info" ]; then
+                    LVM_VG=$(echo "$lv_info" | awk '{print $1}')
+                    LVM_LV=$(echo "$lv_info" | awk '{print $2}')
+                    SNAPSHOT_METHOD="lvm"
+                fi
+            fi
+            ;;
+    esac
+
+    if [ "$SNAPSHOT_METHOD" == "none" ]; then
+        SNAPSHOT_METHOD="package-only"
+    fi
+}
+
+show_detection_report() {
+    echo -e "${CYAN}${BOLD}"
+    echo "  ╔══════════════════════════════════════════════════╗"
+    echo "  ║        🩺  ХИРУРГ ОБНОВЛЕНИЙ  — Диагностика       ║"
+    echo "  ╚══════════════════════════════════════════════════╝"
+    echo -e "${NC}"
+    echo -e "  ${WHITE}Среда:${NC}          ${LGREEN}${ENV_TYPE}${NC}"
+    echo -e "  ${WHITE}Корень (/):${NC}     ${LGREEN}${ROOT_SOURCE}${NC}  ${DIM}(${FS_TYPE})${NC}"
+
+    case "$SNAPSHOT_METHOD" in
+        lvm)
+            echo -e "  ${WHITE}Метод отката:${NC}  ${LGREEN}LVM snapshot${NC} ${DIM}(VG=${LVM_VG}, LV=${LVM_LV})${NC}"
+            ;;
+        zfs)
+            echo -e "  ${WHITE}Метод отката:${NC}  ${LGREEN}ZFS snapshot${NC} ${DIM}(dataset=${ZFS_DATASET})${NC}"
+            ;;
+        btrfs)
+            echo -e "  ${WHITE}Метод отката:${NC}  ${LGREEN}Btrfs snapshot${NC} ${DIM}(${BTRFS_DEVICE})${NC}"
+            ;;
+        package-only)
+            echo -e "  ${WHITE}Метод отката:${NC}  ${YELLOW}Только пакетный откат${NC} ${DIM}(нет ФС со снапшотами)${NC}"
+            echo -e "  ${GRAY}  -> Полного отката системы к состоянию \"до\" не будет.${NC}"
+            echo -e "  ${GRAY}  -> Будет откат версий пакетов из локального кэша apt.${NC}"
+            ;;
+    esac
+    echo -e "${BROWN}  ────────────────────────────────────────────────────${NC}"
+}
+
+# ============================================================
+#  ПРОВЕРКА ОБНОВЛЕНИЙ
+# ============================================================
+
+check_updates() {
+    echo ""
+    run_step "Обновление списка пакетов (apt-get update)" "sudo apt-get update -y" "🔄"
+    echo ""
+    echo -e "${YELLOW}${BOLD}[+] 🔍  Анализ доступных обновлений...${NC}"
+
+    local upgradable
+    upgradable=$(apt list --upgradable 2>/dev/null | grep -v "^Listing")
+
+    if [ -z "$upgradable" ]; then
+        echo -e "   ${GREEN}✔ Система уже полностью обновлена.${NC}"
+        SECURITY_LIST=""
+        OTHER_LIST=""
+        return 1
+    fi
+
+    local total
+    total=$(echo "$upgradable" | wc -l)
+    echo -e "   ${WHITE}Найдено обновлений: ${LGREEN}${BOLD}${total}${NC}"
+
+    SECURITY_LIST=""
+    OTHER_LIST=""
+    local i=0
+    while IFS= read -r line; do
+        i=$((i+1))
+        local pct=$(( i * 100 / total ))
+        printf "\r   Классификация: "
+        progress_bar "$pct"
+        local pkg
+        pkg=$(echo "$line" | cut -d'/' -f1)
+        if echo "$line" | grep -qi "security"; then
+            SECURITY_LIST+="${pkg}\n"
+        else
+            OTHER_LIST+="${pkg}\n"
+        fi
+    done <<< "$upgradable"
+    echo ""
+
+    local sec_count other_count
+    sec_count=$(echo -e "$SECURITY_LIST" | grep -c . )
+    other_count=$(echo -e "$OTHER_LIST" | grep -c . )
+
+    echo ""
+    echo -e "   ${LRED}${BOLD}🛡  Security-обновления: ${sec_count}${NC}"
+    [ "$sec_count" -gt 0 ] && echo -e "$SECURITY_LIST" | grep . | sed 's/^/     🔴 /'
+    echo ""
+    echo -e "   ${BROWN}${BOLD}📦 Обычные обновления: ${other_count}${NC}"
+    [ "$other_count" -gt 0 ] && echo -e "$OTHER_LIST" | grep . | sed 's/^/     🟤 /'
+    echo ""
+    return 0
+}
+
+# ============================================================
+#  БЭКАП ПЕРЕД ОБНОВЛЕНИЕМ
+# ============================================================
+
+create_backup() {
+    local ts
+    ts=$(date '+%Y%m%d-%H%M%S')
+    local dir="${BACKUP_ROOT}/${ts}"
+    mkdir -p "$dir"
+
+    echo ""
+    echo -e "${MAGENTA}${BOLD}[+] 💾  Создание точки восстановления...${NC}"
+
+    run_step "Сохранение списка пакетов (dpkg selections)" \
+        "dpkg --get-selections > '${dir}/dpkg-selections.list'" "📋"
+
+    run_step "Сохранение версий установленных пакетов" \
+        "dpkg-query -W -f='\${Package}=\${Version}\n' > '${dir}/package-versions.list'" "📋"
+
+    run_step "Копирование /etc" \
+        "sudo tar -czf '${dir}/etc-backup.tar.gz' -C / etc 2>/dev/null" "🗂️"
+
+    run_step "Сохранение списка репозиториев" \
+        "sudo cp -r /etc/apt/sources.list* '${dir}/' 2>/dev/null; true" "📋"
+
+    run_step "Фиксация текущего ядра" \
+        "uname -r > '${dir}/kernel-version.txt'" "🧬"
+
+    case "$SNAPSHOT_METHOD" in
+        lvm)
+            run_step "Создание LVM-снапшота (${LVM_LV}_pre_upgrade)" \
+                "sudo lvcreate -s -n ${LVM_LV}_pre_upgrade -L 2G ${ROOT_SOURCE}" "📸"
+            ;;
+        zfs)
+            run_step "Создание ZFS-снапшота" \
+                "sudo zfs snapshot ${ZFS_DATASET}@pre-upgrade-${ts}" "📸"
+            ;;
+        btrfs)
+            run_step "Создание Btrfs-снапшота" \
+                "sudo btrfs subvolume snapshot / '/.snapshots/pre-upgrade-${ts}' 2>/dev/null || echo 'Не удалось — проверьте раскладку subvolume вручную'" "📸"
+            ;;
+        package-only)
+            echo -e "   ${YELLOW}⚠ Снапшот ФС недоступен — сохранён только список версий пакетов.${NC}"
+            ;;
+    esac
+
+    cat > "$STATE_FILE" <<EOF
+LAST_BACKUP_DIR=${dir}
+LAST_BACKUP_TS=${ts}
+SNAPSHOT_METHOD=${SNAPSHOT_METHOD}
+LVM_VG=${LVM_VG}
+LVM_LV=${LVM_LV}
+ZFS_DATASET=${ZFS_DATASET}
+BTRFS_SNAPSHOT=/.snapshots/pre-upgrade-${ts}
+EOF
+
+    echo ""
+    echo -e "   ${LGREEN}${BOLD}✔ Точка восстановления создана:${NC} ${dir}"
+    log "Backup created: $dir (method=$SNAPSHOT_METHOD)"
+}
+
+# ============================================================
+#  БЕЗОПАСНОЕ ОБНОВЛЕНИЕ
+# ============================================================
+
+safe_upgrade() {
+    local mode=$1  # security | full
+
+    echo ""
+    echo -e "${CYAN}${BOLD}══════════════════════════════════════════════${NC}"
+    echo -e "${CYAN}${BOLD}   ЗАПУСК ОБНОВЛЕНИЯ (режим: ${mode})${NC}"
+    echo -e "${CYAN}${BOLD}══════════════════════════════════════════════${NC}"
+
+    create_backup
+
+    echo ""
+    if [ "$mode" == "security" ]; then
+        echo -e "${YELLOW}${BOLD}[+] 🛡  Установка только security-обновлений...${NC}"
+        if [ -z "$(echo -e "$SECURITY_LIST" | grep .)" ]; then
+            echo -e "   ${GREEN}✔ Security-обновлений нет.${NC}"
+            return
+        fi
+        local pkgs
+        pkgs=$(echo -e "$SECURITY_LIST" | grep . | tr '\n' ' ')
+        run_step "Установка: ${pkgs}" "sudo apt-get install --only-upgrade -y ${pkgs}" "🛡️"
+    else
+        run_step "Полное обновление системы (apt-get upgrade)" "sudo apt-get upgrade -y" "🚀"
+    fi
+
+    local upgrade_status=$?
+
+    echo ""
+    echo -e "${YELLOW}${BOLD}[+] 🩺  Проверка целостности после обновления...${NC}"
+    run_step "Проверка битых пакетов" "sudo dpkg --audit" "🔍"
+    run_step "Проверка зависимостей apt" "sudo apt-get check" "🔍"
+
+    if [ $upgrade_status -eq 0 ]; then
+        echo ""
+        echo -e "${LGREEN}${BOLD}   ✔ ОБНОВЛЕНИЕ ЗАВЕРШЕНО УСПЕШНО${NC}"
+        echo -e "${DIM}   Точка восстановления сохранена на случай проблем позже.${NC}"
+        log "Upgrade completed successfully (mode=$mode)"
+    else
+        echo ""
+        echo -e "${LRED}${BOLD}   ✘ ОБНОВЛЕНИЕ ЗАВЕРШИЛОСЬ С ОШИБКОЙ${NC}"
+        log "Upgrade FAILED (mode=$mode)"
+        read -p "$(echo -e ${YELLOW}"   Выполнить откат сейчас? [y/N]: "${NC})" ans
+        if [[ "$ans" == "y" || "$ans" == "Y" ]]; then
+            rollback
+        fi
+    fi
+}
+
+# ============================================================
+#  ОТКАТ
+# ============================================================
+
+rollback() {
+    if [ ! -f "$STATE_FILE" ]; then
+        echo -e "${LRED}   Нет сохранённого состояния для отката. Резервных точек не найдено.${NC}"
+        return
+    fi
+    source "$STATE_FILE"
+
+    echo ""
+    echo -e "${RED}${BOLD}══════════════════════════════════════════════${NC}"
+    echo -e "${RED}${BOLD}   ОТКАТ К ТОЧКЕ ВОССТАНОВЛЕНИЯ: ${LAST_BACKUP_TS}${NC}"
+    echo -e "${RED}${BOLD}══════════════════════════════════════════════${NC}"
+
+    case "$SNAPSHOT_METHOD" in
+        lvm)
+            echo -e "${YELLOW}   LVM-откат требует перемонтирования / перезагрузки.${NC}"
+            read -p "   Слить снапшот ${LVM_LV}_pre_upgrade в исходный том? [y/N]: " ans
+            if [[ "$ans" == "y" ]]; then
+                run_step "Слияние LVM-снапшота" "sudo lvconvert --merge ${LVM_VG}/${LVM_LV}_pre_upgrade" "⏪"
+                echo -e "${LRED}${BOLD}   ⚠ Требуется перезагрузка для завершения отката: sudo reboot${NC}"
+            fi
+            ;;
+        zfs)
+            read -p "   Откатить ZFS-датасет к снапшоту pre-upgrade-${LAST_BACKUP_TS}? [y/N]: " ans
+            if [[ "$ans" == "y" ]]; then
+                run_step "ZFS rollback" "sudo zfs rollback ${ZFS_DATASET}@pre-upgrade-${LAST_BACKUP_TS}" "⏪"
+                echo -e "${LGREEN}   ✔ Откат выполнен. Рекомендуется reboot.${NC}"
+            fi
+            ;;
+        btrfs)
+            echo -e "${YELLOW}   Снапшот находится в: ${BTRFS_SNAPSHOT}${NC}"
+            echo -e "${GRAY}   Для отката btrfs требуется ручная подмена subvolume по умолчанию"
+            echo -e "   (btrfs subvolume set-default) и перезагрузка — сделайте это осознанно,"
+            echo -e "   автоматика тут рискованна и зависит от вашей раскладки дисков.${NC}"
+            ;;
+        package-only)
+            echo -e "${YELLOW}   Полного отката ФС нет. Откатываю пакеты до сохранённых версий...${NC}"
+            if [ -f "${LAST_BACKUP_DIR}/package-versions.list" ]; then
+                run_step "Откат версий пакетов из кэша apt" \
+                    "sudo dpkg --set-selections < '${LAST_BACKUP_DIR}/dpkg-selections.list'; while read -r line; do pkg=\$(echo \$line | cut -d= -f1); ver=\$(echo \$line | cut -d= -f2); sudo apt-get install -y --allow-downgrades \"\${pkg}=\${ver}\" 2>/dev/null; done < '${LAST_BACKUP_DIR}/package-versions.list'" \
+                    "⏪"
+                echo -e "${DIM}   Примечание: сработает только для пакетов, чьи старые .deb ещё есть в /var/cache/apt/archives${NC}"
+            else
+                echo -e "${LRED}   Файл со списком версий не найден.${NC}"
+            fi
+            ;;
+    esac
+    log "Rollback attempted (method=$SNAPSHOT_METHOD)"
+}
+
+# ============================================================
+#  МЕНЮ
+# ============================================================
+
+menu() {
+    detect_environment
+    detect_filesystem
+
+    while true; do
+        clear
+        show_detection_report
+        echo ""
+        echo -e "  ${WHITE}${BOLD}Выберите действие:${NC}"
+        echo ""
+        echo -e "   ${CYAN}1)${NC} 🔍  Проверить обновления (без установки)"
+        echo -e "   ${CYAN}2)${NC} 🛡️   Установить ТОЛЬКО security-обновления (безопасно)"
+        echo -e "   ${CYAN}3)${NC} 🚀  Полное обновление системы (с бэкапом)"
+        echo -e "   ${CYAN}4)${NC} 💾  Создать точку восстановления вручную (без обновления)"
+        echo -e "   ${CYAN}5)${NC} ⏪  Откатиться к последней точке восстановления"
+        echo -e "   ${CYAN}6)${NC} 📜  Показать лог операций"
+        echo -e "   ${RED}0)${NC}  Выход"
+        echo -e "${BROWN}  ────────────────────────────────────────────────────${NC}"
+        read -p "$(echo -e ${WHITE}${BOLD}"  Ваш выбор [0-6]: "${NC})" choice
+
+        case $choice in
+            1) check_updates ;;
+            2)
+                check_updates
+                if [ $? -eq 0 ]; then
+                    read -p "$(echo -e ${YELLOW}"Установить только security-обновления? [y/N]: "${NC})" c
+                    [[ "$c" == "y" || "$c" == "Y" ]] && safe_upgrade "security"
+                fi
+                ;;
+            3)
+                check_updates
+                if [ $? -eq 0 ]; then
+                    echo -e "${LRED}${BOLD}Внимание: будут установлены ВСЕ обновления, включая non-security.${NC}"
+                    read -p "$(echo -e ${YELLOW}"Продолжить полное обновление с бэкапом? [y/N]: "${NC})" c
+                    [[ "$c" == "y" || "$c" == "Y" ]] && safe_upgrade "full"
+                fi
+                ;;
+            4) create_backup ;;
+            5) rollback ;;
+            6)
+                echo ""
+                [ -f "$LOG_FILE" ] && tail -n 50 "$LOG_FILE" || echo -e "${GRAY}Лог пуст.${NC}"
+                ;;
+            0)
+                echo -e "${LGREEN}${BOLD}  Работа завершена. 👋${NC}"
+                exit ;;
+            *) echo -e "${LRED}  Неверный выбор!${NC}" ;;
+        esac
+
+        echo ""
+        read -p "$(echo -e ${GRAY}"  Нажмите Enter, чтобы вернуться в меню..."${NC})"
+    done
+}
+
+menu

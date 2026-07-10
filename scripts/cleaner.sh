@@ -1,36 +1,59 @@
 #!/bin/bash
 
-# Функция для вывода свободного места
-check_space() {
-    echo "--- Свободное место ---"
-    df -h | grep '^/'
+# Цвета для вывода
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+NC='\033[0m' # No Color
+
+# Функция очистки с проверкой места до и после
+clean_action() {
+    local task_name=$1
+    local cmd=$2
+    
+    echo -e "${YELLOW}[+] Запуск: $task_name...${NC}"
+    
+    # Считаем место до
+    local space_before=$(df -h / | awk 'NR==2 {print $4}')
+    
+    # Выполняем команду
+    if eval "$cmd"; then
+        local space_after=$(df -h / | awk 'NR==2 {print $4}')
+        echo -e "${GREEN}[OK] Действие завершено. Свободно: $space_before -> $space_after${NC}"
+    else
+        echo -e "${RED}[ERROR] Ошибка при выполнении $task_name${NC}"
+    fi
 }
 
-echo "--- Меню глубокой очистки системы ---"
-check_space
-echo ""
-echo "1) Очистить кэш APT (скачанные .deb пакеты)"
-echo "2) Удалить ненужные зависимости (autoremove)"
-echo "3) Очистить кэш эскизов (thumbnails - часто съедает место)"
-echo "4) Урезать системные логи (оставить последние 100MB)"
-echo "5) Полная очистка (все пункты)"
-echo "0) Выход"
-read -p "Выберите действие: " choice
+menu() {
+    while true; do
+        clear
+        echo -e "${YELLOW}--- СИСТЕМА ОЧИСТКИ (Proxmox) ---${NC}"
+        df -h | grep '^/'
+        echo -e "\n1) Очистить кэш APT"
+        echo "2) Удалить ненужные зависимости (autoremove)"
+        echo "3) Очистить кэш эскизов (thumbnails)"
+        echo "4) Урезать системные логи (до 100MB)"
+        echo "5) ПОЛНАЯ ОЧИСТКА (все пункты)"
+        echo "0) Выход"
+        read -p "Выберите действие [0-5]: " choice
 
-case $choice in
-    1) sudo apt-get clean && echo "Кэш APT очищен." ;;
-    2) sudo apt-get autoremove -y && echo "Зависимости удалены." ;;
-    3) rm -rf ~/.cache/thumbnails/* && echo "Кэш эскизов очищен." ;;
-    4) sudo journalctl --vacuum-size=100M && echo "Логи урезаны до 100MB." ;;
-    5) 
-        sudo apt-get clean && sudo apt-get autoremove -y
-        rm -rf ~/.cache/thumbnails/*
-        sudo journalctl --vacuum-size=100M
-        echo "Полная очистка завершена!"
-        ;;
-    0) exit ;;
-    *) echo "Неверный выбор." ;;
-esac
+        case $choice in
+            1) clean_action "Очистка кэша APT" "sudo apt-get clean" ;;
+            2) clean_action "Удаление зависимостей" "sudo apt-get autoremove -y" ;;
+            3) clean_action "Очистка эскизов" "rm -rf ~/.cache/thumbnails/*" ;;
+            4) clean_action "Урезание логов" "sudo journalctl --vacuum-size=100M" ;;
+            5) 
+                clean_action "APT" "sudo apt-get clean"
+                clean_action "Autoremove" "sudo apt-get autoremove -y"
+                clean_action "Thumbnails" "rm -rf ~/.cache/thumbnails/*"
+                clean_action "Logs" "sudo journalctl --vacuum-size=100M"
+                ;;
+            0) echo "Выход..."; exit ;;
+            *) echo -e "${RED}Неверный выбор!${NC}" ;;
+        esac
+        read -p "Нажмите Enter, чтобы вернуться в меню..."
+    done
+}
 
-check_space
-read -p "Нажмите Enter для выхода..."
+menu

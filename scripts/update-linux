@@ -28,6 +28,14 @@ LOG_FILE="/var/log/patch-manager.log"
 
 mkdir -p "$BACKUP_ROOT" "$(dirname "$STATE_FILE")" 2>/dev/null
 
+# ---------- Гарантируем права на служебные файлы ----------
+init_permissions() {
+    sudo mkdir -p "$BACKUP_ROOT" "$(dirname "$STATE_FILE")" "$(dirname "$LOG_FILE")"
+    sudo touch "$LOG_FILE"
+    sudo chown -R "$(whoami)":"$(whoami)" "$BACKUP_ROOT" "$(dirname "$STATE_FILE")" "$LOG_FILE" 2>/dev/null
+}
+init_permissions
+
 # ---------- Спиннер ----------
 spinner() {
     local pid=$1

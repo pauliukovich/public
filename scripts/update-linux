@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # ============================================================
-#  ХИРУРГ ОБНОВЛЕНИЙ v1.0 — безопасный apt upgrade для Debian 13
+#  ХИРУРГ ОБНОВЛЕНИЙ v1.1 — безопасный apt upgrade для Debian 13
 #  Автоопределение ФС и среды, бэкап, разделение security/non-security,
-#  откат при сбое.
+#  быстрый батч-откат при сбое.
 # ============================================================
 
 # ---------- Цвета ----------
@@ -116,7 +116,6 @@ detect_filesystem() {
             SNAPSHOT_METHOD="btrfs"
             ;;
         *)
-            # Проверяем, не поверх ли LVM он лежит
             if [[ "$ROOT_SOURCE" == /dev/mapper/* ]] && command -v lvs >/dev/null 2>&1; then
                 local lv_info
                 lv_info=$(lvs --noheadings -o vg_name,lv_name "$ROOT_SOURCE" 2>/dev/null)
@@ -156,7 +155,7 @@ show_detection_report() {
         package-only)
             echo -e "  ${WHITE}Метод отката:${NC}  ${YELLOW}Только пакетный откат${NC} ${DIM}(нет ФС со снапшотами)${NC}"
             echo -e "  ${GRAY}  -> Полного отката системы к состоянию \"до\" не будет.${NC}"
-            echo -e "  ${GRAY}  -> Будет откат версий пакетов из локального кэша apt.${NC}"
+            echo -e "  ${GRAY}  -> Будет откат версий пакетов из локального кэша apt (батчем, одной командой).${NC}"
             ;;
     esac
     echo -e "${BROWN}  ────────────────────────────────────────────────────${NC}"
@@ -369,18 +368,89 @@ rollback() {
             echo -e "   автоматика тут рискованна и зависит от вашей раскладки дисков.${NC}"
             ;;
         package-only)
-            echo -e "${YELLOW}   Полного отката ФС нет. Откатываю пакеты до сохранённых версий...${NC}"
-            if [ -f "${LAST_BACKUP_DIR}/package-versions.list" ]; then
-                run_step "Откат версий пакетов из кэша apt" \
-                    "sudo dpkg --set-selections < '${LAST_BACKUP_DIR}/dpkg-selections.list'; while read -r line; do pkg=\$(echo \$line | cut -d= -f1); ver=\$(echo \$line | cut -d= -f2); sudo apt-get install -y --allow-downgrades \"\${pkg}=\${ver}\" 2>/dev/null; done < '${LAST_BACKUP_DIR}/package-versions.list'" \
-                    "⏪"
-                echo -e "${DIM}   Примечание: сработает только для пакетов, чьи старые .deb ещё есть в /var/cache/apt/archives${NC}"
-            else
-                echo -e "${LRED}   Файл со списком версий не найден.${NC}"
-            fi
+            rollback_packages_batch
             ;;
     esac
     log "Rollback attempted (method=$SNAPSHOT_METHOD)"
+}
+
+# ---------- Пакетный откат одной транзакцией ----------
+rollback_packages_batch() {
+    echo -e "${YELLOW}   Полного отката ФС нет. Откатываю пакеты до сохранённых версий...${NC}"
+
+    local ver_file="${LAST_BACKUP_DIR}/package-versions.list"
+    if [ ! -f "$ver_file" ]; then
+        echo -e "${LRED}   Файл со списком версий не найден: ${ver_file}${NC}"
+        return
+    fi
+
+    echo -e "${WHITE}   Восстанавливаю dpkg selections...${NC}"
+    sudo dpkg --set-selections < "${LAST_BACKUP_DIR}/dpkg-selections.list" 2>>"$LOG_FILE"
+
+    echo -e "${WHITE}   Сверяю сохранённые версии с текущими...${NC}"
+
+    local to_downgrade=""
+    local missing=""
+    local total=0
+    local checked=0
+
+    total=$(wc -l < "$ver_file")
+    [ "$total" -eq 0 ] && total=1
+
+    while IFS='=' read -r pkg ver; do
+        [ -z "$pkg" ] && continue
+        checked=$((checked+1))
+        printf "\r   Проверка кэша: "
+        progress_bar $(( checked * 100 / total ))
+
+        local current_ver
+        current_ver=$(dpkg-query -W -f='${Version}' "$pkg" 2>/dev/null)
+
+        [ "$current_ver" == "$ver" ] && continue
+        [ -z "$current_ver" ] && continue
+
+        if ls /var/cache/apt/archives/"${pkg}_${ver}"_*.deb >/dev/null 2>&1 || \
+           apt-cache show "${pkg}=${ver}" >/dev/null 2>&1; then
+            to_downgrade+="${pkg}=${ver} "
+        else
+            missing+="${pkg}=${ver}\n"
+        fi
+    done < "$ver_file"
+    echo ""
+
+    if [ -n "$missing" ]; then
+        echo ""
+        echo -e "   ${YELLOW}⚠ Не найдены в кэше (пропущены, откатить нельзя):${NC}"
+        echo -e "$missing" | grep . | sed 's/^/     🟡 /' | head -20
+        local missing_count
+        missing_count=$(echo -e "$missing" | grep -c .)
+        [ "$missing_count" -gt 20 ] && echo -e "     ${DIM}... и ещё $((missing_count - 20))${NC}"
+    fi
+
+    if [ -z "$to_downgrade" ]; then
+        echo ""
+        echo -e "   ${GREEN}✔ Нечего откатывать — все версии уже совпадают или недоступны в кэше.${NC}"
+        return
+    fi
+
+    local pkg_count
+    pkg_count=$(echo "$to_downgrade" | wc -w)
+    echo ""
+    echo -e "   ${WHITE}К откату: ${LGREEN}${BOLD}${pkg_count}${NC}${WHITE} пакет(ов), одной транзакцией.${NC}"
+
+    run_step "Пакетный откат (${pkg_count} пакетов одной командой)" \
+        "sudo apt-get install -y --allow-downgrades ${to_downgrade}" "⏪"
+
+    local status=$?
+    if [ $status -eq 0 ]; then
+        echo -e "   ${GREEN}✔ Откат пакетов завершён успешно.${NC}"
+    else
+        echo -e "   ${LRED}✘ Батч-откат завершился с ошибкой (код $status).${NC}"
+        echo -e "   ${YELLOW}   Возможная причина: конфликт зависимостей при массовом даунгрейде.${NC}"
+        echo -e "   ${GRAY}   Подробности в $LOG_FILE. Можно попробовать: sudo apt-get install -f${NC}"
+    fi
+
+    run_step "Проверка целостности после отката" "sudo apt-get check" "🔍"
 }
 
 # ============================================================
